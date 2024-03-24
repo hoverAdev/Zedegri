@@ -8,7 +8,7 @@ if generate == true{
 			while string_length(cross_compare) != string_length(scripture){
 				cross_compare += deathblow_list[i][j];
 			}
-			if string_length(cross_compare) == string_length(scripture){
+			if cross_compare == scripture{
 				array_push(array_to_print, deathblow_list[i]);
 			}
 		}

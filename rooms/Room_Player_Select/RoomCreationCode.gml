@@ -10,3 +10,11 @@
 global.partyMemberPosition = 0;
 global.party_members = [];
 global.level = 1;
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 7222383A
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)window_set_size(1920,1080);$(13_10)draw_set_font(font_arial);"
+/// @description Execute Code
+window_set_size(1920,1080);
+draw_set_font(font_arial);

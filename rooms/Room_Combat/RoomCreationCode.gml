@@ -1,3 +1,6 @@
+draw_set_font(font_arial);
+draw_set_halign(fa_center);
+
 randomize();
 global.all_state_pause = 0;
 global.MAX_AP = 4;

@@ -34,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Button_X36",
-    "path":"sprites/Button_X36/Button_X36.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
