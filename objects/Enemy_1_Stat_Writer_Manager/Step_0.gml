@@ -1,7 +1,7 @@
 	/// @description Insert description here
 	// You can write your code in this editor
 if global.all_state_pause == 0{
-	show_debug_message(current_speed);
+	//show_debug_message(current_speed);
 	current_speed += 0.7125; 
 	if current_speed >= stat_block[7]{
 		//                     -----SELECTION OF ATTACK-----

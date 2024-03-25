@@ -34,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Button_X_Decrease",
+    "path":"sprites/Button_X_Decrease/Button_X_Decrease.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

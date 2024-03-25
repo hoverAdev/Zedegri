@@ -34,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Button_C_Decrease",
+    "path":"sprites/Button_C_Decrease/Button_C_Decrease.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

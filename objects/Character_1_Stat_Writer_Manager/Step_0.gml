@@ -4,32 +4,18 @@ if current_speed >= stat_block[4]{
 	global.all_state_pause = 1;
 	buttons_spawned = false;
 	current_speed = 0;
-
+	Black_Overlay.covered = false;
 	
 }
 if global.all_state_pause != 1{ current_speed += 0.75; }
 
 if global.all_state_pause == 1{
-	if buttons_spawned == false{
-		instance_create_layer(64, 574+64, layer, Button_Z);
-		instance_create_layer(128+32, 574+64, layer, Button_X);
-		instance_create_layer(64+128+64, 574+64, layer, Button_C);
-		buttons_spawned = true;
-		if current_ap == 0 and deathblow_performed == false{ // NO AP AND NO DEATHBLOW
-			current_ap = 3 + turn_counter;
-		}
-		else if current_ap != 0 and deathblow_performed == false{ // YES AP AND NO DEATHBLOW
-			current_ap += 3 + turn_counter;
-		}
-		else{ current_ap = 3; deathblow_performed = false;}
-		if current_ap > global.MAX_AP{ current_ap = global.MAX_AP;}
-	}
+/*	
 	if buttons_spawned == true {
 		
 		if keyboard_check_pressed(ord("1")){
 			targetted_enemy = 1;
 			show_debug_message("Enemy 1 Selected");
-			Black_Overlay.covered = false;
 		}
 		else if keyboard_check_pressed(ord("2")){
 			targetted_enemy = 2;
@@ -45,7 +31,34 @@ if global.all_state_pause == 1{
 			targetted_enemy = 4;
 			show_debug_message("Enemy 4 Selected");
 			Black_Overlay.covered = false;
+		}*/
+	if keyboard_check_pressed(ord("1")) and ether_confirmed == false{
+		targetted_enemy = 1;}
+	else if keyboard_check_pressed(ord("2")) and ether_confirmed == false{
+		targetted_enemy = 2;}
+	else if keyboard_check_pressed(ord("3")) and ether_confirmed == false{
+		targetted_enemy = 3;}
+	else if keyboard_check_pressed(ord("4")) and ether_confirmed == false{
+		targetted_enemy = 4;}
+	else if keyboard_check_pressed(ord("S")){
+		ether_confirmed = true;
+	}
+		
+	if targetted_enemy != 0 and ether_confirmed == false{
+		if buttons_spawned == false{
+		instance_create_layer(64, room_height-160, layer, Button_Z);
+		instance_create_layer(128+32, room_height-160, layer, Button_X);
+		instance_create_layer(64+128+64, room_height-160, layer, Button_C);
+		buttons_spawned = true;
+		if current_ap == 0 and deathblow_performed == false{ // NO AP AND NO DEATHBLOW
+			current_ap = 3 + turn_counter;
 		}
+		else if current_ap != 0 and deathblow_performed == false{ // YES AP AND NO DEATHBLOW
+			current_ap += 3 + turn_counter;
+		}
+		else{ current_ap = 3; deathblow_performed = false;}
+		if current_ap > global.MAX_AP{ current_ap = global.MAX_AP;}
+	}
 		//if Black_Overlay == false{Draw_Available_Deathblow_Manager.generate = true;}
 		Draw_Available_Deathblow_Manager.generate = true;
 		if Button_C.button_c_pressed == true and current_ap >= 3{
@@ -137,5 +150,40 @@ if global.all_state_pause == 1{
 			obj_enemy_selector.y = 9999;
 			Draw_Available_Deathblow_Manager.generate = false;
 		}
+	}
+
+	if ether_confirmed == true{
+		//Select spell from Menu
+		//Multi-If statement to determine which way to process the spell
+		//Process the spell in the needed way
+		//Close menu and select enemy/teammate
+		//execute required part
+		//Deactivate ether_confirmed
+		global.all_state_pause = 0;
+		ether_confirmed = false;
+		turn_counter ++;	
+		Black_Overlay.covered = true;
+		obj_enemy_selector.x = 9999;
+		obj_enemy_selector.y = 9999;
+		//obj_friend_selector.x = 9999;
+		//obj_friend_selector.y = 9999;
+		Draw_Available_Deathblow_Manager.generate = false;
+	}
+	
+	if targetted_enemy == 1{
+		Enemy_1_Stat_Writer_Manager.current_hp -= dmg;
+		dmg = 0;
+	}
+	else if targetted_enemy == 2{
+		Enemy_2_Stat_Writer_Manager.current_hp -= dmg;
+		dmg = 0;
+	}
+	else if targetted_enemy == 3{
+		Enemy_3_Stat_Writer_Manager.current_hp -= dmg;
+		dmg = 0;
+	}
+	else if targetted_enemy == 4{
+		Enemy_4_Stat_Writer_Manager.current_hp -= dmg;
+		dmg = 0;
 	}
 }
