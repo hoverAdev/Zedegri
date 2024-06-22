@@ -1,17 +1,33 @@
 /// @description Insert description here
 // You can write your code in this editor
-if generate == true{
-	for (var i = 0; i > array_length(deathblow_list); i ++){
-		for (var j = 0; j > string_length(scripture); j ++){
-			var scripture_length = string_length(scripture);
-			var cross_compare = "";
-			while string_length(cross_compare) != string_length(scripture){
-				cross_compare += deathblow_list[i][j];
-			}
-			if cross_compare == scripture{
-				array_push(array_to_print, deathblow_list[i]);
-			}
-		}
+//["ZC",   "ZZC","XC",  "ZXC","XZC","ZZZC",   "ZXZC","ZZXC","XZZC","ZZZZC"];
+//show_debug_message(deathblow_possible);
+
+if deathblow_possible == true{
+	//figure out how to have it be sticky
+	//as soon as they select the enemy, draw self, and only draw self again after their turn ends,
+	//which will leave an invalid scripture of A or some shit.
+	draw_self();
+	//show_debug_message("Drawn Self");
+	if current_ap >= 4{
+		draw_text(x,y+32*3,"ZC");
+	}
+	if current_ap >= 5{
+		draw_text(x,y+32*2,"ZZC, XC");
+	}
+	if current_ap >= 6{
+		draw_text(x,y+32,"ZXC, ZZZC, XZC");
+	}
+	if current_ap >= 7{
+		draw_text(x,y,"ZXZC, ZZXC, ZZZZC, XZZC");
 	}
 }
-show_debug_message(array_to_print);
+if drawn_ep_values > 2{
+	drawn_ep_values = 2;	
+}
+if hidden_ep_values{
+	draw_self();
+	hidden_ep_values = false;
+	current_ap = 0;
+}
+//show_debug_message(array_to_print);

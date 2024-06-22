@@ -4,5 +4,9 @@
 deathblow_list = ["ZC","ZZC","XC","ZXC","XZC","ZZZC","ZXZC","ZZXC","XZZC","ZZZZC"];
 //                "TX","TTX","SX","TSX","STX","TTTX","TSTX","TTSX","STTX","TTTTX"
 generate = false;
+deathblow_possible = false;
 scripture = "";
 array_to_print = [];
+drawn_ep_values = 0;
+hidden_ep_values = false;
+current_ap = 0;
