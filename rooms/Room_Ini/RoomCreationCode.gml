@@ -8,4 +8,4 @@ global.MAX_AP = 5;
 
 
 global.Mass_Deactivate = false;
-room_goto(Room_Player_Select);
+//room_goto(Room_Player_Select);

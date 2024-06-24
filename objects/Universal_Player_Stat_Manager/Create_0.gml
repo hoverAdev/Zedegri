@@ -3,73 +3,32 @@
 persistent = true;
 var LM = 1 + global.level / 15;
 
-JC_WPN = [0,0,0,0];
-JC_AMR = [0,0,0,0];
-JC_CRM = [0,0,0,0];
-
-EL_WPN = [0,0,0,0];
-EL_AMR = [0,0,0,0];
-EL_CRM = [0,0,0,0];
-
-DC_WPN = [0,0,0,0];
-DC_AMR = [0,0,0,0];
-DC_CRM = [0,0,0,0];
-
-AB_WPN = [0,0,0,0];
-AB_AMR = [0,0,0,0];
-AB_CRM = [0,0,0,0];
-
-AZ_WPN = [0,0,0,0];
-AZ_AMR = [0,0,0,0];
-AZ_CRM = [0,0,0,0];
-
-JZ_WPN = [0,0,0,0];
-JZ_CRM = [0,0,0,0];
-
-KI_WPN = [0,0,0,0];
-KI_CRM = [0,0,0,0];
-
-TR_WPN = [0,0,0,0];
-TR_CRM = [0,0,0,0];
-
-SL_WPN = [0,0,0,0];
-SL_CRM = [0,0,0,0];
-
-HD_WPN = [0,0,0,0];
-HD_CRM = [0,0,0,0];
-
-FN_WPN = [0,0,0,0];
-FN_AMR = [0,0,0,0];
-FN_CRM = [0,0,0,0];
-
-AF_WPN = [0,0,0,0];
-AF_CRM = [0,0,0,0];
-
-JO_WPN = [0,0,0,0];
-JO_AMR = [0,0,0,0];
-JO_CRM = [0,0,0,0];
-
-FI_WPN = [0,0,0,0];
-FI_AMR = [0,0,0,0];
-FI_CRM = [0,0,0,0];
-
-MI_WPN = [0,0,0,0];
-MI_CRM = [0,0,0,0];
-
-SO_WPN = [0,0,0,0];
-SO_CRM = [0,0,0,0];
-
-HA_WPN = [0,0,0,0];
-HA_CRM = [0,0,0,0];
-
-AM_WPN = [0,0,0,0];
-AM_CRM = [0,0,0,0];
-
-TS_WPN = [0,0,0,0];
-TS_CRM = [0,0,0,0];
-
 //0 = ATK, 1 = DEF, 2 = SPD, 3 = HP
 // + _WPN[0] + _AMR[0] + _CRM[0]
+
+JC_WPN = json_to_array(UIC.JC_WPN); EL_WPN = json_to_array(UIC.EL_WPN); DC_WPN = json_to_array(UIC.DC_WPN); AB_WPN = json_to_array(UIC.AB_WPN); AZ_WPN = json_to_array(UIC.AZ_WPN); 
+JC_AMR = json_to_array(UIC.JC_AMR); EL_AMR = json_to_array(UIC.EL_AMR); DC_AMR = json_to_array(UIC.DC_AMR); AB_AMR = json_to_array(UIC.AB_AMR); AZ_AMR = json_to_array(UIC.AZ_AMR); 
+JC_CRM =json_to_array( UIC.JC_CRM); EL_CRM = json_to_array(UIC.EL_CRM); DC_CRM = json_to_array(UIC.DC_CRM); AB_CRM = json_to_array(UIC.AB_CRM); AZ_CRM = json_to_array(UIC.AZ_CRM); 
+
+JZ_WPN = json_to_array(UIC.JZ_WPN); KI_WPN = json_to_array(UIC.KI_WPN); TR_WPN = json_to_array(UIC.TR_WPN); SL_WPN = json_to_array(UIC.SL_WPN); HD_WPN = json_to_array(UIC.HD_WPN); 
+JZ_CRM = json_to_array(UIC.JZ_CRM); KI_CRM = json_to_array(UIC.KI_CRM); TR_CRM = json_to_array(UIC.TR_CRM); SL_CRM = json_to_array(UIC.SL_CRM); HD_CRM = json_to_array(UIC.HD_CRM); 
+
+FN_WPN = json_to_array(UIC.FN_WPN); AF_WPN = json_to_array(UIC.AF_WPN);
+FN_AMR = json_to_array(UIC.FN_AMR);
+FN_CRM = json_to_array(UIC.FN_CRM); AF_CRM = json_to_array(UIC.AF_CRM);
+
+JO_WPN = json_to_array(UIC.JO_WPN); AM_WPN = json_to_array(UIC.AM_WPN);
+JO_AMR = json_to_array(UIC.JO_AMR);
+JO_CRM = json_to_array(UIC.JO_CRM); AM_CRM = json_to_array(UIC.AM_CRM);
+
+FI_WPN = json_to_array(UIC.FI_WPN); 
+FI_AMR = json_to_array(UIC.FI_AMR);
+FI_CRM = json_to_array(UIC.FI_CRM); 
+
+MI_WPN = json_to_array(UIC.MI_WPN); SO_WPN = json_to_array(UIC.SO_WPN); HA_WPN = json_to_array(UIC.HA_WPN); TS_WPN = json_to_array(UIC.TS_WPN);
+MI_CRM = json_to_array(UIC.MI_CRM); SO_CRM = json_to_array(UIC.SO_CRM); HA_CRM = json_to_array(UIC.HA_CRM); TS_CRM = json_to_array(UIC.TS_CRM);
+
+
 JCA =  JC_WPN[0] + JC_AMR[0] + JC_CRM[0];
 JCD =  JC_WPN[1] + JC_AMR[1] + JC_CRM[1];
 JCS =  JC_WPN[2] + JC_AMR[2] + JC_CRM[2];
