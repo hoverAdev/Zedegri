@@ -1,5 +1,5 @@
 {
-  "$GMRoom":"",
+  "$GMRoom":"v1",
   "%Name":"Room_Enemy_Select",
   "creationCodeFile":"rooms/Room_Enemy_Select/RoomCreationCode.gml",
   "inheritCode":false,
@@ -12,8 +12,8 @@
   "isDnd":true,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"","%Name":"inst_472D0E50","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_472D0E50","objectId":{"name":"Enemy_Input_Textbox","path":"objects/Enemy_Input_Textbox/Enemy_Input_Textbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.75,"scaleY":2.0,"x":160.0,"y":160.0,},
-        {"$GMRInstance":"","%Name":"inst_2DAE69BF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DAE69BF","objectId":{"name":"Ether_Manager","path":"objects/Ether_Manager/Ether_Manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":32.0,},
+        {"$GMRInstance":"v1","%Name":"inst_472D0E50","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_472D0E50","objectId":{"name":"Enemy_Input_Textbox","path":"objects/Enemy_Input_Textbox/Enemy_Input_Textbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.75,"scaleY":2.0,"x":160.0,"y":160.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2DAE69BF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DAE69BF","objectId":{"name":"Ether_Manager","path":"objects/Ether_Manager/Ether_Manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":32.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_369DBE36","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_369DBE36","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Background","path":"sprites/Background/Background.yy",},"x":0.0,"y":0.0,},

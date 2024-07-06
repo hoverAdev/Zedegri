@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"print_enemy_string",
   "isCompatibility":false,
   "isDnD":false,
