@@ -32,7 +32,7 @@ az_ether = [
     [1, "Aerial Hacksaw", "A'zin targets the eyes of the enemy, lowering the enemy's damage", 3, (70 + Universal_Player_Stat_Manager.all_character_array[4][7])*LM, "E0,04"],
     [2, "Double Spinning Edge", "A'zin dual wields their weapon, and slices into anything ahead", 2, (120 + Universal_Player_Stat_Manager.all_character_array[4][7])*LM, "ATK"],
 	[3, "Blade Dance", "A'zin deals a damaging attack, increases enemy attack by 2 for 1 turn", 2, (180 + Universal_Player_Stat_Manager.all_character_array[4][7])*LM, "E2,01"],
-//	[4, "Ether Accelerate", "A'zin channels their Ether to quicken their movements", 3, 0, ["S", false, 2]],
+	[4, "Ether Accelerate", "A'zin channels their Ether to quicken their movements", 3, 0, ["S", false, 2]],
 //	[5, "Adrenaline Enhancement", "Increases ATK by 2x at the cost of half max HP", 4, Universal_Player_Stat_Manager.all_character_array[4][2] * ceil( 1 + global.level / 15 ) / 2, "E2,06"],
 ];
 dc_ether = [

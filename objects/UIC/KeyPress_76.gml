@@ -34,67 +34,68 @@ if string_char_at(Zedegri_Unlock,11) == 1{JAA = 1;}
 
 var All_Saved_Items = string_split(Total_Array[2],",");
 
-Assign_Item(All_Saved_Items, Jacob_Weapons,         JC_WPN);
-Assign_Item(All_Saved_Items, All_Armour,            JC_AMR);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, JC_CRM);
+JC_WPN = Assign_Item(All_Saved_Items, Jacob_Weapons);
+JC_AMR = Assign_Item(All_Saved_Items, All_Armour);
+JC_CRM = Assign_Item(All_Saved_Items, Charms_And_Sequencers);
 
-Assign_Item(All_Saved_Items, Ella_Weapons,          EL_WPN);
-Assign_Item(All_Saved_Items, All_Armour,            EL_AMR);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, EL_CRM);
+EL_WPN = Assign_Item(All_Saved_Items, Ella_Weapons);
+EL_AMR = Assign_Item(All_Saved_Items, All_Armour);
+EL_CRM = Assign_Item(All_Saved_Items, Charms_And_Sequencers);
 
-Assign_Item(All_Saved_Items, Gibbor_Weapons,        DC_WPN);
-Assign_Item(All_Saved_Items, All_Armour,            DC_AMR);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, DC_CRM);
+DC_WPN=Assign_Item(All_Saved_Items, Gibbor_Weapons        );
+DC_AMR=Assign_Item(All_Saved_Items, All_Armour            );
+DC_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Abby_Weapons,          AB_WPN);
-Assign_Item(All_Saved_Items, All_Armour,            AB_AMR);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, AB_CRM);
+AB_WPN=Assign_Item(All_Saved_Items, Abby_Weapons          );
+AB_AMR=Assign_Item(All_Saved_Items, All_Armour            );
+AB_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Azin_Weapons,          AZ_WPN);
-Assign_Item(All_Saved_Items, All_Armour,            AZ_AMR);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, AZ_CRM);
+AZ_WPN=Assign_Item(All_Saved_Items, Azin_Weapons          );
+AZ_AMR=Assign_Item(All_Saved_Items, All_Armour            );
+AZ_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Fiona_Weapons,         FN_WPN);
-Assign_Item(All_Saved_Items, All_Armour,            FN_AMR);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, FN_CRM);
+FN_WPN=Assign_Item(All_Saved_Items, Fiona_Weapons         );
+FN_AMR=Assign_Item(All_Saved_Items, All_Armour            );
+FN_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Joanna_Weapons,        JO_WPN);
-Assign_Item(All_Saved_Items, All_Armour,            JO_AMR);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, JO_CRM);
+JO_WPN=Assign_Item(All_Saved_Items, Joanna_Weapons        );
+JO_AMR=Assign_Item(All_Saved_Items, All_Armour            );
+JO_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Fiora_Weapons,         FI_WPN);
-Assign_Item(All_Saved_Items, All_Armour,            FI_AMR);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, FI_CRM);
+FI_WPN=Assign_Item(All_Saved_Items, Fiora_Weapons         );
+FI_AMR=Assign_Item(All_Saved_Items, All_Armour            );
+FI_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Jizo_Tsuku_Weapons,    JZ_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, JZ_CRM);
+JZ_WPN=Assign_Item(All_Saved_Items, Jizo_Tsuku_Weapons    );
+JZ_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Jizo_Tsuku_Weapons,    TS_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, TS_CRM);
+TS_WPN=Assign_Item(All_Saved_Items, Jizo_Tsuku_Weapons    );
+TS_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, KaMiHa_Weapons,        KI_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, KI_CRM);
+KI_WPN=Assign_Item(All_Saved_Items, KaMiHa_Weapons        );
+KI_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, KaMiHa_Weapons,        MI_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, MI_CRM);
+MI_WPN=Assign_Item(All_Saved_Items, KaMiHa_Weapons        );
+MI_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, KaMiHa_Weapons,        HA_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, HA_CRM);
+HA_WPN=Assign_Item(All_Saved_Items, KaMiHa_Weapons        );
+HA_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Thurnaer_Weapons,      TR_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, TR_CRM);
+TR_WPN=Assign_Item(All_Saved_Items, Thurnaer_Weapons      );
+TR_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, SurielSol_Weapons,     SL_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, SL_CRM);
+SL_WPN=Assign_Item(All_Saved_Items, SurielSol_Weapons     );
+SL_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, SurielSol_Weapons,     SO_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, SO_CRM);
+SO_WPN=Assign_Item(All_Saved_Items, SurielSol_Weapons     );
+SO_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Hermothr_Weapons,      HD_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, HD_CRM);
+HD_WPN=Assign_Item(All_Saved_Items, Hermothr_Weapons      );
+HD_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Anfang_Weapons,        AF_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, AF_CRM);
+AF_WPN=Assign_Item(All_Saved_Items, Anfang_Weapons        );
+AF_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
-Assign_Item(All_Saved_Items, Amaterasu_Weapons,     AM_WPN);
-Assign_Item(All_Saved_Items, Charms_And_Sequencers, AM_CRM);
+AM_WPN=Assign_Item(All_Saved_Items, Amaterasu_Weapons     );
+AM_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
+i = 0;

@@ -4,7 +4,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_bottom);
 draw_set_font(font_arial_small);
 
-var MAX_STRING = 6;
+var MAX_STRING = 8;
 //Separate string
 var string_as_array = string_split(printed_string,"\n");
 if array_length(string_as_array) > MAX_STRING{

@@ -3,32 +3,35 @@
 persistent = true;
 Zedegri_Toggle = false;
 		//	x,y
-selector = [0,0];
+character_selector = 1;
+option_selector = 0;
+item_selector = 0;
+selector_x = 0;
 
-drawn_array = [];
+documented_list = [];
+
 
 i = 0;
-function Assign_Item(All_Items, Catalogue, Send_Off){
+function Assign_Item(All_Items, Catalogue){	
 	for (var incrementor = 0; incrementor < array_length(Catalogue); incrementor++){
 		if All_Items[i] == Catalogue[incrementor].name{
-			Send_Off = Catalogue[incrementor];
-			i++
-			break;
+			i++;
+			return Catalogue[incrementor];
 		}
 	}
 }
 
-Unarmed = {
-	name: "Unarmed",
+
+var specific = "Gauntlet"
+Jacob_Weapons = [
+{	name: "Unarmed",
 	type: "Unarmed",
 	ATK: 0,
 	DEF: 0,
 	SPD: 0,
 	HP: 0,
-	Copies: 32
-};
-var specific = "Gauntlet"
-Jacob_Weapons = [
+	Copies: infinity,
+},
 {	name: "Studded Gauntlet",
 	type: specific,
 	ATK: 15,
@@ -136,6 +139,14 @@ Jacob_Weapons = [
 ];
 specific = "Light Staff";
 Ella_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Makeshift Staff",
 	type: specific,
 	ATK: 0,
@@ -243,6 +254,14 @@ Ella_Weapons = [
 ];
 specific = "Surface Sword";
 Gibbor_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Stable Sword",
 	type: specific,
 	ATK: 25,
@@ -334,6 +353,14 @@ Gibbor_Weapons = [
 ];
 specific = "Kusaragama"
 Azin_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Reliable Whips",
 	type: specific,
 	ATK: 57,
@@ -417,6 +444,14 @@ Azin_Weapons = [
 ];
 specific = "Energy Katana";
 Abby_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Model EK15",
 	type: specific,
 	ATK: 70,
@@ -484,6 +519,14 @@ Abby_Weapons = [
 ];
 specific = "Nano Zedegri";
 Fiona_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "ATK Ether Amp I",
 	type: specific,
 	ATK: 80,
@@ -615,6 +658,14 @@ Fiona_Weapons = [
 ];
 specific = "Zedegri Gauntlets";
 Jizo_Tsuku_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Zedegri Gauntlets Mk.115",
 	type: specific,
 	ATK: 150,
@@ -690,6 +741,14 @@ Jizo_Tsuku_Weapons = [
 ];
 specific = "Megalance";
 KaMiHa_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Megalance V.C8",
 	type: specific,
 	ATK: 80,
@@ -765,6 +824,14 @@ KaMiHa_Weapons = [
 ];
 specific = "Greatsword";
 Thurnaer_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Enriched Greatsword",
 	type: specific,
 	ATK: 150,
@@ -816,6 +883,14 @@ Thurnaer_Weapons = [
 ];
 specific = "Ultrachain";
 Hermothr_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Galvanised Spirit",
 	type: specific,
 	ATK: 120,
@@ -883,6 +958,14 @@ Hermothr_Weapons = [
 ];
 specific = "Energy Dual Edge";
 SurielSol_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Mk. CXIV Screamer Edge",
 	type: specific,
 	ATK: 160,
@@ -934,6 +1017,14 @@ SurielSol_Weapons = [
 ];
 specific = "Zedegri Staff";
 Anfang_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Staff of Power Mk. I",
 	type: specific,
 	ATK: 120,
@@ -1041,6 +1132,14 @@ Anfang_Weapons = [
 ];
 specific = "Energy Rapier";
 Joanna_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Sempiternal Rapier",
 	type: specific,
 	ATK: 150,
@@ -1068,6 +1167,14 @@ Joanna_Weapons = [
 ];
 specific = "Ark Rapier";
 Amaterasu_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Ark Rapier",
 	type: specific,
 	ATK: 250,
@@ -1079,6 +1186,14 @@ Amaterasu_Weapons = [
 ];
 specific = "Energy Dagger";
 Fiora_Weapons = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Ether Dagger",
 	type: specific,
 	ATK: 160,
@@ -1098,6 +1213,14 @@ Fiora_Weapons = [
 ];
 
 All_Armour = [
+{	name: "Unarmed",
+	type: "Unarmed",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
 {	name: "Common Wear",
 	type: "Unisex",
 	ATK: 0,
@@ -1293,8 +1416,23 @@ All_Armour = [
 ];
 
 Charms_And_Sequencers = [
-{
-	name: "Small Charm of Strength",
+{	name: "No Charm",
+	type: "Charm",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
+{	name: "No Sequencer",
+	type: "Sequencer",
+	ATK: 0,
+	DEF: 0,
+	SPD: 0,
+	HP: 0,
+	Copies: infinity,
+},
+{	name: "Small Charm of Strength",
 	type: "Charm",
 	ATK: 20,
 	DEF: 0,
@@ -1682,19 +1820,26 @@ Charms_And_Sequencers = [
 ];
 
 Jacob_Available = 0; Ella_Available = 0; Doc_Available = 0; Abby_Available = 0; Azin_Available = 0; Fiona_Available = 0; Joanna_Available = 0; Fiora_Available = 0;
-JC_WPN = Unarmed; AB_WPN = Abby_Weapons[0]; JO_WPN = Joanna_Weapons[0];
-JC_AMR = Unarmed; AB_AMR = Unarmed; JO_AMR = Unarmed;
-JC_CRM = Unarmed; AB_CRM = Unarmed; JO_CRM = Unarmed;
-EL_WPN = Unarmed; AZ_WPN = Azin_Weapons[0]; FI_WPN = Fiora_Weapons[0];
-EL_AMR = Unarmed; AZ_AMR = Unarmed; FI_AMR = Unarmed;
-EL_CRM = Unarmed; AZ_CRM = Unarmed; FI_CRM = Unarmed;
-DC_WPN = Unarmed; FN_WPN = Unarmed;
-DC_AMR = Unarmed; FN_AMR = Unarmed;
-DC_CRM = Unarmed; FN_CRM = Unarmed;
+
+JC_WPN = Jacob_Weapons[0];         AB_WPN = Abby_Weapons[1];          JO_WPN = Joanna_Weapons[1];
+JC_AMR = All_Armour[0];            AB_AMR = All_Armour[0];            JO_AMR = All_Armour[0];
+JC_CRM = Charms_And_Sequencers[0]; AB_CRM = Charms_And_Sequencers[0]; JO_CRM = Charms_And_Sequencers[0];
+
+EL_WPN = Ella_Weapons[0];          AZ_WPN = Azin_Weapons[1];          FI_WPN = Fiora_Weapons[1];
+EL_AMR = All_Armour[0];            AZ_AMR = All_Armour[0];            FI_AMR = All_Armour[0];
+EL_CRM = Charms_And_Sequencers[0]; AZ_CRM = Charms_And_Sequencers[0]; FI_CRM = Charms_And_Sequencers[0];
+
+DC_WPN = Gibbor_Weapons[0];        FN_WPN = Fiona_Weapons[0];
+DC_AMR = All_Armour[0];            FN_AMR = All_Armour[0];
+DC_CRM = Charms_And_Sequencers[0]; FN_CRM = Charms_And_Sequencers[0];
+
 JJA = 0; JTA = 0;EKA = 0; EMA = 0; EHA = 0;DTA = 0;ASA = 0; ALA = 0;AHA = 0; FAA = 0;JAA = 0; 
-JZ_WPN = Unarmed; SL_WPN = SurielSol_Weapons[0]; MI_WPN = Unarmed; AM_WPN = Amaterasu_Weapons[0];
-JZ_CRM = Unarmed; SL_CRM = Unarmed; MI_CRM = Unarmed; AM_CRM = Unarmed;
-KI_WPN = Unarmed; HD_WPN = Hermothr_Weapons[0]; SO_WPN = Unarmed; TS_WPN = Unarmed;
-KI_CRM = Unarmed; HD_CRM = Unarmed; SO_CRM = Unarmed; TS_CRM = Unarmed;
-TR_WPN = Unarmed; AF_WPN = Unarmed; HA_WPN = Unarmed;
-TR_CRM = Unarmed; AF_CRM = Unarmed; HA_CRM = Unarmed;
+
+JZ_WPN = Jizo_Tsuku_Weapons[0];    SL_WPN = SurielSol_Weapons[1];     MI_WPN = KaMiHa_Weapons[0];        AM_WPN = Amaterasu_Weapons[1];
+JZ_CRM = Charms_And_Sequencers[1]; SL_CRM = Charms_And_Sequencers[1]; MI_CRM = Charms_And_Sequencers[1]; AM_CRM = Charms_And_Sequencers[1];
+
+KI_WPN = KaMiHa_Weapons[0];        HD_WPN = Hermothr_Weapons[1];      SO_WPN = SurielSol_Weapons[0];     TS_WPN = Jizo_Tsuku_Weapons[0];
+KI_CRM = Charms_And_Sequencers[1]; HD_CRM = Charms_And_Sequencers[1]; SO_CRM = Charms_And_Sequencers[1]; TS_CRM = Charms_And_Sequencers[1];
+
+TR_WPN = Thurnaer_Weapons[0];      AF_WPN = Anfang_Weapons[0];        HA_WPN = KaMiHa_Weapons[0];
+TR_CRM = Charms_And_Sequencers[1]; AF_CRM = Charms_And_Sequencers[1]; HA_CRM = Charms_And_Sequencers[1];

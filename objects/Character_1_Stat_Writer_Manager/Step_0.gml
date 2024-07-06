@@ -381,14 +381,17 @@ if global.all_state_pause == 1 and player_1_engaged {
 			var string_splitter;
 			dmg = selected_spell[4];
 			//show_debug_message("before stagger");
-			show_debug_message(selected_spell[5]);
+			//show_debug_message(selected_spell[5]);
 			if array_last(selected_spell) == "ATK"{}
 			else if string_char_at(selected_spell[5],1) == "F"{ // Field Heal
 				var string_splitter = int64(string("{0}{1}",string_char_at(selected_spell[5],2),string_char_at(selected_spell[5],3)));
 				Character_1_Stat_Writer_Manager.current_hp += ceil(Character_1_Stat_Writer_Manager.stat_block[2] * string_splitter/100 * random_range(0.8,1.2));
+				if Character_1_Stat_Writer_Manager.current_hp > Character_1_Stat_Writer_Manager.stat_block[2]{ Character_1_Stat_Writer_Manager.current_hp = Character_1_Stat_Writer_Manager.stat_block[2];}
 				Character_2_Stat_Writer_Manager.current_hp += ceil(Character_2_Stat_Writer_Manager.stat_block[2] * string_splitter/100 * random_range(0.8,1.2));
+				if Character_2_Stat_Writer_Manager.current_hp > Character_2_Stat_Writer_Manager.stat_block[2]{ Character_2_Stat_Writer_Manager.current_hp = Character_2_Stat_Writer_Manager.stat_block[2];}
 				if Character_3_Stat_Writer_Manager.stat_block[4] != infinity{
 					Character_3_Stat_Writer_Manager.current_hp += ceil(Character_3_Stat_Writer_Manager.stat_block[2] * string_splitter/100 * random_range(0.8,1.2));
+					if Character_3_Stat_Writer_Manager.current_hp > Character_3_Stat_Writer_Manager.stat_block[2]{ Character_3_Stat_Writer_Manager.current_hp = Character_3_Stat_Writer_Manager.stat_block[2];}
 				}
 				Text_Chat_Manager.printed_string += string("\nAll your allies healed");
 			}
@@ -731,58 +734,55 @@ if global.all_state_pause == 1 and player_1_engaged {
 			}
 			else if is_array(selected_spell[5]) == true{ //           PERM BUFF
 				var spell = selected_spell[5];
-				if spell[1] == false{
-					draw_buff_screen = true;
-					if keyboard_check_pressed(ord("1")){
-						if spell[0] == "A"{ //attack
-							Character_1_Stat_Writer_Manager.stat_block[5] += spell[2];
-							Character_1_Stat_Writer_Manager.stat_block[6] += spell[2];
-							Character_1_Stat_Writer_Manager.stat_block[7] += spell[2];
-						}
-						else if spell[0] == "D"{ //defence
-							Character_1_Stat_Writer_Manager.stat_block[8] += spell[2];
-						}
-						else if spell[0] == "S" and stat_block[4] >= global.speed_cap{ //speed
-							Character_1_Stat_Writer_Manager.stat_block[4] -= spell[2];
-						}
+				draw_buff_screen = true;
+				if targetted_creature[0] == Character_1_Stat_Writer_Manager.stat_block[0]{
+					if spell[0] == "A"{ //attack
+						Character_1_Stat_Writer_Manager.stat_block[5] += spell[2];
+						Character_1_Stat_Writer_Manager.stat_block[6] += spell[2];
+						Character_1_Stat_Writer_Manager.stat_block[7] += spell[2];
 					}
-					else if keyboard_check_pressed(ord("2")){
-						if spell[0] == "A"{ //attack
-							Character_2_Stat_Writer_Manager.stat_block[5] += spell[2];
-							Character_2_Stat_Writer_Manager.stat_block[6] += spell[2];
-							Character_2_Stat_Writer_Manager.stat_block[7] += spell[2];
-						}
-						else if spell[0] == "D"{ //defence
-							Character_2_Stat_Writer_Manager.stat_block[8] += spell[2];
-						}
-						else if spell[0] == "S" and stat_block[4] >= global.speed_cap{ //speed
-							Character_2_Stat_Writer_Manager.stat_block[4] -= spell[2];
-						}
+					else if spell[0] == "D"{ //defence
+						Character_1_Stat_Writer_Manager.stat_block[8] += spell[2];
 					}
-					else if keyboard_check_pressed(ord("3")){
-						if spell[0] == "A"{ //attack
-							Character_3_Stat_Writer_Manager.stat_block[5] += spell[2];
-							Character_3_Stat_Writer_Manager.stat_block[6] += spell[2];
-							Character_3_Stat_Writer_Manager.stat_block[7] += spell[2];
-						}
-						else if spell[0] == "D"{ //defence
-							Character_3_Stat_Writer_Manager.stat_block[8] += spell[2];
-						}
-						else if spell[0] == "S" and stat_block[4] >= global.speed_cap{ //speed
-							Character_3_Stat_Writer_Manager.stat_block[4] -= spell[2];
+					else if spell[0] == "S" and Character_1_Stat_Writer_Manager.stat_block[4] >= global.speed_cap{ //speed
+						Character_1_Stat_Writer_Manager.stat_block[4] -= spell[2];
+						if Character_1_Stat_Writer_Manager.stat_block[4] <= global.speed_cap{
+							Text_Chat_Manager.printed_string += string("\n{0}'s cannot go any faster",Character_1_Stat_Writer_Manager.stat_block[1]);	
 						}
 					}
 				}
-				else if spell[0] == "A"{ //attack and self
-					stat_block[5] += spell[2];
-					stat_block[6] += spell[2];
-					stat_block[7] += spell[2];
+				//else if (targetted_creature[0] == Character_2_Stat_Writer_Manager[0]) {
+				else if (targetted_creature[0] == Character_2_Stat_Writer_Manager.stat_block[0]) {
+					if spell[0] == "A"{ //attack
+						Character_2_Stat_Writer_Manager.stat_block[5] += spell[2];
+						Character_2_Stat_Writer_Manager.stat_block[6] += spell[2];
+						Character_2_Stat_Writer_Manager.stat_block[7] += spell[2];
+					}
+					else if spell[0] == "D"{ //defence
+						Character_2_Stat_Writer_Manager.stat_block[8] += spell[2];
+					}
+					else if spell[0] == "S" and Character_2_Stat_Writer_Manager.stat_block[4] >= global.speed_cap{ //speed
+						Character_2_Stat_Writer_Manager.stat_block[4] -= spell[2];
+						if Character_2_Stat_Writer_Manager.stat_block[4] <= global.speed_cap{
+							Text_Chat_Manager.printed_string += string("\n{0}'s cannot go any faster",Character_2_Stat_Writer_Manager.stat_block[1]);	
+						}
+					}
 				}
-				else if spell[0] == "D"{ //defence and self
-					stat_block[8] += spell[2];
-				}
-				else if spell[0] == "S" and stat_block[4] >= global.speed_cap{ //speed and self
-					stat_block[4] -= spell[2];
+				else if targetted_creature[0] == Character_3_Stat_Writer_Manager.stat_block[0]{
+					if spell[0] == "A"{ //attack
+						Character_3_Stat_Writer_Manager.stat_block[5] += spell[2];
+						Character_3_Stat_Writer_Manager.stat_block[6] += spell[2];
+						Character_3_Stat_Writer_Manager.stat_block[7] += spell[2];
+					}
+					else if spell[0] == "D"{ //defence
+						Character_3_Stat_Writer_Manager.stat_block[8] += spell[2];
+					}
+					else if spell[0] == "S" and Character_3_Stat_Writer_Manager.stat_block[4] >= global.speed_cap{ //speed
+						Character_3_Stat_Writer_Manager.stat_block[4] -= spell[2];
+						if Character_3_Stat_Writer_Manager.stat_block[4] <= global.speed_cap{
+							Text_Chat_Manager.printed_string += string("\n{0}'s cannot go any faster",Character_3_Stat_Writer_Manager.stat_block[1]);	
+						}
+					}
 				}
 			}
 			else if string_char_at(selected_spell[5],1) == "I"{ //    Instant Kill

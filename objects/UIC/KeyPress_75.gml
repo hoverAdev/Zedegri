@@ -20,6 +20,7 @@ EKA = 0; //Kalaratri
 EMA = 0; //Mikael
 EHA = 0; //Haru
 DTA = 0; //Thunaer
+HDA = 0; //Hermothr
 ASA = 0; //Suriel
 ALA = 0; //Sol
 AHA = 0; //Hermothr
@@ -27,7 +28,7 @@ FAA = 0; //Anfang
 JAA = 0; //Amaterasu
 Save_String += string("{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}\n", JJA,JTA,EKA,EMA,EHA,DTA,ASA,ALA,AHA,FAA,JAA); //Zedegri
 
-//items
+//items 
 Save_String += string("{0},{1},{2},", JC_WPN.name,JC_AMR.name,JC_CRM.name);
 Save_String += string("{0},{1},{2},", EL_WPN.name,EL_AMR.name,EL_CRM.name);
 Save_String += string("{0},{1},{2},", DC_WPN.name,DC_AMR.name,DC_CRM.name);
@@ -35,7 +36,7 @@ Save_String += string("{0},{1},{2},", AB_WPN.name,AB_AMR.name,AB_CRM.name);
 Save_String += string("{0},{1},{2},", AZ_WPN.name,AZ_AMR.name,AZ_CRM.name);
 Save_String += string("{0},{1},{2},", FN_WPN.name,FN_AMR.name,FN_CRM.name);
 Save_String += string("{0},{1},{2},", JO_WPN.name,JO_AMR.name,JO_CRM.name);
-Save_String += string("{0},{1},{2}\n",FI_WPN.name,FI_AMR.name,FI_CRM.name);
+Save_String += string("{0},{1},{2},",FI_WPN.name,FI_AMR.name,FI_CRM.name);
 
 Save_String += string("{0},{1},",JZ_WPN.name,JZ_CRM.name);
 Save_String += string("{0},{1},",TS_WPN.name,TS_CRM.name);
