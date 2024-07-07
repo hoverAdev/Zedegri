@@ -309,7 +309,8 @@ if global.all_state_pause == 0{
 				else{print_enemy_string(string("{0} healed back {1} HP!",stat_block[1],floor(dmg/2)));}
 			}
 			if atk_used[7][0] == 0{ //ATK Debuff
-				if target == 1{
+				if atk_used[7][1] == 0{}
+				else if target == 1{
 					show_debug_message("ENEMY DEBUFF 1");
 					Character_1_Stat_Writer_Manager.dmg_mod_05 += atk_used[7][1];	
 					print_enemy_string(string("{0} has their damage reduced!",Character_1_Stat_Writer_Manager.stat_block[1]));
@@ -406,7 +407,8 @@ if global.all_state_pause == 0{
 				}
 			}
 			if atk_used[8][0] == 0{ //DEF Debuff
-				if target == 1{
+				if atk_used[8][1] == 0{}
+				else if target == 1{
 					show_debug_message("ENEMY DEFENCE DOWN 1");
 					Character_1_Stat_Writer_Manager.def_mod_05 += atk_used[8][1];
 					print_enemy_string(string("{0} has their defence reduced!",Character_1_Stat_Writer_Manager.stat_block[1]));

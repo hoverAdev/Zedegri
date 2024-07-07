@@ -158,7 +158,7 @@ if global.all_state_pause == 1 and player_2_engaged {
 			//show_debug_message(stat_block[7]);
 			deathblow_string += "Z";
 			dmg = stat_block[5];
-			show_debug_message(dmg);
+			//show_debug_message(dmg);
 			var crit_roll = irandom_range(1, 20);
 			var double_crit_roll = irandom_range(1, 20);
 			var dodge_roll = irandom_range(1,100);
