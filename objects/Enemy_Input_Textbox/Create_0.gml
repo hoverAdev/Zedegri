@@ -7,24 +7,28 @@ i = 0;
 disabled_selection = false;
 
 scene = [
-[0,"DEE"],
-[1,"DZE"],
-[2,"TSE"],
-[3,"TSE","TSE"],
-[4,"TSZ"],
-[5,"TSZ","TSE"],
-[6,"TSZ","TSE","TSE"],
 // LAHMUR OUTSIDE: CB TW SL
-[7, "LCB", "LCB"],
-[8, "LTW", "LTW"],
-[9, "LSL", "LSL"],
-[10, "LCB", "LTW"],
-[11, "LCB", "LSL"],
+[1, "LCB", "LCB"],
+[2, "LTW", "LTW"],
+[3, "LSL", "LSL"],
+[4, "LCB", "LTW"],
+[5, "LCB", "LSL"],
 // LAHMUR MOUNTAIN: MB SW DL
-[12,"LMB","LMB","LMB"],
-[13,"LMB","LMB","LDL"],
-[14,"LSW","LDL","LSW"],
-[15,"LSW","LSW","LMB"],
+[6,"LMB","LMB","LMB"],
+[7,"LMB","LMB","LDL"],
+[8,"LSW","LDL","LSW"],
+[9,"LSW","LSW","LMB"],
 // JIZO INTRO BATTLE
-[16,"LZZ","LZZ","LZZ","LZZ"],
+[10,"LZZ","LZZ","LZZ","LZZ"],
+// DIMWOOD FOREST
+[11,],
+[12,],
+[13,],
+[14,],
+[15,],
+[16,],
+[17,],
+[18,],
+[19,],
+[20,],
 ]
