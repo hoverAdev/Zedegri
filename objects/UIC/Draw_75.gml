@@ -13,13 +13,21 @@ var y_offset = 24;
 if room == Room_Ini{
 
 if Zedegri_Toggle == false{
-if      Jacob_Available and option_selector == 0{ draw_text(640,y_automator,string("Jacob: {0}",JC_WPN.name)); y_automator += y_offset;}
-else if Jacob_Available and option_selector == 1{ draw_text(640,y_automator,string("Jacob: {0}",JC_AMR.name)); y_automator += y_offset;}
-else if Jacob_Available and option_selector == 2{ draw_text(640,y_automator,string("Jacob: {0}",JC_CRM.name)); y_automator += y_offset;}
+if      Jacob_Available == 1 and option_selector == 0{ draw_text(640,y_automator,string("Jacob: {0}",JC_WPN.name)); y_automator += y_offset;}
+else if Jacob_Available == 1 and option_selector == 1{ draw_text(640,y_automator,string("Jacob: {0}",JC_AMR.name)); y_automator += y_offset;}
+else if Jacob_Available == 1 and option_selector == 2{ draw_text(640,y_automator,string("Jacob: {0}",JC_CRM.name)); y_automator += y_offset;}
 
-if      Ella_Available and option_selector == 0{ draw_text(640,y_automator,string("Ella: {0}",EL_WPN.name)); y_automator += y_offset;}
-else if Ella_Available and option_selector == 1{ draw_text(640,y_automator,string("Ella: {0}",EL_AMR.name)); y_automator += y_offset;}
-else if Ella_Available and option_selector == 2{ draw_text(640,y_automator,string("Ella: {0}",EL_CRM.name)); y_automator += y_offset;}
+if      Jacob_Available == 2 and option_selector == 0{ draw_text(640,y_automator,string("Jacee: {0}",JC_WPN.name)); y_automator += y_offset;}
+else if Jacob_Available == 2 and option_selector == 1{ draw_text(640,y_automator,string("Jacee: {0}",JC_AMR.name)); y_automator += y_offset;}
+else if Jacob_Available == 2 and option_selector == 2{ draw_text(640,y_automator,string("Jacee: {0}",JC_CRM.name)); y_automator += y_offset;}
+
+if      Ella_Available == 1 and option_selector == 0{ draw_text(640,y_automator,string("Ella: {0}",EL_WPN.name)); y_automator += y_offset;}
+else if Ella_Available == 1 and option_selector == 1{ draw_text(640,y_automator,string("Ella: {0}",EL_AMR.name)); y_automator += y_offset;}
+else if Ella_Available == 1 and option_selector == 2{ draw_text(640,y_automator,string("Ella: {0}",EL_CRM.name)); y_automator += y_offset;}
+
+if      Ella_Available == 2 and option_selector == 0{ draw_text(640,y_automator,string("Evan: {0}",EL_WPN.name)); y_automator += y_offset;}
+else if Ella_Available == 2 and option_selector == 1{ draw_text(640,y_automator,string("Evan: {0}",EL_AMR.name)); y_automator += y_offset;}
+else if Ella_Available == 2 and option_selector == 2{ draw_text(640,y_automator,string("Evan: {0}",EL_CRM.name)); y_automator += y_offset;}
 
 if      Doc_Available and option_selector == 0{ draw_text(640,y_automator,string("Doc: {0}",DC_WPN.name)); y_automator += y_offset;}
 else if Doc_Available and option_selector == 1{ draw_text(640,y_automator,string("Doc: {0}",DC_AMR.name)); y_automator += y_offset;}

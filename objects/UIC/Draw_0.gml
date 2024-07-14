@@ -13,18 +13,31 @@ if room == Room_Ini{
 	draw_text(x,0,"Item Selection\nPress [K] to Save or [L] to Load");
 
 if Zedegri_Toggle == false{
-	if Jacob_Available{
+	if Jacob_Available == 1{
 		draw_text(x,yy,"Jacob");
 		if character_selector == (yy-y)/32{draw_set_color(c_red);
 		draw_text(x,yy,"Jacob");
 		character_hovered = "Jacob";}
+	} 
+	else if Jacob_Available == 2{
+		draw_text(x,yy,"Jacee");
+		if character_selector == (yy-y)/32{draw_set_color(c_red);
+		draw_text(x,yy,"Jacee");
+		character_hovered = "Jacob";}
 	} yy += 32; draw_set_color(c_white);
-	if Ella_Available{
+	
+	if Ella_Available == 1{
 		draw_text(x,yy,"Ella");	
 		if character_selector == (yy-y)/32{draw_set_color(c_red);
 		draw_text(x,yy,"Ella");	
 		character_hovered = "Ella";}
-	} yy += 32; draw_set_color(c_white);
+	}
+	else if Ella_Available == 2{
+		draw_text(x,yy,"Evan");	
+		if character_selector == (yy-y)/32{draw_set_color(c_red);
+		draw_text(x,yy,"Evan");	
+		character_hovered = "Ella";}
+	}yy += 32; draw_set_color(c_white);
 	if Doc_Available{
 		draw_text(x,yy,"Doc");
 		if character_selector == (yy-y)/32{draw_set_color(c_red);
@@ -161,10 +174,20 @@ var Species_Specs ="";
 documented_list = [];
 
 if character_hovered == "Jacob"{
-	Weapon_Array = Jacob_Weapons;	Gender_Specs = "Male";	 Species_Specs ="Human";
+	if Jacob_Available == 1{
+		Weapon_Array = Jacob_Weapons;	Gender_Specs = "Male";	 Species_Specs ="Human";
+	}
+	else if Jacob_Available == 2{
+		Weapon_Array = Jacob_Weapons;	Gender_Specs = "Female";	 Species_Specs ="Human";
+	}
 }
 else if character_hovered == "Ella"{
-	Weapon_Array = Ella_Weapons;	Gender_Specs = "Female"; Species_Specs ="Human";
+	if Ella_Available == 1{
+		Weapon_Array = Ella_Weapons;	Gender_Specs = "Female"; Species_Specs ="Human";
+	}
+	else if Ella_Available == 2{
+		Weapon_Array = Ella_Weapons;	Gender_Specs = "Male"; Species_Specs ="Human";
+	}
 }
 else if character_hovered == "Doc"{
 	Weapon_Array = Gibbor_Weapons;		Gender_Specs = "Male";	 Species_Specs ="Human";

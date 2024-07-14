@@ -8,7 +8,9 @@ var Zedegri_Unlock = Total_Array[1];
 //Human Unlock Process
 //Jacob, Ella, Doc, Abby, Azin, Fiona, Joanna, Fiora
 if string_char_at(Human_Unlock,1) == 1{Jacob_Available  = 1;}
+if string_char_at(Human_Unlock,1) == 2{Jacob_Available  = 2;}
 if string_char_at(Human_Unlock,2) == 1{Ella_Available   = 1;}
+if string_char_at(Human_Unlock,2) == 2{Ella_Available   = 2;}
 if string_char_at(Human_Unlock,3) == 1{Doc_Available    = 1;}
 if string_char_at(Human_Unlock,4) == 1{Abby_Available   = 1;}
 if string_char_at(Human_Unlock,5) == 1{Azin_Available   = 1;}

@@ -80,6 +80,7 @@
     {"id":{"name":"Enemy_4_Stat_Writer_Manager","path":"objects/Enemy_4_Stat_Writer_Manager/Enemy_4_Stat_Writer_Manager.yy",},},
     {"id":{"name":"Enemy_Input_Textbox","path":"objects/Enemy_Input_Textbox/Enemy_Input_Textbox.yy",},},
     {"id":{"name":"Ether_Manager","path":"objects/Ether_Manager/Ether_Manager.yy",},},
+    {"id":{"name":"Gender_Manager","path":"objects/Gender_Manager/Gender_Manager.yy",},},
     {"id":{"name":"obj_All_Selector","path":"objects/obj_All_Selector/obj_All_Selector.yy",},},
     {"id":{"name":"obj_enemy_selector","path":"objects/obj_enemy_selector/obj_enemy_selector.yy",},},
     {"id":{"name":"obj_spell_selector","path":"objects/obj_spell_selector/obj_spell_selector.yy",},},

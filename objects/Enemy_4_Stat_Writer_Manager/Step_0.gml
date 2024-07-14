@@ -247,7 +247,7 @@ if global.all_state_pause == 0{
 					else{print_enemy_string(string("{0} healed {1} back {2} HP!",stat_block[1], Enemy_4_Stat_Writer_Manager.stat_block[1],heal_amount));}
 				}
 			}
-			else if atk_used == 2{ //Field Heal
+			else if atk_used[3] == 2{ //Field Heal
 				show_debug_message("ENEMY FIELD HEAL");
 				var heal_amount_1 = Enemy_1_Stat_Writer_Manager.stat_block[2] * (atk_used[4]/100);
 				var heal_amount_2 = Enemy_2_Stat_Writer_Manager.stat_block[2] * (atk_used[4]/100);

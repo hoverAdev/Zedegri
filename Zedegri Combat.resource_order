@@ -58,6 +58,7 @@
     {"name":"Enemy_4_Stat_Writer_Manager","order":15,"path":"objects/Enemy_4_Stat_Writer_Manager/Enemy_4_Stat_Writer_Manager.yy",},
     {"name":"Enemy_Input_Textbox","order":2,"path":"objects/Enemy_Input_Textbox/Enemy_Input_Textbox.yy",},
     {"name":"Ether_Manager","order":5,"path":"objects/Ether_Manager/Ether_Manager.yy",},
+    {"name":"Gender_Manager","order":23,"path":"objects/Gender_Manager/Gender_Manager.yy",},
     {"name":"obj_All_Selector","order":12,"path":"objects/obj_All_Selector/obj_All_Selector.yy",},
     {"name":"obj_enemy_selector","order":9,"path":"objects/obj_enemy_selector/obj_enemy_selector.yy",},
     {"name":"obj_spell_selector","order":11,"path":"objects/obj_spell_selector/obj_spell_selector.yy",},
