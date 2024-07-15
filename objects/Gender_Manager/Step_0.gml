@@ -26,24 +26,28 @@ if change_made == false{
 			jacob_array[1] = "Jacee";
 			Universal_Player_Stat_Manager.all_character_array[0] = jacob_array;
 			Button_Jacob.button_text = "Jacee";
+			Button_Jacob.sprite_index = Z_Jacee;
 		}
 		else if Jacob_Swap == false{
 			var jacob_array = Universal_Player_Stat_Manager.all_character_array[0];
 			jacob_array[1] = "Jacob";
 			Universal_Player_Stat_Manager.all_character_array[0] = jacob_array;
 			Button_Jacob.button_text = "Jacob";
+			Button_Jacob.sprite_index = Z_Jacob;
 		}
 		if Ella_Swap == true{
 			var ella_array = Universal_Player_Stat_Manager.all_character_array[1];
 			ella_array[1] = "Evan";
 			Universal_Player_Stat_Manager.all_character_array[1] = ella_array;
 			Button_Ella.button_text = "Evan";
+			Button_Ella.sprite_index = Z_Evan;
 		}
 		else if Ella_Swap == false{
 			var ella_array = Universal_Player_Stat_Manager.all_character_array[1];
 			ella_array[1] = "Ella";
 			Universal_Player_Stat_Manager.all_character_array[1] = ella_array;
 			Button_Ella.button_text = "Ella";
+			Button_Ella.sprite_index = Z_Ella;
 		}
 		change_made = true;
 	}
