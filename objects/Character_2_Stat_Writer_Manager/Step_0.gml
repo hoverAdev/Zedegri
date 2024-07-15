@@ -880,9 +880,11 @@ if global.all_state_pause == 1 and player_2_engaged {
 				if dmg < 0{ dmg = 0;}
 			}
 			
-			dmg = round(dmg * random_range(0.75, 1.25));
+			dmg = dmg * random_range(0.75, 1.25);
 			
 			dmg *= dmg_modifiers;
+			
+			dmg = round(dmg);
 			
 			var tc0 = targetted_creature[0];
 			

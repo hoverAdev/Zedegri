@@ -1,6 +1,6 @@
 	/// @description Insert description here
 	// You can write your code in this editor
-if current_hp <= 0{stat_block[7] = infinity;}
+if current_hp <= 0{ current_speed = 0; }
 if global.all_state_pause == 0{
 	//show_debug_message(current_speed);
 	current_speed += 0.495; 

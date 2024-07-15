@@ -1,5 +1,5 @@
 global.speed_cap = 8;
-global.level = 1;
+global.level = 99;
 
 global.ENVDMG = 00; //environmental damage
 global.PLSG = 0.5;  //Player Speed variable

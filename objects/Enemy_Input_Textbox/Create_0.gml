@@ -7,6 +7,8 @@ i = 0;
 disabled_selection = false;
 
 scene = [
+//Tutorial Suid
+[0, "LCB"],
 // LAHMUR OUTSIDE: CB TW SL
 [1, "LCB", "LCB"],
 [2, "LTW", "LTW"],
@@ -15,7 +17,8 @@ scene = [
 [5, "LCB", "LSL"],
 // LAHMUR MOUNTAIN: MB SW DL
 [6,"LMB","LMB","LMB"],
-[7,"LMB","LMB","LDL"],
+[7,"LMB","LSW","LDL"],
+//[7,"LMB","LMB","LDL"], THE REAL ONE
 [8,"LSW","LDL","LSW"],
 [9,"LSW","LSW","LMB"],
 // JIZO INTRO BATTLE
