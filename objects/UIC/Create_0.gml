@@ -1214,7 +1214,7 @@ Fiora_Weapons = [
 
 All_Armour = [
 {	name: "Unarmed",
-	type: "Unarmed",
+	type: "Unisex",
 	ATK: 0,
 	DEF: 0,
 	SPD: 0,
@@ -1267,7 +1267,7 @@ All_Armour = [
 	DEF: 0,
 	SPD: 3,
 	HP: 350,
-	Copies: 0,
+	Copies: 1,
 },
 {	name: "Mystical Defender Set",
 	type: "Male",
