@@ -5,6 +5,7 @@ F3 to swap Jacob/Jacee's gender (does not carry over)
 F4 to swap Ella/Evan's gender (does not carry over)
 Arrow Keys to navigate options
 Enter to select items
+Z Swap to Zedegri View
 C to Continue
 
 Player Selection:

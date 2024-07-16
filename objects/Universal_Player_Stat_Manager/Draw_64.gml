@@ -2,7 +2,7 @@
 // You can write your code in this editor
 draw_set_halign(fa_right);
 draw_set_font(font_arial_amaterasu_sized);
-draw_text(x,y,"Version: 1.03 Post-Update Beta");
+draw_text(x,y,"Version: 1.04 Post-Update Beta");
 if (global.partyMemberPosition >= 3){
 	global.partyMemberPosition = 0;
 }

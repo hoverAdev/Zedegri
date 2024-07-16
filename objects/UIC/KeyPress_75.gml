@@ -36,7 +36,7 @@ Save_String += string("{0},{1},{2},", AB_WPN.name,AB_AMR.name,AB_CRM.name);
 Save_String += string("{0},{1},{2},", AZ_WPN.name,AZ_AMR.name,AZ_CRM.name);
 Save_String += string("{0},{1},{2},", FN_WPN.name,FN_AMR.name,FN_CRM.name);
 Save_String += string("{0},{1},{2},", JO_WPN.name,JO_AMR.name,JO_CRM.name);
-Save_String += string("{0},{1},{2},",FI_WPN.name,FI_AMR.name,FI_CRM.name);
+Save_String += string("{0},{1},{2},", FI_WPN.name,FI_AMR.name,FI_CRM.name);
 
 Save_String += string("{0},{1},",JZ_WPN.name,JZ_CRM.name);
 Save_String += string("{0},{1},",TS_WPN.name,TS_CRM.name);
@@ -54,9 +54,9 @@ Save_String += string("{0},{1},",HD_WPN.name,HD_CRM.name);
 
 Save_String += string("{0},{1},",AF_WPN.name,AF_CRM.name);
 
-Save_String += string("{0},{1}",AM_WPN.name,AM_CRM.name);
+Save_String += string("{0},{1}", AM_WPN.name,AM_CRM.name);
 
 var file;
-file = file_text_open_write(working_directory + "Save_Data.txt");
+file = file_text_open_write("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
 file_text_write_string(file, Save_String);
 file_text_close(file);

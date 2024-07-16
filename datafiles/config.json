@@ -1,0 +1,7 @@
+config{
+	           speed_cap = 8,
+	               level = 1,
+	environmental_damage = 0, A percentage
+	        player_speed = 5, Actually a decimal
+	              max_ap = 4,
+}

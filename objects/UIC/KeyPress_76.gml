@@ -1,9 +1,10 @@
 /// @description Load Object Data
 // You can write your code in this editor
-var Total_Array = Load_Whole_File(working_directory + "Save_Data.txt");
-Total_Array = string_split(Total_Array,"\n");
-var Human_Unlock = Total_Array[0];
-var Zedegri_Unlock = Total_Array[1];
+//var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
+var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
+
+var Human_Unlock = file_text_readln(file);
+var Zedegri_Unlock = file_text_readln(file);
 
 //Human Unlock Process
 //Jacob, Ella, Doc, Abby, Azin, Fiona, Joanna, Fiora
@@ -34,7 +35,8 @@ if string_char_at(Zedegri_Unlock,11) == 1{JAA = 1;}
 //Applying Items to where they should be. ft for loops.
 
 
-var All_Saved_Items = string_split(Total_Array[2],",");
+var All_Saved_Items = string_split(file_text_readln(file),",");
+file_text_close(file);
 
 JC_WPN = Assign_Item(All_Saved_Items, Jacob_Weapons);
 JC_AMR = Assign_Item(All_Saved_Items, All_Armour);

@@ -38,7 +38,7 @@ Jacob_Weapons = [
 	DEF: 10,
 	SPD: 0,
 	HP: 0,
-	Copies: 0,
+	Copies: 1,
 },
 {	name: "Desert Gauntlets",
 	type: specific,
