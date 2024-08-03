@@ -8,3 +8,13 @@ function json_to_array(JSON){
 	array_insert(array, 3, JSON.HP);
 	return array;
 }
+
+function health_colour(current_hp, maximum_hp){
+	var percentage = current_hp / maximum_hp;
+	if percentage > 1{
+		percentage = 1;	
+	}
+	var green = percentage * 255;
+	var red = 255 - green;
+	return make_color_rgb(red, green, 0);
+}

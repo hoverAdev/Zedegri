@@ -77,6 +77,7 @@
     {"id":{"name":"confirmation_button","path":"objects/confirmation_button/confirmation_button.yy",},},
     {"id":{"name":"Dont_Act_At_Same_Time_Manager","path":"objects/Dont_Act_At_Same_Time_Manager/Dont_Act_At_Same_Time_Manager.yy",},},
     {"id":{"name":"Draw_Available_Deathblow_Manager","path":"objects/Draw_Available_Deathblow_Manager/Draw_Available_Deathblow_Manager.yy",},},
+    {"id":{"name":"Ending_Manager","path":"objects/Ending_Manager/Ending_Manager.yy",},},
     {"id":{"name":"Enemy_1_Stat_Writer_Manager","path":"objects/Enemy_1_Stat_Writer_Manager/Enemy_1_Stat_Writer_Manager.yy",},},
     {"id":{"name":"Enemy_2_Stat_Writer_Manager","path":"objects/Enemy_2_Stat_Writer_Manager/Enemy_2_Stat_Writer_Manager.yy",},},
     {"id":{"name":"Enemy_3_Stat_Writer_Manager","path":"objects/Enemy_3_Stat_Writer_Manager/Enemy_3_Stat_Writer_Manager.yy",},},
@@ -94,6 +95,7 @@
     {"id":{"name":"UIC","path":"objects/UIC/UIC.yy",},},
     {"id":{"name":"Universal_Player_Stat_Manager","path":"objects/Universal_Player_Stat_Manager/Universal_Player_Stat_Manager.yy",},},
     {"id":{"name":"Room_Combat","path":"rooms/Room_Combat/Room_Combat.yy",},},
+    {"id":{"name":"Room_Ending","path":"rooms/Room_Ending/Room_Ending.yy",},},
     {"id":{"name":"Room_Enemy_Select","path":"rooms/Room_Enemy_Select/Room_Enemy_Select.yy",},},
     {"id":{"name":"Room_Ini","path":"rooms/Room_Ini/Room_Ini.yy",},},
     {"id":{"name":"Room_Player_Select","path":"rooms/Room_Player_Select/Room_Player_Select.yy",},},
@@ -157,6 +159,7 @@
     {"roomId":{"name":"Room_Player_Select","path":"rooms/Room_Player_Select/Room_Player_Select.yy",},},
     {"roomId":{"name":"Room_Enemy_Select","path":"rooms/Room_Enemy_Select/Room_Enemy_Select.yy",},},
     {"roomId":{"name":"Room_Combat","path":"rooms/Room_Combat/Room_Combat.yy",},},
+    {"roomId":{"name":"Room_Ending","path":"rooms/Room_Ending/Room_Ending.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

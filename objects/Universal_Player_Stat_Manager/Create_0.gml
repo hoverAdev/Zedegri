@@ -218,12 +218,12 @@ all_enemy_array = [//                        |2 = doen't happen
 							[35,000,000,1,25,2,false,[0,0],[1,5]],
 							[70,080,088,0,00,2,true ,[0,0],[0,0]],
 							15, 53, 0],
- ["XXX", "Tanky Trotter",
+ ["FTT", "Tanky Trotter",
 					   1020,[00,000,000,0,00,2,false,[0,0],[2,2]],
 							[20,097,060,0,00,2,false,[0,0],[0,0]],
 							[60,000,000,1,10,2,false,[1,3],[1,3]],
 							40, 70, 1],
- ["XXX", "Shadowfiend", //High Accuracy, low damage, high speed
+ ["FSF", "Shadowfiend", //High Accuracy, low damage, high speed
 						000,[00,000,000,0,00,2,false,[0,0],[0,0]],
 							[00,000,000,0,00,2,false,[0,0],[0,0]],
 							[00,000,000,0,00,2,false,[0,0],[0,0]],

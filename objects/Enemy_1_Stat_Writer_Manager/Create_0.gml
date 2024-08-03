@@ -3,8 +3,9 @@
 show_debug_message(global.enemy_members);
 //Code, Name, HP, LT, HV, FI, DEF, SP, LH%, HH%, FH%, Is Zedegri
 stat_block = global.enemy_members[0];
+stat_block[2] = floor(stat_block[2] * random_range(0.9,1.2));
 current_hp = stat_block[2];
-current_def = stat_block[6];
+current_def = floor(stat_block[6] * random_range(0.8,1.5));
 //current_ep = stat_block[3];
 //current_ap = 0;
 current_speed = 1;
