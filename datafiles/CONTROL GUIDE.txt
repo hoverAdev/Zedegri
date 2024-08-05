@@ -1,8 +1,8 @@
 Zedegri Combat Engine Controls Guide:
 
 Item Selection:
-F3 to swap Jacob/Jacee's gender (does not carry over)
-F4 to swap Ella/Evan's gender (does not carry over)
+F3 to swap Jacob/Jacee's gender (does not carry over between scenes)
+F4 to swap Ella/Evan's gender (does not carry over between scenes)
 Arrow Keys to navigate options
 Enter to select items
 Z Swap to Zedegri View
@@ -14,7 +14,7 @@ F4 to swap Ella/Evan's gender
 LMB to select a character
 Del to clear selected characters
 I to start the tutorial
-Shift + H to hide or bring back the tutorial pop-up
+Shift + H to hide or bring back the tutorial pop-up (works across scenes)
 
 Enemy Selection:
 0123456789 keys to input numbers
@@ -24,10 +24,13 @@ Enter to confirm
 Combat Scene:
 1234 to select the enemy to ATTACK (not used for Ether)
 Z X and C to Attack
+
 S for Ether
-Enter to select the option
 Up and Down arrows to navigate the Ether menu
+Enter to select the option
 Left and Right arrows to navigate characters and enemies
+
 A for Assist
-123 to select a teammate
+123 to select a teammate, you're not meant to be able to select yourself but it wont crash if you do.
+
 D to Defend
