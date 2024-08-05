@@ -20,7 +20,6 @@ EKA = 0; //Kalaratri
 EMA = 0; //Mikael
 EHA = 0; //Haru
 DTA = 0; //Thunaer
-HDA = 0; //Hermothr
 ASA = 0; //Suriel
 ALA = 0; //Sol
 AHA = 0; //Hermothr
