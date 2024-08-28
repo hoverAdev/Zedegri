@@ -1,20 +1,39 @@
 /// @description Insert description here
 // You can write your code in this editor
 if disabled_selection == false{
-	try{
-	global.reward = array_pop(scene[int64(input_Text)]);
-	var set = scene[int64(input_Text)];
-	for(var i = 1; i < array_length(set); i++;){
-		for(var j = 0; j < array_length(Universal_Player_Stat_Manager.all_enemy_array); j++){
-			if Universal_Player_Stat_Manager.all_enemy_array[j][0] == set[i]{
-				array_push(global.enemy_members, Universal_Player_Stat_Manager.all_enemy_array[j]);
-			}
+	//try{
+	global.reward = array_pop(array_last(scene));
+	var scene_code = input_Text;
+	var scene_array = [];
+	for (var i = 0; i < array_length(scene); i++){
+		var analysis = scene[i];
+		//show_debug_message(analysis[0]);
+		if string(analysis[0]) == scene_code{
+			var	enemy_count = array_length(scene[i]) - 1;
+			scene_array = scene[i];
+			break
+			//global.enemy_members[0] = scene[1];
 		}
 	}
+	for (var j = 0; j < enemy_count; j++){ //dont have it iterate multiple times.
+		var enemy_array = [];
+		var enemy_search_code = scene_array[j + 1];	
+		show_debug_message(enemy_search_code); 
+		
+		for (var search = 0; search < array_length(Universal_Player_Stat_Manager.all_enemy_array); search ++){
+			var current_enemy_analysis = Universal_Player_Stat_Manager.all_enemy_array[search];
+			
+			if string(enemy_search_code) = current_enemy_analysis[0]{
+				enemy_array = Universal_Player_Stat_Manager.all_enemy_array[search];
+			}
+		}
+		show_debug_message(enemy_array);
+		global.enemy_members[j] = enemy_array;
+	}/*
 	}catch(_exception){
 	global.enemy_members = [array_last(Universal_Player_Stat_Manager.all_enemy_array),array_last(Universal_Player_Stat_Manager.all_enemy_array)];
 	global.reward = 9999;
-	}
+	}*/
 	room_goto(Room_Combat);
 	
 }
