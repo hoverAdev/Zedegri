@@ -5,5 +5,8 @@ if UIC.Azin_Available == true{
 button_text = Universal_Player_Stat_Manager.all_character_array[4][1];
 sprite_index = Z_Azin;
 }
+else{
+sprite_index = ZH_Azin;	
+}
 hovering = false;
 clicked = false;

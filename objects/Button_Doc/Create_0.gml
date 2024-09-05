@@ -5,5 +5,8 @@ if UIC.Doc_Available == true{
 button_text = Universal_Player_Stat_Manager.all_character_array[2][1];
 sprite_index = Z_Gibbor;
 }
+else{
+sprite_index = ZH_Gibbor;	
+}
 hovering = false;
 clicked = false;

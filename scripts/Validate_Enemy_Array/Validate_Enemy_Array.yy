@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Validate_Enemy_Array",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Validate_Enemy_Array",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -5,5 +5,8 @@ if UIC.JAA == true{
 button_text = Universal_Player_Stat_Manager.all_character_array[18][1];
 sprite_index = Amaterasu;
 }
+else{
+sprite_index = ZH_Amaterasu;	
+}
 hovering = false;
 clicked = false;
