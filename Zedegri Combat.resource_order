@@ -77,6 +77,7 @@
     {"name":"print_enemy_string","order":2,"path":"scripts/print_enemy_string/print_enemy_string.yy",},
     {"name":"Script5","order":4,"path":"scripts/Script5/Script5.yy",},
     {"name":"Script6","order":5,"path":"scripts/Script6/Script6.yy",},
+    {"name":"Script8","order":7,"path":"scripts/Script8/Script8.yy",},
     {"name":"Validate_Enemy_Array","order":6,"path":"scripts/Validate_Enemy_Array/Validate_Enemy_Array.yy",},
     {"name":"Amaterasu","order":3,"path":"sprites/Amaterasu/Amaterasu.yy",},
     {"name":"Background","order":7,"path":"sprites/Background/Background.yy",},

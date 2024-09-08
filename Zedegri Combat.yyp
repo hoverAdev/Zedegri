@@ -105,6 +105,7 @@
     {"id":{"name":"print_enemy_string","path":"scripts/print_enemy_string/print_enemy_string.yy",},},
     {"id":{"name":"Script5","path":"scripts/Script5/Script5.yy",},},
     {"id":{"name":"Script6","path":"scripts/Script6/Script6.yy",},},
+    {"id":{"name":"Script8","path":"scripts/Script8/Script8.yy",},},
     {"id":{"name":"Validate_Enemy_Array","path":"scripts/Validate_Enemy_Array/Validate_Enemy_Array.yy",},},
     {"id":{"name":"Amaterasu","path":"sprites/Amaterasu/Amaterasu.yy",},},
     {"id":{"name":"Background","path":"sprites/Background/Background.yy",},},

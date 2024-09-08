@@ -92,7 +92,7 @@ sl_ether = [
 //	[5, "Ether Vacuum","Suriel creates a difference in ether around a target, absorbing their ether", 2, Universal_Player_Stat_Manager.all_character_array[9][7]*LM * 1.15, "L"], //leech
 ];
 hd_ether = [
-    [1, "Force Restraint", "Hermothr immobalizes the enemy if they are Zedegri-sized", 1, 0, 1],
+    [1, "Force Restraint", "Hermothr has a 50% chance to immobalize any enemy, reguardless of size", 1, 0, 4],
 	[2, "Hyperextension", "Hermothr releases a strong attack with recoil", 2, (150 + Universal_Player_Stat_Manager.all_character_array[10][7])*LM, "RECOIL"],
 //	[3, "Triple Strike", "Attack the enemy three times in a single turn", 4, Universal_Player_Stat_Manager.all_character_array[10][7]*3*LM, "ATK"],
 //	[4, "Ether Accelerate", "Hermothr channels their Ether to quicken their movements", 2, 0, ["S", false, 2]],

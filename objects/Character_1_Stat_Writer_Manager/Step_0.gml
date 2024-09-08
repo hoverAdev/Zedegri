@@ -342,25 +342,33 @@ if global.all_state_pause == 1 and player_1_engaged {
 				
 				if obj_All_Selector.hover == 1{
 					targetted_creature = Character_1_Stat_Writer_Manager.stat_block;
+					target_code = 1;
 				}
 				else if obj_All_Selector.hover == 2{
 					targetted_creature = Character_2_Stat_Writer_Manager.stat_block;
+					target_code = 2;
 				}
 				else if obj_All_Selector.hover == 3{try{
-					targetted_creature = Character_3_Stat_Writer_Manager.stat_block;}
+					targetted_creature = Character_3_Stat_Writer_Manager.stat_block;
+					target_code = 3;
+					}
 					catch(_exception){}
 				}
 				else if obj_All_Selector.hover == 4{
 					targetted_creature = Enemy_1_Stat_Writer_Manager.stat_block;
+					target_code = 4;
 				}
 				else if obj_All_Selector.hover == 5{
 					targetted_creature = Enemy_2_Stat_Writer_Manager.stat_block;
+					target_code = 5;
 				}
 				else if obj_All_Selector.hover == 6{
 					targetted_creature = Enemy_3_Stat_Writer_Manager.stat_block;
+					target_code = 6;
 				}
 				else if obj_All_Selector.hover == 7{
 					targetted_creature = Enemy_4_Stat_Writer_Manager.stat_block;
+					target_code = 7;
 				}
 				hover = obj_All_Selector.persistent_hover;
 				//show_debug_message(hover);
@@ -426,28 +434,28 @@ if global.all_state_pause == 1 and player_1_engaged {
 					}
 					Text_Chat_Manager.printed_string += string("\n{0} Healed {1}!",Character_3_Stat_Writer_Manager.stat_block[1], hp_recover);
 				}
-				else if targetted_creature[0] == Enemy_1_Stat_Writer_Manager.stat_block[0]{
+				else if target_code == 4{
 					Enemy_1_Stat_Writer_Manager.current_hp += hp_recover;
 					if Enemy_1_Stat_Writer_Manager.current_hp > Enemy_1_Stat_Writer_Manager.stat_block[2]{
 						Enemy_1_Stat_Writer_Manager.current_hp = Enemy_1_Stat_Writer_Manager.stat_block[2];
 					}
 					Text_Chat_Manager.printed_string += string("\n{0} Betrayed and healed {1} for {2}",stat_block[1], Enemy_1_Stat_Writer_Manager.stat_block[1], hp_recover);
 				}
-				else if targetted_creature[0] == Enemy_2_Stat_Writer_Manager.stat_block[0]{
+				else if target_code == 5{
 					Enemy_2_Stat_Writer_Manager.current_hp += hp_recover;
 					if Enemy_2_Stat_Writer_Manager.current_hp > Enemy_2_Stat_Writer_Manager.stat_block[2]{
 						Enemy_2_Stat_Writer_Manager.current_hp = Enemy_2_Stat_Writer_Manager.stat_block[2];
 					}
 					Text_Chat_Manager.printed_string += string("\n{0} Betrayed and healed {1} for {2}",stat_block[1], Enemy_2_Stat_Writer_Manager.stat_block[1], hp_recover);
 				}
-				else if targetted_creature[0] == Enemy_3_Stat_Writer_Manager.stat_block[0]{
+				else if target_code == 6{
 					Enemy_3_Stat_Writer_Manager.current_hp += hp_recover;
 					if Enemy_3_Stat_Writer_Manager.current_hp > Enemy_3_Stat_Writer_Manager.stat_block[2]{
 						Enemy_3_Stat_Writer_Manager.current_hp = Enemy_3_Stat_Writer_Manager.stat_block[2];
 					}
 					Text_Chat_Manager.printed_string += string("\n{0} Betrayed and healed {1} for {2}",stat_block[1], Enemy_3_Stat_Writer_Manager.stat_block[1], hp_recover);
 				}
-				else if targetted_creature[0] == Enemy_4_Stat_Writer_Manager.stat_block[0]{
+				else if target_code == 7{
 					Enemy_4_Stat_Writer_Manager.current_hp += hp_recover;
 					if Enemy_4_Stat_Writer_Manager.current_hp > Enemy_4_Stat_Writer_Manager.stat_block[2]{
 						Enemy_4_Stat_Writer_Manager.current_hp = Enemy_4_Stat_Writer_Manager.stat_block[2];
@@ -500,54 +508,54 @@ if global.all_state_pause == 1 and player_1_engaged {
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 2.0x ATK for {2}!",stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1], duration);
 				}
 				// ENEMY 1
-				else if targetted_creature[0] == Enemy_1_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 4 and category == 0{
 					Enemy_1_Stat_Writer_Manager.dmg_mod_05 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 0.5x ATK for {2}!",stat_block[1], Enemy_1_Stat_Writer_Manager.stat_block[1], duration);
 				}
-				else if targetted_creature[0] == Enemy_1_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 4 and category == 1{
 					Enemy_1_Stat_Writer_Manager.dmg_mod_15 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 1.5x ATK for {2}!",stat_block[1], Enemy_1_Stat_Writer_Manager.stat_block[1], duration);
 				}
-				else if targetted_creature[0] == Enemy_1_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 4 and category == 2{
 					Enemy_1_Stat_Writer_Manager.dmg_mod_20 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 2.0x ATK for {2}!",stat_block[1], Enemy_1_Stat_Writer_Manager.stat_block[1], duration);
 				}
 				// ENEMY 2
-				else if targetted_creature[0] == Enemy_2_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 5 and category == 0{
 					Enemy_2_Stat_Writer_Manager.dmg_mod_05 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 0.5x ATK for {2}!",stat_block[1], Enemy_2_Stat_Writer_Manager.stat_block[1], duration);
 				}
-				else if targetted_creature[0] == Enemy_2_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 5 and category == 1{
 					Enemy_2_Stat_Writer_Manager.dmg_mod_15 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 1.5x ATK for {2}!",stat_block[1], Enemy_2_Stat_Writer_Manager.stat_block[1], duration);
 				}
-				else if targetted_creature[0] == Enemy_2_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 5 and category == 2{
 					Enemy_2_Stat_Writer_Manager.dmg_mod_20 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 2.0x ATK for {2}!",stat_block[1], Enemy_2_Stat_Writer_Manager.stat_block[1], duration);
 				}
 				// ENEMY 3
-				else if targetted_creature[0] == Enemy_3_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 6 and category == 0{
 					Enemy_3_Stat_Writer_Manager.dmg_mod_05 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 0.5x ATK for {2}!",stat_block[1], Enemy_3_Stat_Writer_Manager.stat_block[1], duration);
 				}
-				else if targetted_creature[0] == Enemy_3_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 6 and category == 1{
 					Enemy_3_Stat_Writer_Manager.dmg_mod_15 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 1.5x ATK for {2}!",stat_block[1], Enemy_3_Stat_Writer_Manager.stat_block[1], duration);
 				}
-				else if targetted_creature[0] == Enemy_3_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 6 and category == 2{
 					Enemy_3_Stat_Writer_Manager.dmg_mod_20 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 2.0x ATK for {2}!",stat_block[1], Enemy_3_Stat_Writer_Manager.stat_block[1], duration);
 				}
 				// ENEMY 4
-				else if targetted_creature[0] == Enemy_4_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 7 and category == 0{
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 0.5x ATK for {2}!",stat_block[1], Enemy_4_Stat_Writer_Manager.stat_block[1], duration);
 					Enemy_4_Stat_Writer_Manager.dmg_mod_05 += duration;	
 				}
-				else if targetted_creature[0] == Enemy_4_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 7 and category == 1{
 					Enemy_4_Stat_Writer_Manager.dmg_mod_15 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 1.5x ATK for {2}!",stat_block[1], Enemy_4_Stat_Writer_Manager.stat_block[1], duration);
 				}
-				else if targetted_creature[0] == Enemy_4_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 7 and category == 2{
 					Enemy_4_Stat_Writer_Manager.dmg_mod_20 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Gave {1} 2.0x ATK for {2}!",stat_block[1], Enemy_4_Stat_Writer_Manager.stat_block[1], duration);
 				}
@@ -566,7 +574,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 			//	show_debug_message(string("TCC: {0}, P1C: {1}, P2C: {2}, P3C: {3}, E1C: {4}, E2C: {5}, E3C: {6}, E4C: {7}")
 			//	,target_creature_code, party1_creature_code, party2_creature_code, party3_creature_code, enemy1_creature_code, enemy2_creature_code, enemy3_creature_code, enemy4_creature_code);
 				
-				if (target_creature_code == party1_creature_code){
+				if target_code == 1{
 					if (array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and selected_spell[5] == 0) or 
 					   (array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and selected_spell[5] == 1){
 					Character_1_Stat_Writer_Manager.current_speed = 0;
@@ -576,7 +584,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 						Text_Chat_Manager.printed_string += string("\n{0} Failed to Stagger {1}!",stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]);
 					}
 				}
-				else if (target_creature_code == party2_creature_code){
+				else if target_code == 2{
 					if (array_last(Character_2_Stat_Writer_Manager.stat_block) == 0 and selected_spell[5] == 0) or 
 					   (array_last(Character_2_Stat_Writer_Manager.stat_block) == 1 and selected_spell[5] == 1){
 								   Character_2_Stat_Writer_Manager.current_speed = 0;
@@ -586,7 +594,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 						Text_Chat_Manager.printed_string += string("\n{0} Failed to Stagger {1}!",stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]);
 					}
 				}
-				else if (target_creature_code == party3_creature_code){
+				else if target_code == 3{
 					if (array_last(Character_3_Stat_Writer_Manager.stat_block) == 0 and selected_spell[5] == 0) or 
 						(array_last(Character_3_Stat_Writer_Manager.stat_block) == 1 and selected_spell[5] == 1){
 					Character_3_Stat_Writer_Manager.current_speed = 0;
@@ -597,7 +605,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 					Text_Chat_Manager.printed_string += string("\n{0} Failed to Stagger {1}!",stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]);
 				}
 				//show_debug_message(target_creature_code, enemy1_creature_code);
-				if (target_creature_code == enemy1_creature_code){
+				if target_code == 4{
 					//show_debug_message(array_last(Enemy_1_Stat_Writer_Manager.stat_block),selected_spell[5]);
 					if (array_last(Enemy_1_Stat_Writer_Manager.stat_block) == 0 and selected_spell[5] == 0) or 
 					   (array_last(Enemy_1_Stat_Writer_Manager.stat_block) == 1 and selected_spell[5] == 1){
@@ -608,7 +616,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 						Text_Chat_Manager.printed_string += string("\n{0} Failed to Stagger {1}!",stat_block[1], Enemy_1_Stat_Writer_Manager.stat_block[1]);
 					}
 				}
-				else if (target_creature_code == enemy2_creature_code){
+				else if target_code == 5{
 					if (array_last(Enemy_2_Stat_Writer_Manager.stat_block) == 0 and selected_spell[5] == 0) or 
 					   (array_last(Enemy_2_Stat_Writer_Manager.stat_block) == 1 and selected_spell[5] == 1){
 								   Enemy_2_Stat_Writer_Manager.current_speed = 0;
@@ -618,7 +626,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 						Text_Chat_Manager.printed_string += string("\n{0} Failed to Stagger {1}!",stat_block[1], Enemy_2_Stat_Writer_Manager.stat_block[1]);
 					}
 				}
-				else if (target_creature_code == enemy3_creature_code){
+				else if target_code == 6{
 					if (array_last(Enemy_3_Stat_Writer_Manager.stat_block) == 0 and selected_spell[5] == 0) or 
 					   (array_last(Enemy_3_Stat_Writer_Manager.stat_block) == 1 and selected_spell[5] == 1){
 								   Enemy_3_Stat_Writer_Manager.current_speed = 0;
@@ -626,7 +634,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 					}
 					else{ Text_Chat_Manager.printed_string += string("\n{0} Failed to Stagger {1}!",stat_block[1], Enemy_3_Stat_Writer_Manager.stat_block[1]);}
 				}
-				else if (target_creature_code == enemy4_creature_code){
+				else if target_code == 7{
 					if (array_last(Enemy_4_Stat_Writer_Manager.stat_block) == 0 and selected_spell[5] == 0) or 
 					   (array_last(Enemy_4_Stat_Writer_Manager.stat_block) == 1 and selected_spell[5] == 1){
 								   Enemy_4_Stat_Writer_Manager.current_speed = 0;
@@ -635,99 +643,102 @@ if global.all_state_pause == 1 and player_1_engaged {
 					else{ Text_Chat_Manager.printed_string += string("\n{0} Failed to Stagger {1}!",stat_block[1], Enemy_4_Stat_Writer_Manager.stat_block[1]);}
 				}
 			}
+			else if selected_spell[5] > 3{
+				Stagger_Player_Addendum(selected_spell[5], target_code);	
+			}
 			else if string_char_at(selected_spell[5],1) == "D"{ //    DEFENCE MODIFIER
 				var category = int64(string_char_at(selected_spell[5],2));
 				var duration = int64(string("{0}{1}", string_char_at(selected_spell[5],4), string_char_at(selected_spell[5],5)));
 				show_debug_message(category);
 				show_debug_message(duration);
 				// PLAYER 1
-				if targetted_creature[0] == Character_1_Stat_Writer_Manager.stat_block[0] and category == 0{ // change these with the new more effective version
+				if target_code == 1 and category == 0{ // change these with the new more effective version
 					Character_1_Stat_Writer_Manager.def_mod_05 += duration;
 					Text_Chat_Manager.printed_string += string("\n{0} Reduced {1} Defence by 0.5!",stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Character_1_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 1 and category == 1{
 					Character_1_Stat_Writer_Manager.def_mod_15 += duration;
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 1.5!",stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Character_1_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 1 == Character_1_Stat_Writer_Manager.stat_block[0] and category == 2{
 					Character_1_Stat_Writer_Manager.def_mod_20 += duration;
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 2.0!",stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]);
 				}
 				// PLAYER 2
-				else if targetted_creature[0] == Character_2_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 2 == Character_2_Stat_Writer_Manager.stat_block[0] and category == 0{
 					Character_2_Stat_Writer_Manager.def_mod_05 += duration;
 					Text_Chat_Manager.printed_string += string("\n{0} Reduced {1} Defence by 0.5!",stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Character_2_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 2 == Character_2_Stat_Writer_Manager.stat_block[0] and category == 1{
 					Character_2_Stat_Writer_Manager.def_mod_15 += duration;
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 1.5!",stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Character_2_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 2 == Character_2_Stat_Writer_Manager.stat_block[0] and category == 2{
 					Character_2_Stat_Writer_Manager.def_mod_20 += duration;
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 2.0!",stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]);
 				}
 				//PLAYER 3
-				else if targetted_creature[0] == Character_3_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 3 and category == 0{
 					Character_3_Stat_Writer_Manager.def_mod_05 += duration;
 					Text_Chat_Manager.printed_string += string("\n{0} Reduced {1} Defence by 0.5!",stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Character_3_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 3 and category == 1{
 					Character_3_Stat_Writer_Manager.def_mod_15 += duration;
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 1.5!",stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Character_3_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 3 and category == 2{
 					Character_3_Stat_Writer_Manager.def_mod_20 += duration;
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 2.0!",stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]);
 				}
 				// ENEMY 1
-				else if targetted_creature[0] == Enemy_1_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 4 and category == 0{
 					Enemy_1_Stat_Writer_Manager.def_mod_05 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Reduced {1} Defence by 0.5!",stat_block[1], Enemy_1_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Enemy_1_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 4 and category == 1{
 					Enemy_1_Stat_Writer_Manager.def_mod_15 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 1.5!",stat_block[1], Enemy_1_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Enemy_1_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 4 and category == 2{
 					Enemy_1_Stat_Writer_Manager.def_mod_20 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 2.0!",stat_block[1], Enemy_1_Stat_Writer_Manager.stat_block[1]);
 				}
 				// ENEMY 2
-				else if targetted_creature[0] == Enemy_2_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 5 and category == 0{
 					Enemy_2_Stat_Writer_Manager.def_mod_05 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Reduced {1} Defence by 0.5!",stat_block[1], Enemy_2_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Enemy_2_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 5 and category == 1{
 					Enemy_2_Stat_Writer_Manager.def_mod_15 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 1.5!",stat_block[1], Enemy_2_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Enemy_2_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 5 and category == 2{
 					Enemy_2_Stat_Writer_Manager.def_mod_20 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 2.0!",stat_block[1], Enemy_2_Stat_Writer_Manager.stat_block[1]);
 				}
 				// ENEMY 3
-				else if targetted_creature[0] == Enemy_3_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 6 and category == 0{
 					Enemy_3_Stat_Writer_Manager.def_mod_05 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Reduced {1} Defence by 0.5!",stat_block[1], Enemy_3_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Enemy_3_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 6 and category == 1{
 					Enemy_3_Stat_Writer_Manager.def_mod_15 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 1.5!",stat_block[1], Enemy_3_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Enemy_3_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 6 and category == 2{
 					Enemy_3_Stat_Writer_Manager.def_mod_20 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 2.0!",stat_block[1], Enemy_3_Stat_Writer_Manager.stat_block[1]);
 				}
 				// ENEMY 4
-				else if targetted_creature[0] == Enemy_4_Stat_Writer_Manager.stat_block[0] and category == 0{
+				else if target_code == 7 and category == 0{
 					Enemy_4_Stat_Writer_Manager.def_mod_05 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Reduced {1} Defence by 0.5!",stat_block[1], Enemy_4_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Enemy_4_Stat_Writer_Manager.stat_block[0] and category == 1{
+				else if target_code == 7 and category == 1{
 					Enemy_4_Stat_Writer_Manager.def_mod_15 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 1.5!",stat_block[1], Enemy_4_Stat_Writer_Manager.stat_block[1]);
 				}
-				else if targetted_creature[0] == Enemy_4_Stat_Writer_Manager.stat_block[0] and category == 2{
+				else if target_code == 7 and category == 2{
 					Enemy_4_Stat_Writer_Manager.def_mod_20 += duration;	
 					Text_Chat_Manager.printed_string += string("\n{0} Boosted {1} Defence by 2.0!",stat_block[1], Enemy_4_Stat_Writer_Manager.stat_block[1]);
 				}
@@ -849,32 +860,32 @@ if global.all_state_pause == 1 and player_1_engaged {
 			
 			//show_debug_message(dmg);
 			
-			if targetted_creature == 1{
+			if targetted_creature[0] == Character_1_Stat_Writer_Manager.stat_block[0]{
 				dmg -= Character_1_Stat_Writer_Manager.current_def;//8
 				if dmg < 0{ dmg = 0;}
 			}
-			else if targetted_creature == 2{
+			else if targetted_creature[0] == Character_2_Stat_Writer_Manager.stat_block[0]{
 				dmg -= Character_2_Stat_Writer_Manager.current_def;//8
 				if dmg < 0{ dmg = 0;}
 			}
-			else if targetted_creature == 3{
+			else if targetted_creature[0] == Character_3_Stat_Writer_Manager.stat_block[0]{
 				dmg -= Character_3_Stat_Writer_Manager.current_def;//8
 				if dmg < 0{ dmg = 0;}
 			}
 			
-			else if targetted_creature == 4{
+			else if target_code == 4{
 				dmg -= Enemy_1_Stat_Writer_Manager.current_def;//6
 				if dmg < 0{ dmg = 0;}
 			}
-			else if targetted_creature == 5{
+			else if target_code == 5{
 				dmg -= Enemy_2_Stat_Writer_Manager.current_def;//6
 				if dmg < 0{ dmg = 0;}
 			}
-			else if targetted_creature == 6{
+			else if target_code == 6{
 				dmg -= Enemy_3_Stat_Writer_Manager.current_def;//6
 				if dmg < 0{ dmg = 0;}
 			}
-			else if targetted_creature == 7{
+			else if target_code == 7{
 				dmg -= Enemy_4_Stat_Writer_Manager.current_def;//6
 				if dmg < 0{ dmg = 0;}
 			}

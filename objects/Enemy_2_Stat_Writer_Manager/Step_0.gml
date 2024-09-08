@@ -302,6 +302,9 @@ if global.all_state_pause == 0{
 					}
 				}
 			}
+			else if atk_used[5] > 1{
+				Stagger_Enemy_Addendum(atk_used[5], target);	
+			}
 			if atk_used[6] == true{ //Leech
 				show_debug_message("ENEMY LEECH");
 				current_hp += floor(dmg/2);	
