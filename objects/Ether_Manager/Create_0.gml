@@ -9,7 +9,7 @@ var LM = 1 + global.level / 15;
 
 jc_ether = [
     [1, "Power Driver", "A strong single attack with mystical force."                      , 1,(100 + Universal_Player_Stat_Manager.all_character_array[0][7])*LM, "ATK"],
-    [2, "Spirit Splinter", "Targetting the head, dazing the enemy and resetting their time", 3,(50 + Universal_Player_Stat_Manager.all_character_array[0][5])*LM , 0], //Target Daze Norm does not effect Zedegri's
+    [2, "Spirit Splinter", "Targetting the head, dazing the enemy and resetting their time", 2,(50 + Universal_Player_Stat_Manager.all_character_array[0][5])*LM , 7], //Target Daze Norm does not effect Zedegri's
 //	[3, "Battle Spirit", "Jacob gains a focused aura around themselves, increasing defence", 1, 0, "D1,10"],
 //	[4, "Energy Fragmentation", "Jacob focuses their strike to stagger the energy flow of a Zedegri", 4, (200 + Universal_Player_Stat_Manager.all_character_array[0][7])*LM, 1],
 //	[5, "Enchanted Lineage", "Jacob channels their inner Ether for 2X defence", 4, 0, "D2,06"], //unlocked after meeting Fiora and learning that you're a Dara >:3
@@ -37,7 +37,7 @@ az_ether = [
 ];
 dc_ether = [
     [1, "Heal Charge", "Heals a teammates wounds", 2, 0, "H20"],
-    [2, "Low Strike", "Knocks an enemy off balance", 2, (20 + Universal_Player_Stat_Manager.all_character_array[2][5])*LM, 0],
+    [2, "Low Strike", "Knocks an enemy off balance", 4, (20 + Universal_Player_Stat_Manager.all_character_array[2][5])*LM, 0],
 //	[3, "Defensive Brew", "Doc creates a medicine which increases DEF for a short time", 1, "D1,04"],
 //	[4, "Stone Skin", "Doc increases a teammates defence for the remainder of battle", 2, ["D", false, 20]],
 //	[5, "Energy Syphon", "Doc lowers the enemies defence" 1, (60 + Universal_Player_Stat_Manager.all_character_array[2][7])*LM, "D0,05"],
@@ -75,7 +75,7 @@ ki_ether = [
 	[2, "Deathly Glare", "Kalaratri intimidates the enemy, lowering their defence.",2,0, "D0,06"],
 //	[3, "Cursed Word", "An attack with a rare chance to instantly kill the enemy", 1, (100 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM, "I10"],
 //	[4, "Inflict Atrophy", "Kalaratri lowers the strength of the enemy", 3, 0, "E0,06"],
-//	[5, "Lethal Inflection", "Kalaratri launches a single attack with a notable chance to INSTAKILL.", 6, (80 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM,"I90s"],//32
+//	[5, "Lethal Inflection", "Kalaratri launches a single attack with a notable chance to INSTAKILL.", 6, (80 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM,"I32"],//32
 ];
 tr_ether = [
     [1, "Defensive Field","Creates a light protective field around a target",2, 0, "D1,04"], //DEF 1.5 up
@@ -96,7 +96,7 @@ hd_ether = [
 	[2, "Hyperextension", "Hermothr releases a strong attack with recoil", 2, (150 + Universal_Player_Stat_Manager.all_character_array[10][7])*LM, "RECOIL"],
 //	[3, "Triple Strike", "Attack the enemy three times in a single turn", 4, Universal_Player_Stat_Manager.all_character_array[10][7]*3*LM, "ATK"],
 //	[4, "Ether Accelerate", "Hermothr channels their Ether to quicken their movements", 2, 0, ["S", false, 2]],
-//	[5, "Mach Breaker", "Release a super powerful attack which dazes the large enemy", 3, (500 + Universal_Player_Stat_Manager.all_character_array[10][7])*LM, 1],
+//	[5, "Mach Breaker", "Release a super powerful attack which dazes the large enemy", 3, (500 + Universal_Player_Stat_Manager.all_character_array[10][7])*LM, 10],
 ];
 af_ether = [
     [1, "Nature's Love", "Anfang channels their power to heal all their teammates", 4, 0, "F30"],
@@ -137,6 +137,6 @@ ts_ether = [
     [1, "Child of Fear","Tsukuyomi creates an illusion, and lands a strong attack.", 1, Universal_Player_Stat_Manager.all_character_array[19][7]*LM*1.5, "ATK"], //ATK
 	[2, "Empiric Legacy", "Tsukuyomi increases a teammates speed", 2, 0, ["S", false, 2]],
 //	[3, "Lunar Eclipse","As the moon turns to blood, decrease an enemies DEF", 3, global.level*LM, "D0,10"], //DEF DOWN
-//	[4, "Celestrial Force", "A Powerful strike which topples larger enemies", 2, (80 + Universal_Player_Stat_Manager.all_character_array[19][7])*LM, 1], //TOPPLE
+//	[4, "Celestrial Force", "A Powerful strike which topples larger enemies", 2, (80 + Universal_Player_Stat_Manager.all_character_array[19][7])*LM, 8], //TOPPLE
 //	[5, "Enchanted Lineage", "Jacob channels their inner Ether for 2X damage", 4, 0, "E2,06"]
 ];
