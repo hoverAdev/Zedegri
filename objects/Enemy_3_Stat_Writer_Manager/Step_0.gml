@@ -97,25 +97,7 @@ if global.all_state_pause == 0{
 			
 		}
 		else if random_selection_method >= 20{ //RANDOM
-			show_debug_message("RANDOM TARGET");
-			var selected = false;
-			var valid_target = 0;
-			while selected == false{
-				var random_target = irandom_range(1,3);
-				if random_target == 1 and p1hp > 0 {
-					target = 1;
-					selected = true;
-				}
-				else if random_target == 2 and p2hp > 0 {
-					target = 2;
-					selected = true;
-				}
-				else if random_target == 3 and p3hp > 0 {
-					target = 3;
-					selected = true;
-				}
-			}
-	
+			target = Enemy_Random(p1hp, p2hp, p3hp);
 		}
 		else { //------------------------------- HEALTHIEST
 			show_debug_message("HEALTHIEST");

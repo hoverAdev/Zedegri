@@ -9,7 +9,7 @@ Enemy_4_Stat_Writer_Manager.current_hp <= 0 {
 	global.Ending = 1;
 	room_goto(Room_Ending);
 }
-else if
+else if room == Room_Combat and
 Character_1_Stat_Writer_Manager.current_hp <= 0 and
 Character_2_Stat_Writer_Manager.current_hp <= 0 and
 Character_3_Stat_Writer_Manager.current_hp <= 0 {

@@ -269,6 +269,59 @@ function Stagger_Player_Addendum(input, target){
 		print_enemy_string(string("The spell missed!"));	
 	}
 }
+function Enemy_Random(p1hp, p2hp, p3hp){
+	show_debug_message("RANDOM TARGET");
+	var target = 0;
+	if p1hp > 0 and p2hp > 0 and p3hp > 0{
+		var random_target = irandom_range(1,3);
+		if random_target == 1 and p1hp > 0 {
+			target = 1;
+		}
+		else if random_target == 2 and p2hp > 0 {
+			target = 2;
+		}
+		else if random_target == 3 and p3hp > 0 {
+			target = 3;
+		}
+	}
+	else if p1hp > 0 and p2hp > 0{
+		var random_target = irandom_range(1,2);
+		if random_target == 1 and p1hp > 0 {
+			target = 1;
+		}
+		else if random_target == 2 and p2hp > 0 {
+			target = 2;
+		}
+	}
+	else if p1hp > 0 and p3hp > 0{
+		var random_target = irandom_range(1,2);
+		if random_target == 1 and p1hp > 0 {
+			target = 1;
+		}
+		else if random_target == 2 and p2hp > 0 {
+			target = 3;
+		}
+	}
+	else if p2hp > 0 and p3hp > 0{
+		var random_target = irandom_range(1,2);
+		if random_target == 1 and p1hp > 0 {
+			target = 2;
+		}
+		else if random_target == 2 and p2hp > 0 {
+			target = 3;
+		}
+	}
+	else if p1hp > 0{
+		target = 1;	
+	}
+	else if p2hp > 0{
+		target = 2;	
+	}
+	else if p3hp > 0{
+		target = 3;	
+	}	
+	return target;
+}
 function Spell_Cast(target_code, selected_spell){
 	hp_recover = 0;
 	var string_splitter;

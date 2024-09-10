@@ -1,5 +1,5 @@
 config{
-	           speed_cap = 8,
+	           speed_cap = 6,
 	               level = 1,
 	environmental_damage = 0, A percentage
 	        player_speed = 5, Actually a decimal
