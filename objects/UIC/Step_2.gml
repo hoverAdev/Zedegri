@@ -6,12 +6,14 @@ if room == Room_Enemy_Select{
 if keyboard_check_pressed(vk_up) and selector_x == 0{
 	if character_selector == 1{}
 	else{
+		item_selector = 0;
 		character_selector --;	
 	}
 }
 else if keyboard_check_pressed(vk_down) and selector_x == 0{
 	if character_selector == 18{}
 	else{
+		item_selector = 0;
 		character_selector ++;	
 	}
 }
@@ -19,12 +21,14 @@ else if keyboard_check_pressed(vk_down) and selector_x == 0{
 if keyboard_check_pressed(vk_up) and selector_x == 1{
 	if option_selector == 0{}
 	else{
+		item_selector = 0;
 		option_selector --;	
 	}
 }
 else if keyboard_check_pressed(vk_down) and selector_x == 1{
 	if option_selector == 2{}
 	else{
+		item_selector = 0;
 		option_selector ++;	
 	}
 }
@@ -45,12 +49,14 @@ else if keyboard_check_pressed(vk_down) and selector_x == 2{
 if keyboard_check_pressed(vk_right){
 	if selector_x == 2 {}
 	else{
+		item_selector = 0;
 		selector_x ++;	
 	}
 }
 else if keyboard_check_pressed(vk_left){
 	if selector_x == 0 {}
 	else{
+		item_selector = 0;
 		selector_x --;
 	}
 }

@@ -15,13 +15,13 @@ scene = [
 ["L1", "LCB","LCB", 1],
 ["L2", "LTW","LTW", 1],
 ["L3", "LSL","LSL", 1],
-["L4", "LCB","LTW", 1],
-["L5", "LCB","LSL", 1],
+["L4", "LCB","LTW", 1.1],
+["L5", "LCB","LSL", 1.2],
 // LAHMUR MOUNTAIN: MB SW DL
-["LM1", "LMB","LMB","LMB", 1.3],
-["LM2", "LMB","LMB","LDL", 1.3], //THE REAL ONE
-["LM3", "LSW","LDL","LSW", 1.3],
-["LM4", "LSW","LSW","LMB", 1.3],
+["LM1", "LMB","LMB", 1.3],
+["LM2", "LMB","LDL", 1.3], //THE REAL ONE
+["LM3", "LSW","LDL", 1.3],
+["LM4", "LSW","LSW", 1.3],
 // JIZO INTRO BATTLE
 ["B0", "LZZ","LZZ","LZZ","LZZ", 15],
 // DIMWOOD FOREST: FLB FTT FSF

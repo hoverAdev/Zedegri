@@ -287,12 +287,7 @@ if global.all_state_pause == 0{
 			else if atk_used[5] > 1{
 				Stagger_Enemy_Addendum(atk_used[5], target);	
 			}
-			if atk_used[6] == true{ //Leech
-				show_debug_message("ENEMY LEECH");
-				current_hp += floor(dmg/2);	
-				if current_hp > stat_block[2]{ current_hp = stat_block[2]; print_enemy_string(string("{0} healed back to full!",stat_block[1]));}
-				else{print_enemy_string(string("{0} healed back {1} HP!",stat_block[1],floor(dmg/2)));}
-			}
+			
 			if atk_used[7][0] == 0{ //ATK Debuff
 				if atk_used[7][1] == 0{}
 				else if target == 1{
@@ -525,7 +520,12 @@ if global.all_state_pause == 0{
 			dmg *= 2.128;
 			dmg_mod_20 --;
 		}
-	
+		if atk_used[6] == true{ //Leech
+			show_debug_message("ENEMY LEECH");
+			current_hp += floor(dmg/2);	
+			if current_hp > stat_block[2]{ current_hp = stat_block[2]; print_enemy_string(string("{0} healed back to full!",stat_block[1]));}
+			else{print_enemy_string(string("{0} healed back {1} HP!",stat_block[1],floor(dmg/2)));}
+		}
 		//                    -----HITTING THE BLOODY THING-----
 		if target == 1{
 			Character_1_Stat_Writer_Manager.current_hp -= floor(dmg);

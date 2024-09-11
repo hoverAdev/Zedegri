@@ -10,8 +10,56 @@ if Draw_Background_Shade{
 if Disable_Timer == true{
 	global.all_state_pause = true;
 }
+if room == Room_Ini and Is_Tutorial_Active{
+	draw_set_font(font_arial);
+	if Item_Enter_Presses == 0{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"This is technically the start of the Tutorial, but was made after the Tutorial was.\nSo this is not the Introduction\n[Press ENTER to proceed]");
+		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
+	}
+	else if Item_Enter_Presses == 1{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"This scene is the Item Selection Scene\nNavigate the characters, catagories, and lists with UP and DOWN arrow\n[Press ENTER to proceed]");
+		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
+	}
+	else if Item_Enter_Presses == 2{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Swap between which column you scroll through with LEFT and RIGHT arrows\n[Press ENTER to proceed]");
+		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
+	}
+	else if Item_Enter_Presses == 3{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Press ENTER to confirm your selection\n[Press ENTER to proceed]");
+		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
+	}
+	else if Item_Enter_Presses == 4{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Press K to Keep/Save and press L to Load from your save file of selected items\n[Press ENTER to proceed]");
+		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
+	}
+	else if Item_Enter_Presses == 5{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Press Z to swap to Alternative Party View, press again to swap back\n[Press ENTER to proceed]");
+		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
+	}
+	else if Item_Enter_Presses == 6{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Notes when scrolling,\nKeep to visible items on the item selection list\n[Press ENTER to proceed]");
+		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
+	}
+	else if Item_Enter_Presses == 6{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Notes when scrolling,\nKeep to visible items on the item selection list\n[Press ENTER to proceed]");
+		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
+	}
+	else if Item_Enter_Presses >= 7{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		Draw_Background_Shade = false;
+		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
+	}
+}
 
-if room == Room_Player_Select and Is_Tutorial_Active{
+else if room == Room_Player_Select and Is_Tutorial_Active{
 	draw_set_font(font_arial);
 	if Player_Enter_Presses == 0{
 		draw_set_halign(fa_center); draw_set_valign(fa_middle);
@@ -63,7 +111,7 @@ if room == Room_Player_Select and Is_Tutorial_Active{
 		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"That is all for the Character Selection Tutorial\n[Press ENTER to Close Tutorial]");
 		if keyboard_check_pressed(vk_enter){ Player_Enter_Presses += 1; io_clear(); }
 	}
-	else if Player_Enter_Presses == 8{
+	else if Player_Enter_Presses >= 8{
 		draw_set_halign(fa_center); draw_set_valign(fa_middle);
 		Draw_Background_Shade = false;
 		if keyboard_check_pressed(vk_enter){ Player_Enter_Presses += 1; io_clear(); }
@@ -261,3 +309,5 @@ else if room = Room_Combat and Is_Tutorial_Active{
 	}
 	//This is your AP, or Attack Points, this starts at 3
 }
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
