@@ -251,6 +251,14 @@ Ella_Weapons = [
 	HP: 500,
 	Copies: 0,
 },
+{	name: "Staff of Anima",
+	type: specific,
+	ATK: 200,
+	DEF: 300,
+	SPD: -5,
+	HP: 600,
+	Copies: 0,
+}
 ];
 specific = "Surface Sword";
 Gibbor_Weapons = [
