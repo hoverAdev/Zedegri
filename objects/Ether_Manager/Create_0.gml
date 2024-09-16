@@ -103,7 +103,7 @@ af_ether = [
 	[2, "Nature's Ferocity", "A fierce vine attack which immobalizes the target", 3, (120 + Universal_Player_Stat_Manager.all_character_array[12][7])*LM, 1],
 //	[3, "Nature's Restoration","Anfang steals life from the enemy to heal herself", 2, (180 + Universal_Player_Stat_Manager.all_character_array[12][7])*LM, "L"], //Leech
 //	[4, "Nature's Blessing", "Anfang empowers a teammate with strength for the rest of battle", 2, 0, ["A", false, 20]], //Perm ATK buff
-//	[5, "Nature's Ultimatum", "Anfang gives a teammate 2x attack for a very long time", 8, 0, "E2,16"],
+	[5, "Nature's Ultimatum", "Anfang attacks the opponent, more damage the higher their Current HP is", 8, 0, "CHP"],
 ];
 mi_ether = [
     [1, "Heaven's Saber", "Mika'el crashes both of their swords into the enemy with ferocity", 1, (60 + Universal_Player_Stat_Manager.all_character_array[15][7])*LM*2, "ATK"], //ATK

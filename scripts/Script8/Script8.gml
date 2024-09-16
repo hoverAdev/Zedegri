@@ -783,16 +783,20 @@ function Spell_Cast(target_code, selected_spell){
 	else if array_last(selected_spell) == "RECOIL"{
 		if current_def > dmg{}
 		else{
-		current_hp -= floor((dmg - current_def)/4);
-		if current_hp <= 0{ 
-			current_hp = 1; 
-			Text_Chat_Manager.printed_string += string("\n{0} Survived the Recoil with 1HP",stat_block[1]);
-		}
+			current_hp -= floor((dmg - current_def)/4);
+			if current_hp <= 0{ 
+				current_hp = 1; 
+				Text_Chat_Manager.printed_string += string("\n{0} Survived the Recoil with 1HP",stat_block[1]);
+			}
 				
-		else {
-			Text_Chat_Manager.printed_string += string("\n{0} Took {1} Damage from the Recoil!",stat_block[1], floor((dmg - current_def)/4));
+			else {
+				Text_Chat_Manager.printed_string += string("\n{0} Took {1} Damage from the Recoil!",stat_block[1], floor((dmg - current_def)/4));
+			}
 		}
-	}}
+	}
+	else if array_last(selected_spell) == "CHP"{
+		dmg = current_hp;	
+	}
 	//execute required part
 	current_def = stat_block[8] * def_modifiers;
 			
