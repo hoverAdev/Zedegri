@@ -6,7 +6,7 @@ var Save_String = "";
 //Jacob, Ella, Doc, Abby, Azin, Fiona, Joanna, Fiora
 Jacob_Available =  1;
 Ella_Available =   1;
-Doc_Available =    1;
+Doc_Available =    0;
 Abby_Available =   0;
 Azin_Available =   0;
 Fiona_Available =  0;

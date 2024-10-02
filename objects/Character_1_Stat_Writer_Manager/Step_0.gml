@@ -407,6 +407,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 			current_hp -= environment_damage(stat_block[2], stat_block[1]);
 		
 	}
+}
 
 	if assist_confirmed == true{
 	
@@ -435,6 +436,5 @@ if global.all_state_pause == 1 and player_1_engaged {
 			player_1_engaged = false;
 			current_hp -= environment_damage(stat_block[2], stat_block[1]);
 		}
-	}
 	}
 }

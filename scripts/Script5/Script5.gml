@@ -18,3 +18,26 @@ function health_colour(current_hp, maximum_hp){
 	var red = 255 - green;
 	return make_color_rgb(red, green, 0);
 }
+
+function speed_colour(current_speed, maximum_speed, colour){
+	var percentage = 255 * (current_speed / maximum_speed);
+	var colour_scale_factor = 0.004;
+	var green = 0;
+	var red = 0;
+	var blue = 0;
+	if colour = "blue"{
+		blue = 00 + percentage^2 * colour_scale_factor;
+		if blue > 255{
+			blue = 255;	
+		}
+		//show_debug_message(blue);
+		return make_color_rgb(blue/3, blue/3, blue);
+	}
+	else{
+		red = 00 + percentage^2 * colour_scale_factor;	
+		if red > 255{
+			red = 255;	
+		}
+		return make_color_rgb(red, red/3, red/3);
+	}
+}

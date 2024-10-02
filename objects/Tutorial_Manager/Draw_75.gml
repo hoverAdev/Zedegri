@@ -61,6 +61,7 @@ if room == Room_Ini and Is_Tutorial_Active{
 
 else if room == Room_Player_Select and Is_Tutorial_Active{
 	draw_set_font(font_arial);
+	Draw_Background_Shade = true;
 	if Player_Enter_Presses == 0{
 		draw_set_halign(fa_center); draw_set_valign(fa_middle);
 		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Welcome to the Zedegri Combat Tutorial!\nFirst we need to understand the -Character Select Screen-\n[Press ENTER to proceed]");
@@ -128,10 +129,15 @@ else if room == Room_Enemy_Select and Is_Tutorial_Active{
 	}
 	else if Enemy_Enter_Presses == 1{
 		draw_set_halign(fa_center); draw_set_valign(fa_middle);
-		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Input the number correlated to the combat encounter you wish to engage with\npress Delete to clear the number you put in\nPress Enter to enter the combat encounter\n[Press ENTER to Close Tutorial]");
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Input the CODE correlated to the combat encounter you wish to engage with\npress Delete to clear the number you put in\nPress Enter to enter the combat encounter\n[Press ENTER to Close Tutorial]");
 		if keyboard_check_pressed(vk_enter){ Enemy_Enter_Presses += 1; io_clear(); }
 	}
 	else if Enemy_Enter_Presses == 2{
+		draw_set_halign(fa_center); draw_set_valign(fa_middle);
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"Codes use a regional indicator, which is 1 or 2 letters, and a number\nto differentiate between different encounters\n[Press ENTER to Close Tutorial]");
+		if keyboard_check_pressed(vk_enter){ Enemy_Enter_Presses += 1; io_clear(); }
+	}
+	else if Enemy_Enter_Presses == 3{
 		draw_set_halign(fa_center); draw_set_valign(fa_middle);
 		Draw_Background_Shade = false;
 		Enemy_Input_Textbox.disabled_selection = false;
@@ -174,7 +180,7 @@ else if room = Room_Combat and Is_Tutorial_Active{
 	//This is your HP, once this is below 0, this character is dead, but can be healed back to life
 	else if Combat_Enter_Presses == 4{
 		draw_set_alpha(0.25);
-		draw_rectangle_color(98,140,287,180,c_blue,c_blue,c_blue,c_blue,false);
+		draw_rectangle_color(98,125,287,155,c_blue,c_blue,c_blue,c_blue,false);
 		draw_set_alpha(1);	
 		draw_set_halign(fa_left); draw_set_valign(fa_top);
 		draw_text_outlined(287,290,c_black,c_white,"This is a characters Health Points, abbreviated to HP\nOnce a characters HP reaches Zero, they can no longer attack\n[Press ENTER to proceed]");
@@ -183,7 +189,7 @@ else if room = Room_Combat and Is_Tutorial_Active{
 	//This is your EP, or Ether Points, whenever you use Ether moves, this decreases
 	else if Combat_Enter_Presses == 5{
 		draw_set_alpha(0.25);
-		draw_rectangle_color(98,180,287,220,c_blue,c_blue,c_blue,c_blue,false);
+		draw_rectangle_color(98,155,287,185,c_blue,c_blue,c_blue,c_blue,false);
 		draw_set_alpha(1);	
 		draw_set_halign(fa_left); draw_set_valign(fa_top);
 		draw_text_outlined(287,290,c_black,c_white,"This is a characters Ether Points, abbreviated to EP\nWhen using Ether attacks,this number will decrease down to Zero\n[Press ENTER to proceed]");
@@ -225,7 +231,7 @@ else if room = Room_Combat and Is_Tutorial_Active{
 	}
 	else if Combat_Enter_Presses == 10{
 		draw_set_alpha(0.25);
-		draw_rectangle_color(98,220,287,260,c_blue,c_blue,c_blue,c_blue,false);
+		draw_rectangle_color(98,185,287,215,c_blue,c_blue,c_blue,c_blue,false);
 		draw_set_alpha(1);
 		draw_set_halign(fa_left); draw_set_valign(fa_top);
 		draw_text_outlined(287,290,c_black,c_white,"These are your Attack Points, abbreviated to AP\nAttack Points are what you use to Attack\n[Press ENTER to proceed]");
@@ -233,7 +239,7 @@ else if room = Room_Combat and Is_Tutorial_Active{
 	}
 	else if Combat_Enter_Presses == 11{
 		draw_set_alpha(0.25);
-		draw_rectangle_color(98,220,287,260,c_blue,c_blue,c_blue,c_blue,false);
+		draw_rectangle_color(98,185,287,215,c_blue,c_blue,c_blue,c_blue,false);
 		draw_set_alpha(1);
 		draw_set_halign(fa_left); draw_set_valign(fa_top);
 		draw_text_outlined(287,290,c_black,c_white,"You always start a battle with 3 Attack Points, this number increases as Combat continues\n[Press ENTER to proceed]");
@@ -241,7 +247,7 @@ else if room = Room_Combat and Is_Tutorial_Active{
 	}
 	else if Combat_Enter_Presses == 12{
 		draw_set_alpha(0.25);
-		draw_rectangle_color(98,220,287,260,c_blue,c_blue,c_blue,c_blue,false);
+		draw_rectangle_color(98,185,287,215,c_blue,c_blue,c_blue,c_blue,false);
 		draw_set_alpha(1);
 		draw_set_halign(fa_left); draw_set_valign(fa_top);
 		draw_text_outlined(287,290,c_black,c_white,"When Attacking, you have 3 options of Attack\nLight Attack: Costing 1 Attack Point to use\nMedium Attack: Costing 2 Attack Points to use\nHeavy Attack: Costing 3 Attack Points to use\n[Press ENTER to proceed]");
@@ -249,7 +255,7 @@ else if room = Room_Combat and Is_Tutorial_Active{
 	}
 	else if Combat_Enter_Presses == 13{
 		draw_set_alpha(0.25);
-		draw_rectangle_color(98,220,287,260,c_blue,c_blue,c_blue,c_blue,false);
+		draw_rectangle_color(98,185,287,215,c_blue,c_blue,c_blue,c_blue,false);
 		draw_set_alpha(1);
 		draw_set_halign(fa_left); draw_set_valign(fa_top);
 		draw_text_outlined(287,290,c_black,c_white,"Once you are at 4 or more Attack Points, you can do a Combo Attack\nDoing a Combo Attack sets your AP back to 3 on your next turn\n[Press ENTER to proceed]");
@@ -257,7 +263,7 @@ else if room = Room_Combat and Is_Tutorial_Active{
 	}
 	else if Combat_Enter_Presses == 14{
 		draw_set_alpha(0.25);
-		draw_rectangle_color(98,220,287,260,c_blue,c_blue,c_blue,c_blue,false);
+		draw_rectangle_color(98,185,287,215,c_blue,c_blue,c_blue,c_blue,false);
 		draw_set_alpha(1);
 		draw_set_halign(fa_left); draw_set_valign(fa_top);
 		draw_text_outlined(287,290,c_black,c_white,"The more AP you expend to do a combo, the stronger the final hit will be\nUnlike Regular Attacks, the Combo Finisher can never miss\n[Press ENTER to proceed]");
@@ -265,7 +271,7 @@ else if room = Room_Combat and Is_Tutorial_Active{
 	}
 	else if Combat_Enter_Presses == 15{
 		draw_set_alpha(0.25);
-		draw_rectangle_color(98,220,287,260,c_blue,c_blue,c_blue,c_blue,false);
+		draw_rectangle_color(98,185,287,215,c_blue,c_blue,c_blue,c_blue,false);
 		draw_set_alpha(1);
 		draw_set_halign(fa_left); draw_set_valign(fa_top);
 		draw_text_outlined(287,290,c_black,c_white,"You do not need to memorize Combos, as when you choose to attack, they will be shown to you\n[Press ENTER to proceed]");
