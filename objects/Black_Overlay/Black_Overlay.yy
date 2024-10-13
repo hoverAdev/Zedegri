@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Enemy_Backdrop",
-    "path":"sprites/Player_Enemy_Backdrop/Player_Enemy_Backdrop.yy",
+    "name":"Combat_Ring",
+    "path":"sprites/Combat_Ring/Combat_Ring.yy",
   },
   "spriteMaskId":null,
   "visible":true,

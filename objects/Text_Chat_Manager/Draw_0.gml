@@ -12,4 +12,4 @@ if array_length(string_as_array) > MAX_STRING{
 }
 //show_debug_message(printed_string);
 printed_string = string_replace_all(string_replace_all(string_replace_all(string_replace_all(string(string_as_array),"[",""),"]",""),",","\n"),"\u0022","");
-draw_text(x,y,printed_string);
+draw_text_outlined(x,y,c_black, c_white, printed_string);
