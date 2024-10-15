@@ -1,7 +1,7 @@
 config{
-	           speed_cap = 6,
+	           speed_cap = 1,
 	               level = 2, The max level in the game is sixty
 	environmental_damage = 0, A percentage
 	        player_speed = 5, Actually a decimal
-	              max_ap = 5,
+	              max_ap = 4,
 }

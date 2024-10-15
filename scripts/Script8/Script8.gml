@@ -14,7 +14,7 @@ function Stagger_Enemy_Addendum(input, target){
 		}
 		print_enemy_string(string("{0} staggered every human!",stat_block[1]));
 	}
-	else if input == 4{
+	else if input == 4{// every zedegri
 		if Character_1_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1{
 		   Character_1_Stat_Writer_Manager.current_speed = 0;
 		}
@@ -27,7 +27,7 @@ function Stagger_Enemy_Addendum(input, target){
 		print_enemy_string(string("{0} staggered every Zedegri!",stat_block[1]));
 	}
 	
-	else if input == 5{
+	else if input == 5{// human 25%
 		if dhundred <= 25{
 			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and Character_1_Stat_Writer_Manager.current_hp >= 1{
 				Character_1_Stat_Writer_Manager.current_speed = 0;
@@ -44,7 +44,7 @@ function Stagger_Enemy_Addendum(input, target){
 		}
 	}
 	
-	else if input == 6{
+	else if input == 6{// zedegri 25%
 		if dhundred <= 25{
 			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and Character_1_Stat_Writer_Manager.current_hp >= 1{
 				Character_1_Stat_Writer_Manager.current_speed = 0;
@@ -61,7 +61,7 @@ function Stagger_Enemy_Addendum(input, target){
 		}
 	}
 	
-	else if input == 7{
+	else if input == 7{// human 50%
 		if dhundred <= 50{
 			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and Character_1_Stat_Writer_Manager.current_hp >= 1{
 				Character_1_Stat_Writer_Manager.current_speed = 0;
@@ -78,7 +78,7 @@ function Stagger_Enemy_Addendum(input, target){
 		}
 	}
 	
-	else if input == 8{
+	else if input == 8{// zedegri 50%
 		if dhundred <= 50{
 			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and Character_1_Stat_Writer_Manager.current_hp >= 1{
 				Character_1_Stat_Writer_Manager.current_speed = 0;
@@ -95,7 +95,7 @@ function Stagger_Enemy_Addendum(input, target){
 		}
 	}
 	
-	else if input == 9{
+	else if input == 9{// human 75%
 		if dhundred <= 75{
 			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and Character_1_Stat_Writer_Manager.current_hp >= 1{
 				Character_1_Stat_Writer_Manager.current_speed = 0;
@@ -112,7 +112,7 @@ function Stagger_Enemy_Addendum(input, target){
 		}
 	}
 	
-	else if input == 10{
+	else if input == 10{//zedegri 75%
 		if dhundred <= 75{
 			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and Character_1_Stat_Writer_Manager.current_hp >= 1{
 				Character_1_Stat_Writer_Manager.current_speed = 0;
