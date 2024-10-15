@@ -8,3 +8,4 @@ if (global.partyMemberPosition >= 3){
 }
 draw_set_halign(fa_left);
 draw_set_font(font_arial);
+//show_debug_message(all_character_array[0][2]);

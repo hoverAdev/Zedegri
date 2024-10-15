@@ -1,6 +1,25 @@
 /// @description Load Object Data
 // You can write your code in this editor
 //var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
+
+
+var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/config.json");
+var temporary = file_text_read_string(file);
+file_text_close(file);
+var Configuration = json_parse(temporary);
+global.speed_cap = Configuration.speed_cap;
+global.level = Configuration.level;
+
+global.ENVDMG = Configuration.environmental_damage; //environmental damage
+global.PLSG = Configuration.player_speed/10;  //Player Speed variable
+global.MAX_AP = Configuration.max_ap;
+
+global.Mass_Deactivate = false;
+
+//show_debug_message("The Player Level is: {0}", global.level);
+show_debug_message(floor(global.level / 10));
+
+
 var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
 
 var Human_Unlock = file_text_readln(file);

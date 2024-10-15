@@ -2,6 +2,7 @@
 // You can write your code in this editor
 persistent = true;
 var LM = 1 + global.level / 15 * 1.6;
+show_debug_message(LM);
 
 //0 = ATK, 1 = DEF, 2 = SPD, 3 = HP
 // + _WPN[0] + _AMR[0] + _CRM[0]
