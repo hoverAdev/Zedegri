@@ -581,7 +581,7 @@ function Spell_Cast(target_code, selected_spell){
 			else{ Text_Chat_Manager.printed_string += string("\n{0} Failed to Stagger {1}!",stat_block[1], Enemy_4_Stat_Writer_Manager.stat_block[1]);}
 		}
 	}
-	else if is_numeric(selected_spell[5]) == true{
+	else if is_numeric(selected_spell[5]) == true{		//	  MORE STAGGER OPTIONS
 		Stagger_Player_Addendum(selected_spell[5], target_code);	
 	}
 	else if string_char_at(selected_spell[5],1) == "D"{ //    DEFENCE MODIFIER

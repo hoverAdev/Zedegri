@@ -7,7 +7,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 //Code, Name,  HP, EP,   Speed, Light, Heavy, Fierce, DEF
 printed_string = string("{0} \n{1}/{2} \nEP: {3}/{4} \nAP: {5}/{6}",
-stat_block[1], current_hp, stat_block[2], current_ep, stat_block[3], current_ap, global.MAX_AP,);
+stat_block[1], round(current_hp), stat_block[2], current_ep, stat_block[3], current_ap, global.MAX_AP,);
 draw_text_outlined(x,y,c_black, c_white, printed_string);
 Draw_Modifier(x,y-88,dmg_mod_05,dmg_mod_15,dmg_mod_20,def_mod_05,def_mod_15,def_mod_20);
 //draw_healthbar(x,y+86*2,x+10000, y+(86*2)+32, current_speed/stat_block[4],c_black, c_ltgray, c_white,0,1,0);
