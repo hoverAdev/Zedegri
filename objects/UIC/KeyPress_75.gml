@@ -4,27 +4,10 @@ var Save_String = "";
 
 //IsAvailable 0 = not available, 1 = is available
 //Jacob, Ella, Doc, Abby, Azin, Fiona, Joanna, Fiora
-Jacob_Available =  1;
-Ella_Available =   1;
-Doc_Available =    0;
-Abby_Available =   0;
-Azin_Available =   0;
-Fiona_Available =  0;
-Joanna_Available = 0;
-Fiora_Available =  0;
+
 Save_String = string("{0}{1}{2}{3}{4}{5}{6}{7}\n",Jacob_Available,Ella_Available,Doc_Available,Abby_Available,Azin_Available,Fiona_Available,Joanna_Available,Fiora_Available); //Humans
 
-JJA = 0; //Jizo
-JTA = 0; //Tsukuyomi
-EKA = 0; //Kalaratri
-EMA = 0; //Mikael
-EHA = 0; //Haru
-DTA = 0; //Thunaer
-ASA = 0; //Suriel
-ALA = 0; //Sol
-AHA = 0; //Hermothr
-FAA = 0; //Anfang
-JAA = 0; //Amaterasu
+
 Save_String += string("{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}\n", JJA,JTA,EKA,EMA,EHA,DTA,ASA,ALA,AHA,FAA,JAA); //Zedegri
 
 //items 

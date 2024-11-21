@@ -298,7 +298,7 @@ else if room = Room_Combat and Is_Tutorial_Active{
 		draw_rectangle_color(98,260,287,300,c_blue,c_blue,c_blue,c_blue,false);
 		draw_set_alpha(1);
 		draw_set_halign(fa_left); draw_set_valign(fa_top);
-		draw_text_outlined(287,290,c_black,c_white,"Other things you can do on your turn:\nDefend, Defending increases your defence, and increases your AP and EP by one\nDefending is the only way to restore EP\nAssisting, Assisting makes a teammate harder to hit\nAssisting stacks indefinitely\n[Press ENTER to proceed]");
+		draw_text_outlined(287,290,c_black,c_white,"Other things you can do on your turn:\nDefend, Defending increases your defence, and increases your AP and EP by one\nDefending is the only way to restore EP\nAssisting, Assisting makes a teammate harder to hit\nAssisting goes away at the start of the Assisted's turn\n[Press ENTER to proceed]");
 		if keyboard_check_pressed(vk_enter){ Combat_Enter_Presses += 1; io_clear(); }
 	}
 	else if Combat_Enter_Presses == 19{

@@ -53,3 +53,4 @@ function Compare_And_Draw(chara_name, y_pos, item_name){
 		draw_set_color(c_white);
 	}
 }
+

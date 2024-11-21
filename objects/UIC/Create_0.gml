@@ -1,6 +1,28 @@
 /// @description Universal Item Catalogue
 // You can write your code in this editor
 persistent = true;
+
+Jacob_Available =  0;
+Ella_Available =   0;
+Doc_Available =    0;
+Abby_Available =   0;
+Azin_Available =   0;
+Fiona_Available =  0;
+Joanna_Available = 0;
+Fiora_Available =  0;
+
+JJA = 0; //Jizo
+JTA = 0; //Tsukuyomi
+EKA = 0; //Kalaratri
+EMA = 0; //Mikael
+EHA = 0; //Haru
+DTA = 0; //Thunaer
+ASA = 0; //Suriel
+ALA = 0; //Sol
+AHA = 0; //Hermothr
+FAA = 0; //Anfang
+JAA = 0; //Amaterasu
+
 Zedegri_Toggle = false;
 		//	x,y
 character_selector = 1;

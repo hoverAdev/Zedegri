@@ -152,7 +152,7 @@ if global.all_state_pause == 0{
 		else if action_fierce == true{
 			atk_used = atk_3;
 		}
-		
+		if atk_used[2] - assist_mod <= random_range(1,100){
 			dmg = atk_used[1] + turn_counter *1.1;
 			dmg = round(dmg * random_range(0.7, 1.2)); 
 			
@@ -539,7 +539,7 @@ if global.all_state_pause == 0{
 			Character_3_Stat_Writer_Manager.current_hp -= floor(dmg);
 			print_enemy_string(string("{0} hit {1} for {2} damage!",stat_block[1],Character_3_Stat_Writer_Manager.stat_block[1],floor(dmg)));
 		}
-	
+		}
 	
 		current_speed = 0;
 		turn_counter ++;

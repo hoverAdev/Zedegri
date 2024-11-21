@@ -40,6 +40,7 @@ def_mod_15 = 0;
 def_mod_20 = 0;
 
 assisted = 0;
+assisting = 0;
 
 is_defending = false;
 //ether_array_printed = false;

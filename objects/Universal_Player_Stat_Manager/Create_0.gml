@@ -150,20 +150,20 @@ all_character_array = [
  ];
 
 // ASSIST FIELD
-jacob_assist = 1.9;
-ella_assist = 2.2;
-doc_assist = 1.5;
-abby_assist = 2.1;
-azin_assist = 3;
+jacob_assist = 25.9;
+ella_assist = 26.2;
+doc_assist = 25.5;
+abby_assist = 26.1;
+azin_assist = 27;
 jizo_assist = jacob_assist;
 kala_assist = ella_assist;
 thor_assist = doc_assist;
 suri_assist = abby_assist;
 here_assist = azin_assist;
-fiona_assist = 2.8;
-anfang_assist = 2.9;
-joanna_assist = 1.2;
-fiora_assist = 2;
+fiona_assist = 26.8;
+anfang_assist = 26.9;
+joanna_assist = 18.5;
+fiora_assist = 26;
 mik_assist = ella_assist;
 sol_assist = abby_assist;
 haru_assist = ella_assist;
@@ -206,7 +206,7 @@ all_enemy_array = [//                        |2 = doen't happen
 							[95,000,99, 1,05,3,false,[0,0],[2,1]],
 							30, 38, 0],
  ["LDL","Damp Suckerlip",792,[00,95,080,1,05,2,true ,[0,2],[0,2]],
-							[50,000,099,1,35,2,false,[0,0],[0,0]],
+							[50,000,099,1,15,2,false,[0,0],[0,0]],
 							[80,000,099,0,00,2,false,[1,1],[2,1]],
 							00, 39, 0],
 							
@@ -226,17 +226,44 @@ all_enemy_array = [//                        |2 = doen't happen
 							[20,097,060,0,00,2,false,[0,0],[0,0]],
 							[60,000,000,1,10,2,false,[1,3],[1,3]],
 							40, 70, 1],
- ["FSF", "Shadowfiend", //High Accuracy, low damage, high speed
-						000,[00,000,000,0,00,2,false,[0,0],[0,0]],
+ ["FSF", "Shadowfiend", //Zedegri Class Enemy
+					   1800,[00,500,120,0,00,2,false,[0,0],[0,0]],
+							[40,300,100,0,00,8,false,[0,0],[0,0]],
+							[75,600,080,0,00,2,true ,[0,0],[1,3]],
+							60, 45, 1],
+//Desert Mina Human
+ ["DRM", "Rollmaric",	400,[00,030,075,0,00,5,false,[0,0],[0,0]],
+							[75,020,070,0,00,3,false,[0,0],[0,0]],
+							[90,060,060,0,00,0,false,[0,0],[0,0]],
+							20, 56, 0],					
+							
+ ["DHE","Desert Raider",980,[00,050,110,0,00,2,false,[0,0],[0,0]],
+							[60,120,060,0,00,2,false,[0,0],[0,0]],
+							[80,000,000,1,05,2,false,[1,1],[1,1]],
+							00, 00, 0],
+							
+ ["DSS", "Sandy Scripo",000,[00,000,000,0,00,2,false,[0,0],[0,0]],
 							[00,000,000,0,00,2,false,[0,0],[0,0]],
 							[00,000,000,0,00,2,false,[0,0],[0,0]],
 							00, 00, 0],
-
-
- ["XXX", "BLANK",		000,[00,000,000,0,00,2,false,[0,0],[0,0]],
+//Desert Mina Zedegri	HP	 P%,DMG,ACC,H,H%,S,Leech,ATKB, DEFB
+ ["DOW", "Ophion Worm",2100,[00,000,000,0,00,2,false,[0,0],[0,0]],
 							[00,000,000,0,00,2,false,[0,0],[0,0]],
 							[00,000,000,0,00,2,false,[0,0],[0,0]],
 							00, 00, 0],
+						// DEF,SPD,IsZedegri
+ ["DSH", "Stellar Hawk",0000,[00,000,000,0,00,2,false,[0,0],[0,0]],
+							[00,000,000,0,00,2,false,[0,0],[0,0]],
+							[00,000,000,0,00,2,false,[0,0],[0,0]],
+							00, 00, 0],
+							
+							
+							
+ ["XXX", "BLANK",	   0000,[00,000,000,0,00,2,false,[0,0],[0,0]],
+							[00,000,000,0,00,2,false,[0,0],[0,0]],
+							[00,000,000,0,00,2,false,[0,0],[0,0]],
+							00, 00, 0],
+							
 							
  ["ETHEL", "THE HANDS OF GOD",
 					 999999,[00,4000,90,0,00,1,true, [2,9],[1,9]],

@@ -89,6 +89,20 @@ if current_speed >= stat_block[4]{
 if global.all_state_pause != 1{ current_speed += global.PLSG; }
 //show_debug_message(assisted);
 if global.all_state_pause == 1 and player_3_engaged {
+	
+	if assisting == 1{
+		assisting = 0;
+		Character_1_Stat_Writer_Manager.assisted -= assisted_boost;
+	}
+	else if assisting == 2{
+		assisting = 0;
+		Character_2_Stat_Writer_Manager.assisted -= assisted_boost;
+	}
+	else if assisting == 3{
+		assisting = 0;
+		Character_3_Stat_Writer_Manager.assisted -= assisted_boost;
+	}
+	
 	obj_spell_selector.create_self = false;
 	
 	if keyboard_check_pressed(ord("1")) and ether_confirmed == false and assist_confirmed == false{
@@ -412,14 +426,17 @@ if global.all_state_pause == 1 and player_3_engaged {
 		if keyboard_check_pressed(ord("1")){
 			Character_1_Stat_Writer_Manager.assisted += assisted_boost;
 			_con = true;
+			assisting = 1;
 		}
 		else if keyboard_check_pressed(ord("2")){
 			Character_2_Stat_Writer_Manager.assisted += assisted_boost;
 			_con = true;
+			assisting = 2;
 		}
 		else if keyboard_check_pressed(ord("3")){
 			Character_3_Stat_Writer_Manager.assisted += assisted_boost;
 			_con = true;
+			assisting =3;
 		}
 		if _con{
 			global.all_state_pause = 0;

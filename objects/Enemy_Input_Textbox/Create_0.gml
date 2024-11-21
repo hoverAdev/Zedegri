@@ -27,9 +27,9 @@ scene = [
 // DIMWOOD FOREST: FLB FTT FSF
 ["D1", "FLB","FTT", 1.8],
 ["D2", "FTT","FTT", 1.8],
-["D3", "FSF","FSF","FTT", 2.1],
-["D4", "FLB","FSF","FLB", 2.1],
-["D5", "FTT","FSF","FLB","FTT", 2.4],
+["D3", "FSF", 2.4], //Human Only
+["D4", "FSF","FSF", 2.1], //Zedegri Only
+["D5", "FTT","FLB","FTT", 2.4],
 // MAINLAND MINA: 
 ["M1",],
 ["M2",],

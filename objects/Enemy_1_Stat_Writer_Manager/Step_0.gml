@@ -153,7 +153,7 @@ if global.all_state_pause == 0{
 		else if action_fierce == true{
 			atk_used = atk_3;
 		}
-		
+		if atk_used[2] - assist_mod <= random_range(1,100){
 			dmg = atk_used[1] + turn_counter *1.1;
 			dmg = round(dmg * random_range(0.7, 1.2)); 
 			
@@ -486,61 +486,61 @@ if global.all_state_pause == 0{
 			}
 		
 		
-		if target == 1{
-			dmg -= Character_1_Stat_Writer_Manager.current_def;//8
-			if Character_1_Stat_Writer_Manager.is_defending == true{
-				dmg *= 0.5;
+			if target == 1{
+				dmg -= Character_1_Stat_Writer_Manager.current_def;//8
+				if Character_1_Stat_Writer_Manager.is_defending == true{
+					dmg *= 0.5;
+				}
+				if dmg < 0{ dmg = 0;}
 			}
-			if dmg < 0{ dmg = 0;}
-		}
-		else if target == 2{
-			dmg -= Character_2_Stat_Writer_Manager.current_def;//8
-			if Character_2_Stat_Writer_Manager.is_defending == true{
-				dmg *= 0.5;
+			else if target == 2{
+				dmg -= Character_2_Stat_Writer_Manager.current_def;//8
+				if Character_2_Stat_Writer_Manager.is_defending == true{
+					dmg *= 0.5;
+				}
+				if dmg < 0{ dmg = 0;}
 			}
-			if dmg < 0{ dmg = 0;}
-		}
-		else if target == 3{
-			dmg -= Character_3_Stat_Writer_Manager.current_def;//8
-			if Character_3_Stat_Writer_Manager.is_defending == true{
-				dmg *= 0.5;
+			else if target == 3{
+				dmg -= Character_3_Stat_Writer_Manager.current_def;//8
+				if Character_3_Stat_Writer_Manager.is_defending == true{
+					dmg *= 0.5;
+				}
+				if dmg < 0{ dmg = 0;}
 			}
-			if dmg < 0{ dmg = 0;}
-		}
 		
-		if dmg_mod_05 > 0{
-			dmg *= 0.5;
-			dmg_mod_05 --;
-		}
-		if dmg_mod_15 > 0{
-			dmg *= 1.45;
-			dmg_mod_15 --;
-		}
-		if dmg_mod_20 > 0{
-			dmg *= 2.128;
-			dmg_mod_20 --;
-		}
-		if atk_used[6] == true{ //Leech
-			show_debug_message("ENEMY LEECH");
-			current_hp += floor(dmg/2);	
-			if current_hp > stat_block[2]{ current_hp = stat_block[2]; print_enemy_string(string("{0} healed back to full!",stat_block[1]));}
-			else{print_enemy_string(string("{0} healed back {1} HP!",stat_block[1],floor(dmg/2)));}
-		}
+			if dmg_mod_05 > 0{
+				dmg *= 0.5;
+				dmg_mod_05 --;
+			}
+			if dmg_mod_15 > 0{
+				dmg *= 1.45;
+				dmg_mod_15 --;
+			}
+			if dmg_mod_20 > 0{
+				dmg *= 2.128;
+				dmg_mod_20 --;
+			}
+			if atk_used[6] == true{ //Leech
+				show_debug_message("ENEMY LEECH");
+				current_hp += floor(dmg/2);	
+				if current_hp > stat_block[2]{ current_hp = stat_block[2]; print_enemy_string(string("{0} healed back to full!",stat_block[1]));}
+				else{print_enemy_string(string("{0} healed back {1} HP!",stat_block[1],floor(dmg/2)));}
+			}
 	
-		//                    -----HITTING THE BLOODY THING-----
-		if target == 1{
-			Character_1_Stat_Writer_Manager.current_hp -= floor(dmg);
-			print_enemy_string(string("{0} hit {1} for {2} damage!",stat_block[1],Character_1_Stat_Writer_Manager.stat_block[1],floor(dmg)));
+			//                    -----HITTING THE BLOODY THING-----
+			if target == 1{
+				Character_1_Stat_Writer_Manager.current_hp -= floor(dmg);
+				print_enemy_string(string("{0} hit {1} for {2} damage!",stat_block[1],Character_1_Stat_Writer_Manager.stat_block[1],floor(dmg)));
+			}
+			else if target == 2{
+				Character_2_Stat_Writer_Manager.current_hp -= floor(dmg);
+				print_enemy_string(string("{0} hit {1} for {2} damage!",stat_block[1],Character_2_Stat_Writer_Manager.stat_block[1],floor(dmg)));
+			}
+			else if target == 3{
+				Character_3_Stat_Writer_Manager.current_hp -= floor(dmg);
+				print_enemy_string(string("{0} hit {1} for {2} damage!",stat_block[1],Character_3_Stat_Writer_Manager.stat_block[1],floor(dmg)));
+			}
 		}
-		else if target == 2{
-			Character_2_Stat_Writer_Manager.current_hp -= floor(dmg);
-			print_enemy_string(string("{0} hit {1} for {2} damage!",stat_block[1],Character_2_Stat_Writer_Manager.stat_block[1],floor(dmg)));
-		}
-		else if target == 3{
-			Character_3_Stat_Writer_Manager.current_hp -= floor(dmg);
-			print_enemy_string(string("{0} hit {1} for {2} damage!",stat_block[1],Character_3_Stat_Writer_Manager.stat_block[1],floor(dmg)));
-		}
-	
 		target = 0;
 		current_speed = 0;
 		turn_counter ++;
