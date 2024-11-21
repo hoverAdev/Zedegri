@@ -65,7 +65,7 @@ EL_WPN = Assign_Item(All_Saved_Items, Ella_Weapons);
 EL_AMR = Assign_Item(All_Saved_Items, All_Armour);
 EL_CRM = Assign_Item(All_Saved_Items, Charms_And_Sequencers);
 
-DC_WPN=Assign_Item(All_Saved_Items, Gibbor_Weapons        );
+DC_WPN=Assign_Item(All_Saved_Items, Doc_Weapons        );
 DC_AMR=Assign_Item(All_Saved_Items, All_Armour            );
 DC_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 

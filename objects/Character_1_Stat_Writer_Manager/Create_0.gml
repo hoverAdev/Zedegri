@@ -95,7 +95,7 @@ else if stat_block[0] == "JZ"{
 }
 else if stat_block[0] == "JO"{
 	ether_array = Ether_Manager.jo_ether;
-	assisted_boost = Universal_Player_Stat_Manager.joanna_assist;
+	assisted_boost = Universal_Player_Stat_Manager.jo_assist;
 }
 else if stat_block[0] == "KI"{
 	ether_array = Ether_Manager.ki_ether;
