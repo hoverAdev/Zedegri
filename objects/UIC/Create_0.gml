@@ -60,7 +60,7 @@ Jacob_Weapons = [
 	DEF: 10,
 	SPD: 0,
 	HP: 0,
-	Copies: 0,
+	Copies: 1,
 },
 {	name: "Desert Gauntlets",
 	type: specific,
@@ -175,7 +175,7 @@ Ella_Weapons = [
 	DEF: 20,
 	SPD: 0,
 	HP: 50,
-	Copies: 0,
+	Copies: 1,
 },
 {	name: "Stone Staff",
 	type: specific,
@@ -283,7 +283,7 @@ Ella_Weapons = [
 }
 ];
 specific = "Surface Sword";
-Gibbor_Weapons = [
+Doc_Weapons = [
 {	name: "Unarmed",
 	type: "Unarmed",
 	ATK: 0,
