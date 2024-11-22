@@ -3,4 +3,4 @@
 if covered == false{
 	draw_self();
 }
-else{}
+else {}

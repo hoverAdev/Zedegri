@@ -69,17 +69,17 @@ else if EHA and option_selector == 2{ draw_text(640,y_automator,string("Haru: {0
 if      DTA and option_selector == 0{ draw_text(640,y_automator,string("Thunaer: {0}",TR_WPN.name)); y_automator += y_offset;}	
 else if DTA and option_selector == 2{ draw_text(640,y_automator,string("Thunaer: {0}",TR_CRM.name)); y_automator += y_offset;}
 
-if      AHA and option_selector == 0{ draw_text(640,y_automator,string("Hermothr: {0}",HD_WPN.name)); y_automator += y_offset;}	
-else if AHA and option_selector == 2{ draw_text(640,y_automator,string("Hermothr: {0}",HD_CRM.name)); y_automator += y_offset;}
+if      AHA and option_selector == 0 { draw_text(640,y_automator,string("Hermothr: {0}",HD_WPN.name)); y_automator += y_offset;}	
+else if AHA and option_selector == 2 { draw_text(640,y_automator,string("Hermothr: {0}",HD_CRM.name)); y_automator += y_offset;}
 
-if      ASA and option_selector == 0{ draw_text(640,y_automator,string("Suriel: {0}",SL_WPN.name)); y_automator += y_offset;}	
-else if ASA and option_selector == 2{ draw_text(640,y_automator,string("Suriel: {0}",SL_CRM.name)); y_automator += y_offset;}
-if      ALA and option_selector == 0{ draw_text(640,y_automator,string("Sol: {0}",SO_WPN.name)); y_automator += y_offset;}	
-else if ALA and option_selector == 2{ draw_text(640,y_automator,string("Sol: {0}",SO_CRM.name)); y_automator += y_offset;}
+if      ASA and option_selector == 0 { draw_text(640,y_automator,string("Suriel: {0}",SL_WPN.name)); y_automator += y_offset;}	
+else if ASA and option_selector == 2 { draw_text(640,y_automator,string("Suriel: {0}",SL_CRM.name)); y_automator += y_offset;}
+if      ALA and option_selector == 0 { draw_text(640,y_automator,string("Sol: {0}",SO_WPN.name)); y_automator += y_offset;}	
+else if ALA and option_selector == 2 { draw_text(640,y_automator,string("Sol: {0}",SO_CRM.name)); y_automator += y_offset;}
 
-if      FAA and option_selector == 0{ draw_text(640,y_automator,string("Anfang: {0}",AF_WPN.name)); y_automator += y_offset;}	
-else if FAA and option_selector == 2{ draw_text(640,y_automator,string("Anfang: {0}",AF_CRM.name)); y_automator += y_offset;}
-if      JAA and option_selector == 0{ draw_text(640,y_automator,string("Amaterasu: {0}",AM_WPN.name)); y_automator += y_offset;}	
-else if JAA and option_selector == 2{ draw_text(640,y_automator,string("Amaterasu: {0}",AM_CRM.name)); y_automator += y_offset;}
+if      FAA and option_selector == 0 { draw_text(640,y_automator,string("Anfang: {0}",AF_WPN.name)); y_automator += y_offset;}	
+else if FAA and option_selector == 2 { draw_text(640,y_automator,string("Anfang: {0}",AF_CRM.name)); y_automator += y_offset;}
+if      JAA and option_selector == 0 { draw_text(640,y_automator,string("Amaterasu: {0}",AM_WPN.name)); y_automator += y_offset;}	
+else if JAA and option_selector == 2 { draw_text(640,y_automator,string("Amaterasu: {0}",AM_CRM.name)); y_automator += y_offset;}
 }
 }

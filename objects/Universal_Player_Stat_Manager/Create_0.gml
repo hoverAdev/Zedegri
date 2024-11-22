@@ -9,7 +9,7 @@ show_debug_message(LM);
 
 JC_WPN = json_to_array(UIC.JC_WPN); EL_WPN = json_to_array(UIC.EL_WPN); DC_WPN = json_to_array(UIC.DC_WPN); AB_WPN = json_to_array(UIC.AB_WPN); AZ_WPN = json_to_array(UIC.AZ_WPN); 
 JC_AMR = json_to_array(UIC.JC_AMR); EL_AMR = json_to_array(UIC.EL_AMR); DC_AMR = json_to_array(UIC.DC_AMR); AB_AMR = json_to_array(UIC.AB_AMR); AZ_AMR = json_to_array(UIC.AZ_AMR); 
-JC_CRM =json_to_array( UIC.JC_CRM); EL_CRM = json_to_array(UIC.EL_CRM); DC_CRM = json_to_array(UIC.DC_CRM); AB_CRM = json_to_array(UIC.AB_CRM); AZ_CRM = json_to_array(UIC.AZ_CRM); 
+JC_CRM = json_to_array(UIC.JC_CRM); EL_CRM = json_to_array(UIC.EL_CRM); DC_CRM = json_to_array(UIC.DC_CRM); AB_CRM = json_to_array(UIC.AB_CRM); AZ_CRM = json_to_array(UIC.AZ_CRM); 
 
 JZ_WPN = json_to_array(UIC.JZ_WPN); KI_WPN = json_to_array(UIC.KI_WPN); TR_WPN = json_to_array(UIC.TR_WPN); SL_WPN = json_to_array(UIC.SL_WPN); HD_WPN = json_to_array(UIC.HD_WPN); 
 JZ_CRM = json_to_array(UIC.JZ_CRM); KI_CRM = json_to_array(UIC.KI_CRM); TR_CRM = json_to_array(UIC.TR_CRM); SL_CRM = json_to_array(UIC.SL_CRM); HD_CRM = json_to_array(UIC.HD_CRM); 
@@ -196,7 +196,7 @@ all_enemy_array = [//                        |2 = doen't happen
 							[80,000,099,0,00,2,false,[1,1],[2,1]],
 							00, 41, 0],
 	//Mountain
- ["LMB","Mountain Boar",820,[00,40,110,0,00,2,false, [0,0],[0,0]],
+ ["LMB","Mountain Boar",820,[00,40,110, 0,00,2,false,[0,0],[0,0]],
 						    [55,065,65, 0,00,0,false,[0,0],[0,0]],
 							[80,000,99, 1,05,2,false,[1,2],[2,2]],
 							10,  40, 0],
@@ -211,8 +211,8 @@ all_enemy_array = [//                        |2 = doen't happen
 							00, 39, 0],
 							
  ["LZZ", "Enemy Zedegri",
-					   1480,[00,200,105,0,00,2,false,[0,0],[0,0]],
-							[45,150,000,0,00,6,false,[1,3],[0,0]],
+					   1480,[00,270,105,0,00,2,false,[0,0],[0,0]],
+							[45,160,060,0,00,6,false,[1,3],[0,0]],
 							[70,000,000,0,10,2,false,[0,0],[2,3]],
 							80, 51, 1],
 //Forest Enemies

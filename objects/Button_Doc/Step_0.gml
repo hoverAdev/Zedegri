@@ -11,8 +11,7 @@ if (mouse_check_button_released(mb_left))
 {
 	clicked = false;
 
-	if (hovering) 
-	{
+	if (hovering) {
 		array_insert(global.party_members,global.partyMemberPosition,Universal_Player_Stat_Manager.all_character_array[2]);
 		show_debug_message(global.party_members);
 		global.partyMemberPosition += 1;

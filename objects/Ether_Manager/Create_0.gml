@@ -12,7 +12,7 @@ jc_ether = [
     [2, "Spirit Splinter", "Targetting the head, dazing the enemy and resetting their time", 2,(50 + Universal_Player_Stat_Manager.all_character_array[0][5])*LM , 7], //Target Daze Norm does not effect Zedegri's
 //	[3, "Battle Spirit", "Jacob gains a focused aura around themselves, increasing defence", 1, 0, "D1,10"],
 //	[4, "Energy Fragmentation", "Jacob focuses their strike to stagger the energy flow of a Zedegri", 4, (200 + Universal_Player_Stat_Manager.all_character_array[0][7])*LM, 1],
-//	[5, "Enchanted Lineage", "Jacob channels their inner Ether for 2X defence", 4, 0, "D2,06"], //unlocked after meeting WHOOPSIE~ and learning that you're >:3
+//	[5, "Enchanted Lineage", "Jacob channels their inner Ether for 2X defence", 4, 0, "D2,06"], //unlocked after meeting Ethel and learning that you're lesbaian
 ];
 el_ether = [
     [1, "Ether Channel", "Increase the attack of a Teammate or Yourself", 3, 0, "E1,04"],
@@ -36,7 +36,7 @@ az_ether = [
 //	[5, "Adrenaline Enhancement", "Increases ATK by 2x at the cost of half max HP", 4, Universal_Player_Stat_Manager.all_character_array[4][2] * ceil( 1 + global.level / 15 ) / 2, "E2,06"],
 ];
 dc_ether = [
-    [1, "Heal Charge", "Heals a teammates wounds", 2, 0, "H20"],
+    [1, "Heal Charge", "Heals a teammates wounds", 2, 0, "H17"],
     [2, "Low Strike", "Knocks an enemy off balance", 4, (20 + Universal_Player_Stat_Manager.all_character_array[2][5])*LM, 0],
 //	[3, "Defensive Brew", "Doc creates a medicine which increases DEF for a short time", 1, "D1,04"],
 //	[4, "Stone Skin", "Doc increases a teammates defence for the remainder of battle", 2, ["D", false, 20]],

@@ -3,9 +3,9 @@
 var Save_String = "";
 
 //IsAvailable 0 = not available, 1 = is available
-//Jacob, Ella, Doc, Abby, Azin, Fiona, Joanna, Fiora
+//Jacob, Ella, Doc, Abby, Azin, Fiona, sOLDIER, sPOILERS 
 
-Save_String = string("{0}{1}{2}{3}{4}{5}{6}{7}\n",Jacob_Available,Ella_Available,Doc_Available,Abby_Available,Azin_Available,Fiona_Available,Joanna_Available,Fiora_Available); //Humans
+Save_String = string("{0}{1}{2}{3}{4}{5}{6}{7}\n",Jacob_Available,Ella_Available,Doc_Available,Abby_Available,Azin_Available,Fiona_Available,JO_Available,Fiora_Available); //Humans
 
 
 Save_String += string("{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}\n", JJA,JTA,EKA,EMA,EHA,DTA,ASA,ALA,AHA,FAA,JAA); //Zedegri

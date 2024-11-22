@@ -24,7 +24,7 @@ FAA = 0; //Anfang
 JAA = 0; //Amaterasu
 
 Zedegri_Toggle = false;
-		//	x,y
+//	x,y
 character_selector = 1;
 option_selector = 0;
 item_selector = 0;
@@ -736,7 +736,7 @@ Jizo_Tsuku_Weapons = [
 	HP: 0,
 	Copies: 0,
 },
-{	name: "Zedegri Enforcers Somar Model",
+{	name: "Zedegri Enforcers Solace Model",
 	type: specific,
 	ATK: 210,
 	DEF: 60,
@@ -1654,7 +1654,7 @@ Charms_And_Sequencers = [
 	HP: 260,	
 	Copies: 0,
 },
-
+// Sequencers
 {	name: "Low Output Strength Sequencer",
 	type: "Sequencer",
 	ATK: 60,
@@ -1851,25 +1851,25 @@ Charms_And_Sequencers = [
 
 Jacob_Available = 0; Ella_Available = 0; Doc_Available = 0; Abby_Available = 0; Azin_Available = 0; Fiona_Available = 0; Joanna_Available = 0; Fiora_Available = 0;
 
-JC_WPN = Jacob_Weapons[0];         AB_WPN = Abby_Weapons[1];          JO_WPN = Soldier_Weapons[1];
-JC_AMR = All_Armour[0];            AB_AMR = All_Armour[0];            JO_AMR = All_Armour[0];
-JC_CRM = Charms_And_Sequencers[0]; AB_CRM = Charms_And_Sequencers[0]; JO_CRM = Charms_And_Sequencers[0];
+JC_WPN = Jacob_Weapons[0];			AB_WPN = Abby_Weapons[1];          JO_WPN = Soldier_Weapons[1];
+JC_AMR = All_Armour[0];				AB_AMR = All_Armour[0];            JO_AMR = All_Armour[0];
+JC_CRM = Charms_And_Sequencers[0];	AB_CRM = Charms_And_Sequencers[0]; JO_CRM = Charms_And_Sequencers[0];
 
-EL_WPN = Ella_Weapons[0];          AZ_WPN = Azin_Weapons[1];          ZM_WPN = Spoiler_Weapons[1];
-EL_AMR = All_Armour[0];            AZ_AMR = All_Armour[0];            ZM_AMR = All_Armour[0];
-EL_CRM = Charms_And_Sequencers[0]; AZ_CRM = Charms_And_Sequencers[0]; ZM_CRM = Charms_And_Sequencers[0];
+EL_WPN = Ella_Weapons[0];			AZ_WPN = Azin_Weapons[1];          ZM_WPN = Spoiler_Weapons[1];
+EL_AMR = All_Armour[0];				AZ_AMR = All_Armour[0];            ZM_AMR = All_Armour[0];
+EL_CRM = Charms_And_Sequencers[0];	AZ_CRM = Charms_And_Sequencers[0]; ZM_CRM = Charms_And_Sequencers[0];
 
-DC_WPN = Doc_Weapons[0];        FN_WPN = Fiona_Weapons[0];
-DC_AMR = All_Armour[0];            FN_AMR = All_Armour[0];
-DC_CRM = Charms_And_Sequencers[0]; FN_CRM = Charms_And_Sequencers[0];
+DC_WPN = Doc_Weapons[0];		    FN_WPN = Fiona_Weapons[0];
+DC_AMR = All_Armour[0];			    FN_AMR = All_Armour[0];
+DC_CRM = Charms_And_Sequencers[0];  FN_CRM = Charms_And_Sequencers[0];
 
-JJA = 0; JTA = 0;EKA = 0; EMA = 0; EHA = 0;DTA = 0;ASA = 0; ALA = 0;AHA = 0; FAA = 0;JAA = 0; 
+JJA = 0; JTA = 0; EKA = 0; EMA = 0; EHA = 0; DTA = 0; ASA = 0; ALA = 0; AHA = 0; FAA = 0; JAA = 0; 
 
-JZ_WPN = Jizo_Tsuku_Weapons[0];    SL_WPN = SurielSol_Weapons[1];     MI_WPN = KaMiHa_Weapons[0];        AM_WPN = Amaterasu_Weapons[1];
-JZ_CRM = Charms_And_Sequencers[1]; SL_CRM = Charms_And_Sequencers[1]; MI_CRM = Charms_And_Sequencers[1]; AM_CRM = Charms_And_Sequencers[1];
+JZ_WPN = Jizo_Tsuku_Weapons[0];     SL_WPN = SurielSol_Weapons[1];     MI_WPN = KaMiHa_Weapons[0];        AM_WPN = Amaterasu_Weapons[1];
+JZ_CRM = Charms_And_Sequencers[1];  SL_CRM = Charms_And_Sequencers[1]; MI_CRM = Charms_And_Sequencers[1]; AM_CRM = Charms_And_Sequencers[1];
 
-KI_WPN = KaMiHa_Weapons[0];        HD_WPN = Hermothr_Weapons[1];      SO_WPN = SurielSol_Weapons[0];     TS_WPN = Jizo_Tsuku_Weapons[0];
-KI_CRM = Charms_And_Sequencers[1]; HD_CRM = Charms_And_Sequencers[1]; SO_CRM = Charms_And_Sequencers[1]; TS_CRM = Charms_And_Sequencers[1];
+KI_WPN = KaMiHa_Weapons[0];         HD_WPN = Hermothr_Weapons[1];      SO_WPN = SurielSol_Weapons[0];     TS_WPN = Jizo_Tsuku_Weapons[0];
+KI_CRM = Charms_And_Sequencers[1];  HD_CRM = Charms_And_Sequencers[1]; SO_CRM = Charms_And_Sequencers[1]; TS_CRM = Charms_And_Sequencers[1];
 
-TR_WPN = Thurnaer_Weapons[0];      AF_WPN = Anfang_Weapons[0];        HA_WPN = KaMiHa_Weapons[0];
-TR_CRM = Charms_And_Sequencers[1]; AF_CRM = Charms_And_Sequencers[1]; HA_CRM = Charms_And_Sequencers[1];
+TR_WPN = Thurnaer_Weapons[0];       AF_WPN = Anfang_Weapons[0];        HA_WPN = KaMiHa_Weapons[0];
+TR_CRM = Charms_And_Sequencers[1];  AF_CRM = Charms_And_Sequencers[1]; HA_CRM = Charms_And_Sequencers[1];

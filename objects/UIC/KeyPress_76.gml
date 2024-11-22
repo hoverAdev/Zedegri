@@ -26,7 +26,7 @@ var Human_Unlock = file_text_readln(file);
 var Zedegri_Unlock = file_text_readln(file);
 
 //Human Unlock Process
-//Jacob, Ella, Doc, Abby, Azin, Fiona, Joanna, Fiora
+//Jacob, Ella, Doc, Abby, Azin, Fiona, 
 if string_char_at(Human_Unlock,1) == 1 {Jacob_Available  = 1;}
 if string_char_at(Human_Unlock,1) == 2 {Jacob_Available  = 2;}
 if string_char_at(Human_Unlock,2) == 1 {Ella_Available   = 1;}

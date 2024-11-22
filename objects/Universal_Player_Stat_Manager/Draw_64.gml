@@ -2,8 +2,8 @@
 // You can write your code in this editor
 draw_set_halign(fa_right);
 draw_set_font(font_arial_amaterasu_sized);
-draw_text(x,y,"V1.7 Support and Assist Update");
-if (global.partyMemberPosition >= 3){
+draw_text(x,y,"1.7.Ambience1");
+if (global.partyMemberPosition > 4){
 	global.partyMemberPosition = 0;
 }
 draw_set_halign(fa_left);

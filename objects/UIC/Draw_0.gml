@@ -90,9 +90,11 @@ else if Zedegri_Toggle == true{
 	} yy += 32; draw_set_color(c_white);
 	if DTA{
 		draw_text(x,yy,"Thunaer");
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Thunaer");
-		character_hovered = "Thunaer";}
+		if (character_selector == (yy-y)/32) {
+			draw_set_color(c_red);
+			draw_text(x,yy,"Thunaer");
+			character_hovered = "Thunaer";
+		}
 	} yy += 32; draw_set_color(c_white);
 	if AHA{
 		draw_text(x,yy,"Hermothr");
@@ -190,7 +192,7 @@ else if character_hovered == "Ella"{
 	}
 }
 else if character_hovered == "Doc"{
-	Weapon_Array = Gibbor_Weapons;		Gender_Specs = "Male";	 Species_Specs ="Human";
+	Weapon_Array = Doc_Weapons;		Gender_Specs = "Male";	 Species_Specs ="Human";
 }
 else if character_hovered == "Abby"{
 	Weapon_Array = Abby_Weapons;	Gender_Specs = "Female"; Species_Specs ="Human";

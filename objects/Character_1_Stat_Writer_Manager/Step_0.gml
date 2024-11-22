@@ -40,16 +40,17 @@ if current_speed >= stat_block[4]{
 	else if current_ap != 0 and deathblow_performed == false{ // YES AP AND NO DEATHBLOW
 		current_ap += turn_counter;
 	}
-	else{
+	else{ // YES DEATHBLOW
 		current_ap = 3; 
 		deathblow_performed = false; 
 		turn_counter = 0;
-		}
+	}
 	if current_ap > global.MAX_AP{ current_ap = global.MAX_AP;}
 	
 	if current_ap >= 4{
 		Draw_Available_Deathblow_Manager.deathblow_possible = true;
 	}
+	
 	
 	is_defending = false;
 	player_1_engaged = true;
@@ -270,7 +271,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 			dmg = 0;
 		}
 		else if targetted_enemy == 4{
-			Enemy_4_Stat_Writer_Manager.current_hp -= dmg;
+			Enemy_4_Stat_Writer_Manager.current_hp -= round(dmg);
 			dmg = 0;
 		}
 	
@@ -399,7 +400,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 	var target_code_name = targetted_creature[0];}
 	catch (_exception){}
 	if selected_spell != [] and target_code_name != "" and obj_All_Selector.confirmed_input{
-			Spell_Cast(target_code, selected_spell);
+			Spell_Cast(target_code, selected_spell); //-------------------------------------------------------------- resume here
 		
 			//Deactivate ether_confirmed
 			global.all_state_pause = 0;
