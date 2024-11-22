@@ -3,7 +3,7 @@
 //var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
 
 
-var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/config.json");
+var file = file_text_open_read("C:\\Users\\Serenity Montgomery\\Documents\\GameMakerStudio2\\Zedegri\\datafiles\\config.json");
 var temporary = file_text_read_string(file);
 file_text_close(file);
 var Configuration = json_parse(temporary);
@@ -20,23 +20,23 @@ global.Mass_Deactivate = false;
 show_debug_message(floor(global.level / 10));
 
 
-var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
+var file = file_text_open_read("C:\\Users\\Serenity Montgomery\\Documents\\GameMakerStudio2\\Zedegri\\datafiles\\Save_Data.txt");
 
 var Human_Unlock = file_text_readln(file);
 var Zedegri_Unlock = file_text_readln(file);
 
 //Human Unlock Process
 //Jacob, Ella, Doc, Abby, Azin, Fiona, Joanna, Fiora
-if string_char_at(Human_Unlock,1) == 1{Jacob_Available  = 1;}
-if string_char_at(Human_Unlock,1) == 2{Jacob_Available  = 2;}
-if string_char_at(Human_Unlock,2) == 1{Ella_Available   = 1;}
-if string_char_at(Human_Unlock,2) == 2{Ella_Available   = 2;}
-if string_char_at(Human_Unlock,3) == 1{Doc_Available    = 1;}
-if string_char_at(Human_Unlock,4) == 1{Abby_Available   = 1;}
-if string_char_at(Human_Unlock,5) == 1{Azin_Available   = 1;}
-if string_char_at(Human_Unlock,6) == 1{Fiona_Available  = 1;}
-if string_char_at(Human_Unlock,7) == 1{JO_Available = 1;}
-if string_char_at(Human_Unlock,8) == 1{Spoiler_Available  = 1;}
+if string_char_at(Human_Unlock,1) == 1 {Jacob_Available  = 1;}
+if string_char_at(Human_Unlock,1) == 2 {Jacob_Available  = 2;}
+if string_char_at(Human_Unlock,2) == 1 {Ella_Available   = 1;}
+if string_char_at(Human_Unlock,2) == 2 {Ella_Available   = 2;}
+if string_char_at(Human_Unlock,3) == 1 {Doc_Available    = 1;}
+if string_char_at(Human_Unlock,4) == 1 {Abby_Available   = 1;}
+if string_char_at(Human_Unlock,5) == 1 {Azin_Available   = 1;}
+if string_char_at(Human_Unlock,6) == 1 {Fiona_Available  = 1;}
+if string_char_at(Human_Unlock,7) == 1 {JO_Available	 = 1;}
+if string_char_at(Human_Unlock,8) == 1 {Spoiler_Available  = 1;}
 //Zedegri Unlock Process
 //JJA = 0; JTA = 0;EKA = 0; EMA = 0; EHA = 0;DTA = 0;ASA = 0; ALA = 0;AHA = 0; FAA = 0;JAA = 0; 
 if string_char_at(Zedegri_Unlock,1) == 1{JJA = 1;}

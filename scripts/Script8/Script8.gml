@@ -1,43 +1,43 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Stagger_Enemy_Addendum(input, target){ //for enemies
+function Stagger_Enemy_Addendum(input, target) { //for enemies
 	var dhundred = irandom_range(1,100);
-	if input == 3{ //every human
-		if Character_1_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0{
+	if input == 3 { //every human
+		if Character_1_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 {
 		   Character_1_Stat_Writer_Manager.current_speed = 0;
 		}
-		if Character_2_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 0{
+		if Character_2_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 0 {
 		   Character_2_Stat_Writer_Manager.current_speed = 0;
 		}
-		if Character_3_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 0{
+		if Character_3_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 0 {
 		   Character_3_Stat_Writer_Manager.current_speed = 0;
 		}
 		print_enemy_string(string("{0} staggered every human!",stat_block[1]));
 	}
-	else if input == 4{// every zedegri
-		if Character_1_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1{
+	else if input == 4 {// every zedegri
+		if Character_1_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 {
 		   Character_1_Stat_Writer_Manager.current_speed = 0;
 		}
-		if Character_2_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 1{
+		if Character_2_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 1 {
 		   Character_2_Stat_Writer_Manager.current_speed = 0;
 		}
-		if Character_3_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 1{
+		if Character_3_Stat_Writer_Manager.current_hp >= 1 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 1 {
 		   Character_3_Stat_Writer_Manager.current_speed = 0;
 		}
 		print_enemy_string(string("{0} staggered every Zedegri!",stat_block[1]));
 	}
 	
-	else if input == 5{// human 25%
-		if dhundred <= 25{
-			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and Character_1_Stat_Writer_Manager.current_hp >= 1{
+	else if input == 5 {// human 25%
+		if dhundred <= 25 {
+			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and Character_1_Stat_Writer_Manager.current_hp >= 1 {
 				Character_1_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 0 and Character_2_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 0 and Character_2_Stat_Writer_Manager.current_hp >= 1 {
 				Character_2_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 0 and Character_3_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 0 and Character_3_Stat_Writer_Manager.current_hp >= 1 {
 				Character_3_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]));
 			}

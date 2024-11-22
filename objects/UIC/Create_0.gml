@@ -2,14 +2,14 @@
 // You can write your code in this editor
 persistent = true;
 
-Jacob_Available =  0;
-Ella_Available =   0;
-Doc_Available =    0;
-Abby_Available =   0;
-Azin_Available =   0;
-Fiona_Available =  0;
-JO_Available = 0;
-Spoiler_Available =  0;
+Jacob_Available		= 0;
+Ella_Available		= 0;
+Doc_Available		= 0;
+Abby_Available		= 0;
+Azin_Available		= 0;
+Fiona_Available		= 0;
+JO_Available		= 0;
+Spoiler_Available	= 0;
 
 JJA = 0; //Jizo
 JTA = 0; //Tsukuyomi
@@ -257,7 +257,7 @@ Ella_Weapons = [
 	HP: 0,
 	Copies: 0,
 },
-{	name: "Falcion Rod",
+{	name: "Falchion Rod",
 	type: specific,
 	ATK: 180,
 	DEF: 110,
@@ -324,7 +324,7 @@ Doc_Weapons = [
 	HP: 0,
 	Copies: 0,
 },
-{	name: "Ceremoneal Blade",
+{	name: "Ceremonial Blade",
 	type: specific,
 	ATK: 55,
 	DEF: 30,

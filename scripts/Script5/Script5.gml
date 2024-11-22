@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function json_to_array(JSON){
+function json_to_array(JSON) {
 	array = [];
 	array_insert(array, 0, JSON.ATK);
 	array_insert(array, 1, JSON.DEF);
@@ -9,9 +9,9 @@ function json_to_array(JSON){
 	return array;
 }
 
-function health_colour(current_hp, maximum_hp){
+function health_colour(current_hp, maximum_hp) {
 	var percentage = current_hp / maximum_hp;
-	if percentage > 1{
+	if percentage > 1 {
 		percentage = 1;	
 	}
 	var green = percentage * 255;
@@ -19,15 +19,15 @@ function health_colour(current_hp, maximum_hp){
 	return make_color_rgb(red, green, 0);
 }
 
-function speed_colour(current_speed, maximum_speed, colour){
+function speed_colour(current_speed, maximum_speed, colour) {
 	var percentage = 255 * (current_speed / maximum_speed);
 	var colour_scale_factor = 0.004;
 	var green = 0;
 	var red = 0;
 	var blue = 0;
-	if colour = "blue"{
+	if colour = "blue" {
 		blue = 00 + percentage^2 * colour_scale_factor;
-		if blue > 255{
+		if blue > 255 {
 			blue = 255;	
 		}
 		//show_debug_message(blue);

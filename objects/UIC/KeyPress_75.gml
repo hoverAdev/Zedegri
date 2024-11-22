@@ -39,6 +39,6 @@ Save_String += string("{0},{1},",AF_WPN.name,AF_CRM.name);
 Save_String += string("{0},{1}", AM_WPN.name,AM_CRM.name);
 
 var file;
-file = file_text_open_write("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
+file = file_text_open_write("C:\Users\Serenity Montgomery\Documents\GameMakerStudio2\Zedegri\datafiles\config.json");
 file_text_write_string(file, Save_String);
 file_text_close(file);
