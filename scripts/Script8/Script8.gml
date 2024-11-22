@@ -46,83 +46,83 @@ function Stagger_Enemy_Addendum(input, target) { //for enemies
 	
 	else if input == 6{// zedegri 25%
 		if dhundred <= 25{
-			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and Character_1_Stat_Writer_Manager.current_hp >= 1{
+			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and Character_1_Stat_Writer_Manager.current_hp >= 1 {
 				Character_1_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 1 and Character_2_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 1 and Character_2_Stat_Writer_Manager.current_hp >= 1 {
 				Character_2_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 1 and Character_3_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 1 and Character_3_Stat_Writer_Manager.current_hp >= 1 {
 				Character_3_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]));
 			}
 		}
 	}
 	
-	else if input == 7{// human 50%
-		if dhundred <= 50{
-			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and Character_1_Stat_Writer_Manager.current_hp >= 1{
+	else if input == 7 {// human 50%
+		if dhundred <= 50 {
+			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and Character_1_Stat_Writer_Manager.current_hp >= 1 {
 				Character_1_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 0 and Character_2_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 0 and Character_2_Stat_Writer_Manager.current_hp >= 1 {
 				Character_2_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 0 and Character_3_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 0 and Character_3_Stat_Writer_Manager.current_hp >= 1 {
 				Character_3_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]));
 			}
 		}
 	}
 	
-	else if input == 8{// zedegri 50%
-		if dhundred <= 50{
-			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and Character_1_Stat_Writer_Manager.current_hp >= 1{
+	else if input == 8 {// zedegri 50%
+		if dhundred <= 50 {
+			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and Character_1_Stat_Writer_Manager.current_hp >= 1 {
 				Character_1_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 1 and Character_2_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 1 and Character_2_Stat_Writer_Manager.current_hp >= 1 {
 				Character_2_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 1 and Character_3_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 1 and Character_3_Stat_Writer_Manager.current_hp >= 1 {
 				Character_3_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]));
 			}
 		}
 	}
 	
-	else if input == 9{// human 75%
-		if dhundred <= 75{
-			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and Character_1_Stat_Writer_Manager.current_hp >= 1{
+	else if input == 9 {// human 75%
+		if dhundred <= 75 {
+			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 0 and Character_1_Stat_Writer_Manager.current_hp >= 1 {
 				Character_1_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 0 and Character_2_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 0 and Character_2_Stat_Writer_Manager.current_hp >= 1 {
 				Character_2_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 0 and Character_3_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 0 and Character_3_Stat_Writer_Manager.current_hp >= 1 {
 				Character_3_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]));
 			}
 		}
 	}
 	
-	else if input == 10{//zedegri 75%
-		if dhundred <= 75{
-			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and Character_1_Stat_Writer_Manager.current_hp >= 1{
+	else if input == 10 {//zedegri 75%
+		if dhundred <= 75 {
+			if target == 1 and array_last(Character_1_Stat_Writer_Manager.stat_block) == 1 and Character_1_Stat_Writer_Manager.current_hp >= 1 {
 				Character_1_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_1_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 1 and Character_2_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 2 and array_last(Character_2_Stat_Writer_Manager.stat_block) == 1 and Character_2_Stat_Writer_Manager.current_hp >= 1 {
 				Character_2_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_2_Stat_Writer_Manager.stat_block[1]));
 			}
-			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 1 and Character_3_Stat_Writer_Manager.current_hp >= 1{
+			else if target == 3 and array_last(Character_3_Stat_Writer_Manager.stat_block) == 1 and Character_3_Stat_Writer_Manager.current_hp >= 1 {
 				Character_3_Stat_Writer_Manager.current_speed = 0;
 				print_enemy_string(string("{0} staggered {1}", stat_block[1], Character_3_Stat_Writer_Manager.stat_block[1]));
 			}
@@ -130,7 +130,7 @@ function Stagger_Enemy_Addendum(input, target) { //for enemies
 	}
 	
 }
-function Stagger_Player_Addendum(input, target){ //for players
+function Stagger_Player_Addendum(input, target) { //for players
 	//print_enemy_string(string(target)); //Debug code
 	//show_debug_message(target);
 	target = target - 3;
@@ -138,44 +138,44 @@ function Stagger_Player_Addendum(input, target){ //for players
 	var Low_Shot = 52;
 	var Med_Shot = 70;
 	var High_Shot = 90;
-	if input == 4 and dhundred <= Low_Shot{
+	if input == 4 and dhundred <= Low_Shot {
 		//print_enemy_string("in input 4"); //issue still with target
-		if target == 1{
+		if target == 1 {
 			Enemy_1_Stat_Writer_Manager.current_speed = 0;
 			print_enemy_string(string("{0} was staggered!",Enemy_1_Stat_Writer_Manager.stat_block[1]));
 		}
-		else if target == 2{
+		else if target == 2 {
 			Enemy_2_Stat_Writer_Manager.current_speed = 0;
 			print_enemy_string(string("{0} was staggered!",Enemy_2_Stat_Writer_Manager.stat_block[1]));
 		}
-		else if target == 3{
+		else if target == 3 {
 			Enemy_3_Stat_Writer_Manager.current_speed = 0;
 			print_enemy_string(string("{0} was staggered!",Enemy_3_Stat_Writer_Manager.stat_block[1]));
 		}
-		else if target == 4{
+		else if target == 4 {
 			Enemy_4_Stat_Writer_Manager.current_speed = 0;
 			print_enemy_string(string("{0} was staggered!",Enemy_4_Stat_Writer_Manager.stat_block[1]));
 		}
 	}
-	else if input == 5 and dhundred <= Low_Shot{ //       Human
-		if target == 1 and array_last(Enemy_1_Stat_Writer_Manager.stat_block) == 0{
+	else if input == 5 and dhundred <= Low_Shot { //       Human
+		if target == 1 and array_last(Enemy_1_Stat_Writer_Manager.stat_block) == 0 {
 			Enemy_1_Stat_Writer_Manager.current_speed = 0;
 			print_enemy_string(string("{0} was staggered!",Enemy_1_Stat_Writer_Manager.stat_block[1]));
 		}
-		else if target == 2 and array_last(Enemy_2_Stat_Writer_Manager.stat_block) == 0{
+		else if target == 2 and array_last(Enemy_2_Stat_Writer_Manager.stat_block) == 0 {
 			Enemy_2_Stat_Writer_Manager.current_speed = 0;
 			print_enemy_string(string("{0} was staggered!",Enemy_2_Stat_Writer_Manager.stat_block[1]));
 		}
-		else if target == 3 and array_last(Enemy_3_Stat_Writer_Manager.stat_block) == 0{
+		else if target == 3 and array_last(Enemy_3_Stat_Writer_Manager.stat_block) == 0 {
 			Enemy_3_Stat_Writer_Manager.current_speed = 0;
 			print_enemy_string(string("{0} was staggered!",Enemy_3_Stat_Writer_Manager.stat_block[1]));
 		}
-		else if target == 4 and array_last(Enemy_4_Stat_Writer_Manager.stat_block) == 0{
+		else if target == 4 and array_last(Enemy_4_Stat_Writer_Manager.stat_block) == 0 {
 			Enemy_4_Stat_Writer_Manager.current_speed = 0;
 			print_enemy_string(string("{0} was staggered!",Enemy_4_Stat_Writer_Manager.stat_block[1]));
 		}
 	}
-	else if input == 6 and dhundred <= Low_Shot{//   Zedegri
+	else if input == 6 and dhundred <= Low_Shot {//   Zedegri
 		if target == 1 and array_last(Enemy_1_Stat_Writer_Manager.stat_block) == 1{
 			Enemy_1_Stat_Writer_Manager.current_speed = 0;
 			print_enemy_string(string("{0} was staggered!",Enemy_1_Stat_Writer_Manager.stat_block[1]));
