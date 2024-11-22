@@ -6,8 +6,6 @@ var Save_String = "";
 //Jacob, Ella, Doc, Abby, Azin, Fiona, sOLDIER, sPOILERS 
 
 Save_String = string("{0}{1}{2}{3}{4}{5}{6}{7}\n",Jacob_Available,Ella_Available,Doc_Available,Abby_Available,Azin_Available,Fiona_Available,JO_Available,Fiora_Available); //Humans
-
-
 Save_String += string("{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}\n", JJA,JTA,EKA,EMA,EHA,DTA,ASA,ALA,AHA,FAA,JAA); //Zedegri
 
 //items 
@@ -38,7 +36,8 @@ Save_String += string("{0},{1},",AF_WPN.name,AF_CRM.name);
 
 Save_String += string("{0},{1}", AM_WPN.name,AM_CRM.name);
 
-var file;
-file = file_text_open_write("C:\Users\Serenity Montgomery\Documents\GameMakerStudio2\Zedegri\datafiles\config.json");
+
+var filename = working_directory + "config.json";
+var file = file_text_open_write(filename);
 file_text_write_string(file, Save_String);
 file_text_close(file);

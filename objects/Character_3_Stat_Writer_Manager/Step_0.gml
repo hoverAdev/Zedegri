@@ -86,7 +86,7 @@ if current_speed >= stat_block[4]{
 	dmg = 0;
 	
 }
-if global.all_state_pause != 1{ current_speed += global.PLSG; }
+if global.all_state_pause != 1{ current_speed += global.PLSG * global.game_speed; }
 //show_debug_message(assisted);
 if global.all_state_pause == 1 and player_3_engaged {
 	

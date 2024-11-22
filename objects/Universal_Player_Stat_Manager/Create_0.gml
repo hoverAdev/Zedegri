@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 persistent = true;
+
+var motd = "[FORK] 1.7.Ambi.2"
+
 var LM = 1 + global.level / 15 * 1.6;
 show_debug_message(LM);
 

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if current_hp <= 0{ current_speed = 0; }
+if current_hp <= 0 { current_speed = 0; }
 if current_speed >= stat_block[4]{
 	global.all_state_pause = 1;
 	buttons_spawned = false;
@@ -86,7 +86,7 @@ if current_speed >= stat_block[4]{
 	dmg = 0;
 	
 }
-if global.all_state_pause != 1{ current_speed += global.PLSG; }
+if global.all_state_pause != 1 { current_speed += global.PLSG * global.game_speed; }
 //show_debug_message(assisted);
 if global.all_state_pause == 1 and player_2_engaged {
 	

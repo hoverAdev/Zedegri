@@ -11,7 +11,7 @@ if (mouse_check_button_released(mb_left))
 {
 	clicked = false;
 
-	if (hovering) 
+	if hovering and (array_length(global.party_members) > 0)
 	{
 		room_goto(Room_Enemy_Select);
 	}

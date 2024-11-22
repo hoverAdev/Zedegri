@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var s = global.PLSG;
+var s = global.PLSG * global.game_speed;
 var p1c = Character_1_Stat_Writer_Manager.current_speed;
 var p2c = Character_2_Stat_Writer_Manager.current_speed;
 var p3c = Character_3_Stat_Writer_Manager.current_speed;

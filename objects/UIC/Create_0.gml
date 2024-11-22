@@ -2,6 +2,8 @@
 // You can write your code in this editor
 persistent = true;
 
+global.game_speed = 0.5;
+
 Jacob_Available		= 0;
 Ella_Available		= 0;
 Doc_Available		= 0;

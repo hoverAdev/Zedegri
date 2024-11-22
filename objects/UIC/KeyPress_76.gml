@@ -2,10 +2,11 @@
 // You can write your code in this editor
 //var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
 
-
-var file = file_text_open_read("C:\\Users\\Serenity Montgomery\\Documents\\GameMakerStudio2\\Zedegri\\datafiles\\config.json");
+var filename = working_directory + "config.json";
+var file = file_text_open_read(filename);
 var temporary = file_text_read_string(file);
 file_text_close(file);
+
 var Configuration = json_parse(temporary);
 global.speed_cap = Configuration.speed_cap;
 global.level = Configuration.level;
@@ -19,8 +20,8 @@ global.Mass_Deactivate = false;
 //show_debug_message("The Player Level is: {0}", global.level);
 show_debug_message(floor(global.level / 10));
 
-
-var file = file_text_open_read("C:\\Users\\Serenity Montgomery\\Documents\\GameMakerStudio2\\Zedegri\\datafiles\\Save_Data.txt");
+filename = working_directory + "Save_Data.txt";
+file = file_text_open_read(filename);
 
 var Human_Unlock = file_text_readln(file);
 var Zedegri_Unlock = file_text_readln(file);
@@ -39,15 +40,15 @@ if string_char_at(Human_Unlock,7) == 1 {JO_Available	 = 1;}
 if string_char_at(Human_Unlock,8) == 1 {Spoiler_Available  = 1;}
 //Zedegri Unlock Process
 //JJA = 0; JTA = 0;EKA = 0; EMA = 0; EHA = 0;DTA = 0;ASA = 0; ALA = 0;AHA = 0; FAA = 0;JAA = 0; 
-if string_char_at(Zedegri_Unlock,1) == 1{JJA = 1;}
-if string_char_at(Zedegri_Unlock,2) == 1{JTA = 1;}
-if string_char_at(Zedegri_Unlock,3) == 1{EKA = 1;}
-if string_char_at(Zedegri_Unlock,4) == 1{EMA = 1;}
-if string_char_at(Zedegri_Unlock,5) == 1{EHA = 1;}
-if string_char_at(Zedegri_Unlock,6) == 1{DTA = 1;}
-if string_char_at(Zedegri_Unlock,7) == 1{ASA = 1;}
-if string_char_at(Zedegri_Unlock,8) == 1{ALA = 1;}
-if string_char_at(Zedegri_Unlock,9) == 1{AHA = 1;}
+if string_char_at(Zedegri_Unlock, 1) == 1{JJA = 1;}
+if string_char_at(Zedegri_Unlock, 2) == 1{JTA = 1;}
+if string_char_at(Zedegri_Unlock, 3) == 1{EKA = 1;}
+if string_char_at(Zedegri_Unlock, 4) == 1{EMA = 1;}
+if string_char_at(Zedegri_Unlock, 5) == 1{EHA = 1;}
+if string_char_at(Zedegri_Unlock, 6) == 1{DTA = 1;}
+if string_char_at(Zedegri_Unlock, 7) == 1{ASA = 1;}
+if string_char_at(Zedegri_Unlock, 8) == 1{ALA = 1;}
+if string_char_at(Zedegri_Unlock, 9) == 1{AHA = 1;}
 if string_char_at(Zedegri_Unlock,10) == 1{FAA = 1;}
 if string_char_at(Zedegri_Unlock,11) == 1{JAA = 1;}
 

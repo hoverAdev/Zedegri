@@ -11,7 +11,7 @@ if (mouse_check_button_released(mb_left))
 {
 	clicked = false;
 
-	if (hovering) 
+	if hovering and UIC.Abby_Available and array_length(global.party_members) < 3
 	{
 		array_insert(global.party_members,global.partyMemberPosition,Universal_Player_Stat_Manager.all_character_array[3]);
 		show_debug_message(global.party_members);

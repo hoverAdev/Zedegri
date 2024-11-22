@@ -87,7 +87,7 @@ if current_speed >= stat_block[4]{
 	dmg = 0;
 	
 }
-if global.all_state_pause != 1{ current_speed += global.PLSG; }
+if global.all_state_pause != 1{ current_speed += global.PLSG * global.game_speed; }
 //show_debug_message(assisted);
 if global.all_state_pause == 1 and player_1_engaged {
 	
@@ -397,7 +397,7 @@ if global.all_state_pause == 1 and player_1_engaged {
 	var target_code_name = "";
 	//show_debug_message(selected_spell, targetted_creature, obj_All_Selector.confirmed_input);
 	try{
-	var target_code_name = targetted_creature[0];}
+		target_code_name = targetted_creature[0];}
 	catch (_exception){}
 	if selected_spell != [] and target_code_name != "" and obj_All_Selector.confirmed_input{
 			Spell_Cast(target_code, selected_spell); //-------------------------------------------------------------- resume here
