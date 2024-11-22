@@ -2,7 +2,7 @@
 // You can write your code in this editor
 //                 4    5     5    6     6     6      7      7      7      7
 deathblow_list = ["ZC","ZZC","XC","ZXC","XZC","ZZZC","ZXZC","ZZXC","XZZC","ZZZZC"];
-//                "△X","△△X","SX","△SX","S△X","△△△X","△S△X","△△SX","S△△X","△△△△X"
+//                "△×","△△×","□×","△□×","□△×","△△△×","△□△×","△△S×","□△△×","△△△△×"
 generate = false;
 deathblow_possible = false;
 scripture = "";
