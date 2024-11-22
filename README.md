@@ -46,5 +46,3 @@ In Enemy Selection:
 In Combat:
 
   When defending the game may freeze, idk why i was playtesting and two teammates were dead and the game froze after the enemies attacked the last defending player, so i added F12 to reset all speeds to 0 and reset the pause. Use with caution.
-
-© Riamu Satou, 2024, All Right Reserved
