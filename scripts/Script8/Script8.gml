@@ -738,8 +738,31 @@ function Spell_Cast(target_code, selected_spell){
 		var string_splitter = int64(string("{0}{1}",string_char_at(selected_spell[5],2),string_char_at(selected_spell[5],3)));
 		//1 + 200 * (Enemy % - 20) / (300 - 20) + 20 * (Player % / 300)
 		var PLAYER_PERCENT = current_hp/stat_block[2];
-		var ENEMY_PERCENT = Enemy_1_Stat_Writer_Manager.current_hp/Enemy_1_Stat_Writer_Manager.stat_block[2];
+		var ENEMY_PERCENT = 0;
 		var RANDINT = irandom(100);
+		
+		if hover == 1{
+			ENEMY_PERCENT = Character_1_Stat_Writer_Manager.current_hp/Character_1_Stat_Writer_Manager.stat_block[2];
+		}
+		else if hover == 2{
+			ENEMY_PERCENT = Character_2_Stat_Writer_Manager.current_hp/Character_2_Stat_Writer_Manager.stat_block[2];
+		}
+		else if hover == 3{
+			ENEMY_PERCENT = Character_3_Stat_Writer_Manager.current_hp/Character_3_Stat_Writer_Manager.stat_block[2];
+		}
+		else if hover == 4{
+			ENEMY_PERCENT = Enemy_1_Stat_Writer_Manager.current_hp/Enemy_1_Stat_Writer_Manager.stat_block[2];
+		}
+		else if hover == 5{
+			ENEMY_PERCENT = Enemy_2_Stat_Writer_Manager.current_hp/Enemy_2_Stat_Writer_Manager.stat_block[2];
+		}
+		else if hover == 6{
+			ENEMY_PERCENT = Enemy_3_Stat_Writer_Manager.current_hp/Enemy_3_Stat_Writer_Manager.stat_block[2];
+		}
+		else if hover == 7{
+			ENEMY_PERCENT = Enemy_4_Stat_Writer_Manager.current_hp/Enemy_4_Stat_Writer_Manager.stat_block[2];
+		}
+		
 		var DEATH_PERCENT = ((PLAYER_PERCENT * 0.4 - 1) * (ENEMY_PERCENT * 0.6 - 1) / 2) * 100 - 11;
 		DEATH_PERCENT += string_splitter;
 				
@@ -777,7 +800,7 @@ function Spell_Cast(target_code, selected_spell){
 			else if hover == 7{Enemy_4_Stat_Writer_Manager.current_hp -= 999999;}
 		}
 		else{
-				Text_Chat_Manager.printed_string += string("\nThe Instant Kill Failed, {0} {1}",DEATH_PERCENT, RANDINT);
+				Text_Chat_Manager.printed_string += string("\nThe Instant Kill Failed");
 		}
 	}
 	else if array_last(selected_spell) == "RECOIL"{

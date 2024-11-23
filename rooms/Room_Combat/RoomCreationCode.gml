@@ -8,7 +8,7 @@ global.heavy_evade = 91;
 global.fierce_evade = 78;
 global.buttons_spawned = false;
 
-var LVL_MOD = 1 + (global.level / 15);
+var LVL_MOD = 1 + (global.level / 15 * 1.6);
 
 //Code, Name,  HP, EP,   Speed, Light, Heavy, Fierce, DEF
 Character_1_Stat_Writer_Manager.stat_block[2] = ceil(Character_1_Stat_Writer_Manager.stat_block[2] * LVL_MOD);

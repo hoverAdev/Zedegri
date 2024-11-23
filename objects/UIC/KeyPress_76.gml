@@ -3,7 +3,7 @@
 //var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
 
 
-var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/config.json");
+var file = file_text_open_read(working_directory + "config.json");
 var temporary = file_text_read_string(file);
 file_text_close(file);
 var Configuration = json_parse(temporary);
@@ -20,7 +20,7 @@ global.Mass_Deactivate = false;
 show_debug_message(floor(global.level / 10));
 
 
-var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
+var file = file_text_open_read(working_directory + "Save_Data.txt");
 
 var Human_Unlock = file_text_readln(file);
 var Zedegri_Unlock = file_text_readln(file);

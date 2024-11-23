@@ -22,7 +22,7 @@ if global.all_state_pause == 0{
 		catch (_exception){
 		p3hp = 0;}
 		
-		var random_selection_method = irandom_range(1,50);
+		var random_selection_method = irandom_range(1,60);
 		var target = 0;
 		if random_selection_method >= 51{      // LOW HEALTH TARGET
 			show_debug_message("LOW HEALTH TARGET");
