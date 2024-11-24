@@ -1,5 +1,6 @@
 /// @description Save Object Data
 // You can write your code in this editor
+if room = Room_Ini {
 var Save_String = "";
 
 //IsAvailable 0 = not available, 1 = is available
@@ -38,7 +39,11 @@ Save_String += string("{0},{1},",AF_WPN.name,AF_CRM.name);
 
 Save_String += string("{0},{1}", AM_WPN.name,AM_CRM.name);
 
-var file;
-file = file_text_open_write(working_directory + "/Save_Data.txt");
-file_text_write_string(file, Save_String);
-file_text_close(file);
+var filename = get_save_filename("Zedegri Save (*.txt)|*.txt|All Files (*.*)|*.*", "");
+if filename != "" {
+	var file;
+	file = file_text_open_write(filename);
+	file_text_write_string(file, Save_String);
+	file_text_close(file);
+}
+}

@@ -8,7 +8,7 @@
   "option_windows_copyright_info":"(c) Riamu Satou 2024-2025",
   "option_windows_copy_exe_to_dest":false,
   "option_windows_description_info":"Zedegri Combat Engine",
-  "option_windows_disable_sandbox":true,
+  "option_windows_disable_sandbox":false,
   "option_windows_display_cursor":true,
   "option_windows_display_name":"Zedegri Combat Engine",
   "option_windows_enable_steam":false,

@@ -1,11 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+/*
 if keyboard_check(ord("L")){
 	draw_text(room_width/2,0,"Loaded");
 }
 else if keyboard_check(ord("K")){
 	draw_text(room_width/2,0,"Saved");
 }
+*/
 
 var y_automator = 450;
 var y_offset = 24;

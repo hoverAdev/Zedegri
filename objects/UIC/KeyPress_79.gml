@@ -1,7 +1,7 @@
-/// @description Load Object Data
+/// @description Load Object Data from file
 // You can write your code in this editor
 
-if room == Room_Ini {
+
 //var file = file_text_open_read(working_directory + "config.json");
 var file = buffer_load("config.json");
 var temporary = buffer_read(file, buffer_text);
@@ -18,8 +18,10 @@ global.Mass_Deactivate = false;
 
 show_debug_message("Player level is {0}", global.level);
 
-
-file = file_text_open_read("Save_Data.txt");
+var filename = get_open_filename("Zedegri Save (*.txt)|*.txt|All Files (*.*)|*.*", "")
+if filename != "" 
+{
+file = file_text_open_read(filename);
 
 var Human_Unlock = file_text_readln(file);
 var Zedegri_Unlock = file_text_readln(file);
@@ -120,6 +122,6 @@ AF_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
 AM_WPN=Assign_Item(All_Saved_Items, Amaterasu_Weapons     );
 AM_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
+}
 
 i = 0;
-}

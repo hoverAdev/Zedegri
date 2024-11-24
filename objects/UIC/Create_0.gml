@@ -2,8 +2,31 @@
 // You can write your code in this editor
 persistent = true;
 
+// Set platform type
+if os_browser == browser_not_a_browser {
+	switch os_type {
+		case os_windows:
+		case os_linux:
+		case os_macosx:
+			global.platform = "desktop";
+			break;
+		case os_ios:
+		case os_tvos:
+		case os_android:
+			global.platform = "mobile";
+			break;
+		case os_gxgames:
+			global.platform = "web";
+			break;
+		default:
+			global.platform = "desktop";
+	}
+} else { global.platform = "web"; }
+
+// Set how fast the game runs during Room_Combat
 global.game_speed = 0.75;
 
+// Initialize variables
 Jacob_Available =  0;
 Ella_Available =   0;
 Doc_Available =    0;
@@ -34,9 +57,8 @@ selector_x = 0;
 
 documented_list = [];
 
-
 i = 0;
-function Assign_Item(All_Items, Catalogue){	
+function Assign_Item(All_Items, Catalogue) {	
 	for (var incrementor = 0; incrementor < array_length(Catalogue); incrementor++){
 		if All_Items[i] == Catalogue[incrementor].name{
 			i++;

@@ -10,7 +10,7 @@ var character_hovered = "";
 //Character Selector
 yy = y + 32;
 if room == Room_Ini{
-	draw_text(x,0,"Item Selection\nPress [K] to Save or [L] to Load");
+	draw_text(x,0,"Item Selection\nPress [K] to Save or [L] to Load\nPress [O] to Load from file");
 
 if Zedegri_Toggle == false{
 	if Jacob_Available == 1{

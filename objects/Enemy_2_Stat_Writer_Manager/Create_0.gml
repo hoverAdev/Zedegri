@@ -2,13 +2,14 @@
 // You can write your code in this editor
 show_debug_message(global.enemy_members);
 //Code, Name, HP, LT, HV, FI, DEF, SP, LH%, HH%, FH%, Is Zedegri
-try{stat_block = global.enemy_members[1];}catch (_exception){stat_block = Universal_Player_Stat_Manager.all_enemy_array[2];}
+try{ stat_block = global.enemy_members[1]; }
+catch (_exception){ stat_block = Universal_Player_Stat_Manager.all_enemy_array.XXX;}
 stat_block[2] = floor(stat_block[2] * random_range(0.9,1.2));
 current_hp = stat_block[2];
 current_def = floor(stat_block[6] * random_range(0.8,1.5));
 //current_ep = stat_block[3];
 //current_ap = 0;
-current_speed = 1;
+current_speed = random_range(1, stat_block[7]);;
 turn_start = false;
 //deathblow_performed = false;
 turn_counter = 0;
