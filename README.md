@@ -28,7 +28,7 @@ currently unlocked zedegris, ordered by character linked with, and then by the o
 Weapon, Armour (Human only), and Charm/Sequencer
 
 
-# **Refer to the control guide on the controls, as they change depending on the room you are currently in.**
+### **Refer to the control guide on the controls, as they change depending on the room you are currently in.**
 
 
 ## Known Issues and Crashes
