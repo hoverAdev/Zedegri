@@ -20,7 +20,7 @@ global.Mass_Deactivate = false;
 show_debug_message(floor(global.level / 10));
 
 
-var file = file_text_open_read(working_directory + "Save_Data.txt");
+file = file_text_open_read(working_directory + "Save_Data.txt");
 
 var Human_Unlock = file_text_readln(file);
 var Zedegri_Unlock = file_text_readln(file);

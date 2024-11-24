@@ -2,6 +2,8 @@
 // You can write your code in this editor
 persistent = true;
 
+global.game_speed = 0.75;
+
 Jacob_Available =  0;
 Ella_Available =   0;
 Doc_Available =    0;
@@ -24,7 +26,7 @@ FAA = 0; //Anfang
 JAA = 0; //Amaterasu
 
 Zedegri_Toggle = false;
-		//	x,y
+//	x,y
 character_selector = 1;
 option_selector = 0;
 item_selector = 0;
@@ -1654,7 +1656,7 @@ Charms_And_Sequencers = [
 	HP: 260,	
 	Copies: 0,
 },
-
+// Sequencers
 {	name: "Low Output Strength Sequencer",
 	type: "Sequencer",
 	ATK: 60,

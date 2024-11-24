@@ -1,4 +1,4 @@
-## Written by Riamu Satou
+# Written by Riamu Satou
 
 The Zedegri Combat Engine is a combat simulator for a theoretical game, it is not meant to be perfect, it is meant to be functional
 

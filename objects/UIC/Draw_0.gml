@@ -15,64 +15,84 @@ if room == Room_Ini{
 if Zedegri_Toggle == false{
 	if Jacob_Available == 1{
 		draw_text(x,yy,"Jacob");
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Jacob");
-		character_hovered = "Jacob";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Jacob");
+			character_hovered = "Jacob";
+		}
 	} 
 	else if Jacob_Available == 2{
 		draw_text(x,yy,"Jacee");
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Jacee");
-		character_hovered = "Jacob";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Jacee");
+			character_hovered = "Jacob";
+		}
 	} yy += 32; draw_set_color(c_white);
 	
 	if Ella_Available == 1{
 		draw_text(x,yy,"Ella");	
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Ella");	
-		character_hovered = "Ella";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Ella");	
+			character_hovered = "Ella";
+		}
 	}
 	else if Ella_Available == 2{
 		draw_text(x,yy,"Evan");	
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Evan");	
-		character_hovered = "Ella";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Evan");	
+			character_hovered = "Ella";
+		}
 	}yy += 32; draw_set_color(c_white);
 	if Doc_Available{
 		draw_text(x,yy,"Doc");
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Doc");	
-		character_hovered = "Doc";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Doc");	
+			character_hovered = "Doc";
+		}
 	} yy += 32; draw_set_color(c_white);
 	if Abby_Available{
 		draw_text(x,yy,"Abby");
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Abby");	
-		character_hovered = "Abby";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Abby");	
+			character_hovered = "Abby";
+		}
 	} yy += 32; draw_set_color(c_white);
 	if Azin_Available{
 		draw_text(x,yy,"Azin");
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Azin");	
-		character_hovered = "Azin";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Azin");	
+			character_hovered = "Azin";
+		}
 	} yy += 32; draw_set_color(c_white);
 	if Fiona_Available{
 		draw_text(x,yy,"Fiona");
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Fiona");
-		character_hovered = "Fiona";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Fiona");
+			character_hovered = "Fiona";
+		}
 	} yy += 32; draw_set_color(c_white);
 	if Joanna_Available{
 		draw_text(x,yy,"Joanna");
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Joanna");	
-		character_hovered = "Joanna";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Joanna");	
+			character_hovered = "Joanna";
+		}
 	} yy += 32; draw_set_color(c_white);
 	if Fiora_Available{
 		draw_text(x,yy,"Fiora");
-		if character_selector == (yy-y)/32{draw_set_color(c_red);
-		draw_text(x,yy,"Fiora");
-		character_hovered = "Fiora";}
+		if character_selector == (yy-y)/32{
+			draw_set_color(c_red);
+			draw_text(x,yy,"Fiora");
+			character_hovered = "Fiora";
+		}
 	} yy += 32; draw_set_color(c_white);
 }
 else if Zedegri_Toggle == true{

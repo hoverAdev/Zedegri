@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 persistent = true;
+
+motd = "[FORK] 1.7.Ambience3"
+
 var LM = 1 + global.level / 15 * 1.6;
 show_debug_message(LM);
 
@@ -9,7 +12,7 @@ show_debug_message(LM);
 
 JC_WPN = json_to_array(UIC.JC_WPN); EL_WPN = json_to_array(UIC.EL_WPN); DC_WPN = json_to_array(UIC.DC_WPN); AB_WPN = json_to_array(UIC.AB_WPN); AZ_WPN = json_to_array(UIC.AZ_WPN); 
 JC_AMR = json_to_array(UIC.JC_AMR); EL_AMR = json_to_array(UIC.EL_AMR); DC_AMR = json_to_array(UIC.DC_AMR); AB_AMR = json_to_array(UIC.AB_AMR); AZ_AMR = json_to_array(UIC.AZ_AMR); 
-JC_CRM =json_to_array( UIC.JC_CRM); EL_CRM = json_to_array(UIC.EL_CRM); DC_CRM = json_to_array(UIC.DC_CRM); AB_CRM = json_to_array(UIC.AB_CRM); AZ_CRM = json_to_array(UIC.AZ_CRM); 
+JC_CRM = json_to_array(UIC.JC_CRM); EL_CRM = json_to_array(UIC.EL_CRM); DC_CRM = json_to_array(UIC.DC_CRM); AB_CRM = json_to_array(UIC.AB_CRM); AZ_CRM = json_to_array(UIC.AZ_CRM); 
 
 JZ_WPN = json_to_array(UIC.JZ_WPN); KI_WPN = json_to_array(UIC.KI_WPN); TR_WPN = json_to_array(UIC.TR_WPN); SL_WPN = json_to_array(UIC.SL_WPN); HD_WPN = json_to_array(UIC.HD_WPN); 
 JZ_CRM = json_to_array(UIC.JZ_CRM); KI_CRM = json_to_array(UIC.KI_CRM); TR_CRM = json_to_array(UIC.TR_CRM); SL_CRM = json_to_array(UIC.SL_CRM); HD_CRM = json_to_array(UIC.HD_CRM); 

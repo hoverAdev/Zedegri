@@ -13,7 +13,7 @@ Draw_Modifier(x,y-88,dmg_mod_05,dmg_mod_15,dmg_mod_20,def_mod_05,def_mod_15,def_
 //draw_healthbar(x,y+86*2,x+10000, y+(86*2)+32, current_speed/stat_block[4],c_black, c_ltgray, c_white,0,1,0);
 
 
-if draw_ether_menu == true{
+if draw_ether_menu == true {
 	draw_set_font(font_arial_amaterasu_sized);
 	output_string = "";
 	for (var i = 0; i < array_length(ether_array); i ++){
@@ -24,11 +24,11 @@ if draw_ether_menu == true{
 	draw_set_font(font_arial);
 }
 
-if draw_assist_screen == true{
+if draw_assist_screen == true { // Boosts ally EVA
 	draw_text_outlined(638, 320, c_black, c_white, "Assist Teammate: \nSelect 1 for Teammate 1, or select 2 for Teammate 2.");
 }
 
-if draw_buff_screen == true{
+if draw_buff_screen == true { // Boosts ally DMG (unused)
 	draw_text(638, 320, "Buff A Teammate: \nSelect 1 for Teammate 1, select 2 for Teammate 2, or select 3 for Teammate 3.");
 }
 
