@@ -271,3 +271,16 @@ all_enemy_array = [//                        |2 = doen't happen
 							[80,000,90,2,20,2,false,[0,0],[2,9]],
 							1999, 20, 1],
 ]
+var _file = file_text_open_read(working_directory + "Enemies.json");
+while file_text_eof(_file) == false{
+array_push(all_enemy_array, Enemy_Arraify(json_parse(file_text_readln(_file))));
+show_debug_message(array_last(all_enemy_array));
+}
+/*
+while file_text_eoln(_file){
+		
+}
+
+for (i = 0; i 
+array_push(all_enemy_array, file_text_read_string()
+*/

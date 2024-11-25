@@ -130,6 +130,7 @@ function Stagger_Enemy_Addendum(input, target){ //for enemies
 	}
 	
 }
+
 function Stagger_Player_Addendum(input, target){ //for players
 	//print_enemy_string(string(target)); //Debug code
 	//show_debug_message(target);
@@ -269,6 +270,7 @@ function Stagger_Player_Addendum(input, target){ //for players
 		print_enemy_string(string("The spell missed!"));	
 	}
 }
+
 function Enemy_Random(p1hp, p2hp, p3hp){
 	show_debug_message("RANDOM TARGET");
 	var target = 0;
@@ -322,6 +324,7 @@ function Enemy_Random(p1hp, p2hp, p3hp){
 	}	
 	return target;
 }
+
 function Spell_Cast(target_code, selected_spell){
 	hp_recover = 0;
 	var string_splitter;
@@ -898,4 +901,32 @@ function Spell_Cast(target_code, selected_spell){
 		if current_hp > stat_block[2]{
 		current_hp = stat_block[2];}
 	}
+}
+
+function Enemy_Arraify(input){
+	var return_array = [];
+	array_push(return_array, input.code);
+	array_push(return_array, input._name);
+	array_push(return_array, input.hp);
+	array_push(return_array, Attack_Arraify(input.Attack_1));
+	array_push(return_array, Attack_Arraify(input.Attack_2));
+	array_push(return_array, Attack_Arraify(input.Attack_3));
+	array_push(return_array, input.def);
+	array_push(return_array, input._speed);
+	array_push(return_array, input.IsZedegri);
+	return return_array;
+}
+
+function Attack_Arraify(input){
+	var return_array = [];
+	array_push(return_array, input.chance);
+	array_push(return_array, input.damage);
+	array_push(return_array, input.accuracy);
+	array_push(return_array, input.IsHeal);
+	array_push(return_array, input.HealPercent);
+	array_push(return_array, input.Stagger);
+	array_push(return_array, input.IsLeech);
+	array_push(return_array, input.AttackBuff);
+	array_push(return_array, input.DefenceBuff);
+	return return_array;
 }
