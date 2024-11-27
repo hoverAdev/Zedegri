@@ -12,4 +12,4 @@ for(i = 0;i < array_length(global.party_members); i++) {
 	}
 }
 
-draw_text(900, 800, textMembers);
+draw_text_outlined(900, 800, c_black, c_white, textMembers)

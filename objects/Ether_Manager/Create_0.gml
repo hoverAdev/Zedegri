@@ -52,9 +52,9 @@ fn_ether = [
 jo_ether = [
     [1, "Blood Enhance", "Enhance ones strength at the cost of damage",2,50*LM, ["A",true,50]],
 	[2, "Shatter Strike", "A strong strike which breaks the enemies defence", 2, (80 + Universal_Player_Stat_Manager.all_character_array[13][7])*LM, "D0,05"],
-//	[3, "Limit Break Slash", "She focuses their ether into one attack, deals self damage", 3, (500 + Universal_Player_Stat_Manager.all_character_array[13][7])*LM, "RECOIL"],
-//	[4, "Vital Point Exploit", "She attacks a vital point, chance to instantly kill", 4, 0, "I20"],
-//	[5, "Enchanted Lineage", "She channels their inner Ether for 2X damage", 4, 0, "E2,06"], same name different game
+//	[3, "Limit Break Slash", "They focuses their ether into one attack, deals self damage", 3, (500 + Universal_Player_Stat_Manager.all_character_array[13][7])*LM, "RECOIL"],
+//	[4, "Vital Point Exploit", "They attacks a vital point, chance to instantly kill", 4, 0, "I20"],
+//	[5, "Enchanted Lineage", "Shey channels their inner Ether for 2X damage", 4, 0, "E2,06"], same name different game
 ];
 zm_ether = [
 	[1, "Acceleration", "They increases their speed so they can attack faster", 3, 0, ["S",true,2]],
@@ -75,7 +75,7 @@ ki_ether = [
 	[2, "Deathly Glare", "Kalaratri intimidates the enemy, lowering their defence.",2,0, "D0,06"],
 //	[3, "Cursed Word", "An attack with a rare chance to instantly kill the enemy", 1, (100 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM, "I10"],
 //	[4, "Inflict Atrophy", "Kalaratri lowers the strength of the enemy", 3, 0, "E0,06"],
-//	[5, "Lethal Inflection", "Kalaratri launches a single attack with a notable chance to INSTAKILL.", 6, (80 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM,"I32"],//32
+	[5, "Lethal Inflection", "Kalaratri launches a single attack with a notable chance to INSTAKILL.", 6, (80 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM,"I32"],//32
 ];
 tr_ether = [
     [1, "Defensive Field","Creates a light protective field around a target",2, 0, "D1,04"], //DEF 1.5 up
@@ -103,7 +103,7 @@ af_ether = [
 	[2, "Nature's Ferocity", "A fierce vine attack which immobalizes the target", 3, (120 + Universal_Player_Stat_Manager.all_character_array[12][7])*LM, 1],
 //	[3, "Nature's Restoration","Anfang steals life from the enemy to heal herself", 2, (180 + Universal_Player_Stat_Manager.all_character_array[12][7])*LM, "L"], //Leech
 //	[4, "Nature's Blessing", "Anfang empowers a teammate with strength for the rest of battle", 2, 0, ["A", false, 20]], //Perm ATK buff
-//	[5, "Nature's Ultimatum", "Anfang attacks the opponent, more damage the higher their Current HP is", 8, 0, "CHP"],
+	[5, "Nature's Ultimatum", "Anfang attacks the opponent, more damage the higher their Current HP is", 8, 0, "CHP"],
 ];
 mi_ether = [
     [1, "Heaven's Saber", "Mika'el crashes both of their swords into the enemy with ferocity", 1, (60 + Universal_Player_Stat_Manager.all_character_array[15][7])*LM*2, "ATK"], //ATK

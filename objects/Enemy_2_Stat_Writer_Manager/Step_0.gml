@@ -2,7 +2,7 @@
 	// You can write your code in this editor
 if current_hp <= 0{ current_speed = 0; }
 if global.all_state_pause == 0{
-	show_debug_message(current_speed);
+	//show_debug_message(current_speed);
 	current_speed += 0.495 * global.game_speed; 
 	if current_speed >= stat_block[7]{
 		//                     -----TARGETTING OF PARTY-----

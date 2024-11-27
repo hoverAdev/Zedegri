@@ -292,7 +292,7 @@ if selector_x == 2{
 			JC_AMR = documented_list[item_selector];
 		}
 		else if character_hovered == "Jacob" and option_selector == 2{
-			JC_CRM = documented_list[item_selector];
+			JC_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Ella" and option_selector == 0{
 			EL_WPN = documented_list[item_selector];
@@ -301,7 +301,7 @@ if selector_x == 2{
 			EL_AMR = documented_list[item_selector];
 		}
 		else if character_hovered == "Ella" and option_selector == 2{
-			EL_CRM = documented_list[item_selector];
+			EL_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Doc" and option_selector == 0{
 			DC_WPN = documented_list[item_selector];
@@ -310,7 +310,7 @@ if selector_x == 2{
 			DC_AMR = documented_list[item_selector];
 		}
 		else if character_hovered == "Doc" and option_selector == 2{
-			DC_CRM = documented_list[item_selector];
+			DC_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Abby" and option_selector == 0{
 			AB_WPN = documented_list[item_selector];
@@ -319,7 +319,7 @@ if selector_x == 2{
 			AB_AMR = documented_list[item_selector];
 		}
 		else if character_hovered == "Abby" and option_selector == 2{
-			AB_CRM = documented_list[item_selector];
+			AB_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Azin" and option_selector == 0{
 			AZ_WPN = documented_list[item_selector];
@@ -328,7 +328,7 @@ if selector_x == 2{
 			AZ_AMR = documented_list[item_selector];
 		}
 		else if character_hovered == "Azin" and option_selector == 2{
-			AZ_CRM = documented_list[item_selector];
+			AZ_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Fiona" and option_selector == 0{
 			FN_WPN = documented_list[item_selector];
@@ -337,7 +337,7 @@ if selector_x == 2{
 			FN_AMR = documented_list[item_selector];
 		}
 		else if character_hovered == "Fiona" and option_selector == 2{
-			FN_CRM = documented_list[item_selector];
+			FN_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Soldier" and option_selector == 0{
 			JO_WPN = documented_list[item_selector];
@@ -346,7 +346,7 @@ if selector_x == 2{
 			JO_AMR = documented_list[item_selector];
 		}
 		else if character_hovered == "Soldier" and option_selector == 2{
-			JO_CRM = documented_list[item_selector];
+			JO_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Spoiler" and option_selector == 0{
 			ZM_WPN = documented_list[item_selector];
@@ -355,78 +355,78 @@ if selector_x == 2{
 			ZM_AMR = documented_list[item_selector];
 		}
 		else if character_hovered == "Spoiler" and option_selector == 2{
-			ZM_CRM = documented_list[item_selector];
+			ZM_CHM = documented_list[item_selector];
 		}
 		
 		else if character_hovered == "Jizo" and option_selector == 0{
 			JZ_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Jizo" and option_selector == 2{
-			JZ_CRM = documented_list[item_selector];
+			JZ_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Tsukuyomi" and option_selector == 0{
 			TS_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Tsukuyomi" and option_selector == 2{
-			TS_CRM = documented_list[item_selector];
+			TS_CHM = documented_list[item_selector];
 		}
 		
 		else if character_hovered == "Kalaratri" and option_selector == 0{
 			KI_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Kalaratri" and option_selector == 2{
-			KI_CRM = documented_list[item_selector];
+			KI_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Mikael" and option_selector == 0{
 			MI_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Mikael" and option_selector == 2{
-			MI_CRM = documented_list[item_selector];
+			MI_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Haru" and option_selector == 0{
 			HA_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Haru" and option_selector == 2{
-			HA_CRM = documented_list[item_selector];
+			HA_CHM = documented_list[item_selector];
 		}
 		
 		else if character_hovered == "Thunaer" and option_selector == 0{
 			TR_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Thunaer" and option_selector == 2{
-			TR_CRM = documented_list[item_selector];
+			TR_CHM = documented_list[item_selector];
 		}
 		
 		else if character_hovered == "Suriel" and option_selector == 0{
 			SL_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Suriel" and option_selector == 2{
-			SL_CRM = documented_list[item_selector];
+			SL_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Sol" and option_selector == 0{
 			SO_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Sol" and option_selector == 2{
-			SO_CRM = documented_list[item_selector];
+			SO_CHM = documented_list[item_selector];
 		}
 		
 		else if character_hovered == "Hermothr" and option_selector == 0{
 			HD_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Hermothr" and option_selector == 2{
-			HD_CRM = documented_list[item_selector];
+			HD_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Anfang" and option_selector == 0{
 			AF_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Anfang" and option_selector == 2{
-			AF_CRM = documented_list[item_selector];
+			AF_CHM = documented_list[item_selector];
 		}
 		else if character_hovered == "Amaterasu" and option_selector == 0{
 			AM_WPN = documented_list[item_selector];
 		}
 		else if character_hovered == "Amaterasu" and option_selector == 2{
-			AM_CRM = documented_list[item_selector];
+			AM_CHM = documented_list[item_selector];
 		}
 		
 		draw_text(room_width/2,0,string("{0} equipped {1}", character_hovered, documented_list[item_selector].name));

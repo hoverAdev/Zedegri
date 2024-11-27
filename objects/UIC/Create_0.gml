@@ -2,7 +2,7 @@
 // You can write your code in this editor
 persistent = true;
 
-global.game_speed = 0.5;
+global.game_speed = 1;
 
 Jacob_Available		= 0;
 Ella_Available		= 0;
@@ -1363,7 +1363,7 @@ All_Armour = [
 	DEF: -50,
 	SPD: 5,
 	HP: 0,
-	Copies: 0,
+	Copies: 1,
 },
 {	name: "Athletic Dress Suit",
 	type: "Male",
@@ -1855,23 +1855,23 @@ Jacob_Available = 0; Ella_Available = 0; Doc_Available = 0; Abby_Available = 0; 
 
 JC_WPN = Jacob_Weapons[0];			AB_WPN = Abby_Weapons[1];          JO_WPN = Soldier_Weapons[1];
 JC_AMR = All_Armour[0];				AB_AMR = All_Armour[0];            JO_AMR = All_Armour[0];
-JC_CRM = Charms_And_Sequencers[0];	AB_CRM = Charms_And_Sequencers[0]; JO_CRM = Charms_And_Sequencers[0];
+JC_CHM = Charms_And_Sequencers[0];	AB_CHM = Charms_And_Sequencers[0]; JO_CHM = Charms_And_Sequencers[0];
 
 EL_WPN = Ella_Weapons[0];			AZ_WPN = Azin_Weapons[1];          ZM_WPN = Spoiler_Weapons[1];
 EL_AMR = All_Armour[0];				AZ_AMR = All_Armour[0];            ZM_AMR = All_Armour[0];
-EL_CRM = Charms_And_Sequencers[0];	AZ_CRM = Charms_And_Sequencers[0]; ZM_CRM = Charms_And_Sequencers[0];
+EL_CHM = Charms_And_Sequencers[0];	AZ_CHM = Charms_And_Sequencers[0]; ZM_CHM = Charms_And_Sequencers[0];
 
 DC_WPN = Doc_Weapons[0];		    FN_WPN = Fiona_Weapons[0];
 DC_AMR = All_Armour[0];			    FN_AMR = All_Armour[0];
-DC_CRM = Charms_And_Sequencers[0];  FN_CRM = Charms_And_Sequencers[0];
+DC_CHM = Charms_And_Sequencers[0];  FN_CHM = Charms_And_Sequencers[0];
 
 JJA = 0; JTA = 0; EKA = 0; EMA = 0; EHA = 0; DTA = 0; ASA = 0; ALA = 0; AHA = 0; FAA = 0; JAA = 0; 
 
 JZ_WPN = Jizo_Tsuku_Weapons[0];     SL_WPN = SurielSol_Weapons[1];     MI_WPN = KaMiHa_Weapons[0];        AM_WPN = Amaterasu_Weapons[1];
-JZ_CRM = Charms_And_Sequencers[1];  SL_CRM = Charms_And_Sequencers[1]; MI_CRM = Charms_And_Sequencers[1]; AM_CRM = Charms_And_Sequencers[1];
+JZ_CHM = Charms_And_Sequencers[1];  SL_CHM = Charms_And_Sequencers[1]; MI_CHM = Charms_And_Sequencers[1]; AM_CHM = Charms_And_Sequencers[1];
 
 KI_WPN = KaMiHa_Weapons[0];         HD_WPN = Hermothr_Weapons[1];      SO_WPN = SurielSol_Weapons[0];     TS_WPN = Jizo_Tsuku_Weapons[0];
-KI_CRM = Charms_And_Sequencers[1];  HD_CRM = Charms_And_Sequencers[1]; SO_CRM = Charms_And_Sequencers[1]; TS_CRM = Charms_And_Sequencers[1];
+KI_CHM = Charms_And_Sequencers[1];  HD_CHM = Charms_And_Sequencers[1]; SO_CHM = Charms_And_Sequencers[1]; TS_CHM = Charms_And_Sequencers[1];
 
 TR_WPN = Thurnaer_Weapons[0];       AF_WPN = Anfang_Weapons[0];        HA_WPN = KaMiHa_Weapons[0];
-TR_CRM = Charms_And_Sequencers[1];  AF_CRM = Charms_And_Sequencers[1]; HA_CRM = Charms_And_Sequencers[1];
+TR_CHM = Charms_And_Sequencers[1];  AF_CHM = Charms_And_Sequencers[1]; HA_CHM = Charms_And_Sequencers[1];

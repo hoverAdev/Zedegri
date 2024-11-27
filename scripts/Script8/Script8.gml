@@ -329,7 +329,7 @@ function Spell_Cast(target_code, selected_spell){
 	//show_debug_message("before stagger");
 	//show_debug_message(selected_spell[5]);
 	if array_last(selected_spell) == "ATK"{}
-	else if string_char_at(selected_spell[5],1) == "F"{ // Field Heal
+	else if string_char_at(selected_spell[5],1) == "F"{ // Field Heal [2][3]
 		var string_splitter = int64(string("{0}{1}",string_char_at(selected_spell[5],2),string_char_at(selected_spell[5],3)));
 		Character_1_Stat_Writer_Manager.current_hp += ceil(Character_1_Stat_Writer_Manager.stat_block[2] * string_splitter/100 * random_range(0.8,1.2));
 		if Character_1_Stat_Writer_Manager.current_hp > Character_1_Stat_Writer_Manager.stat_block[2]{ Character_1_Stat_Writer_Manager.current_hp = Character_1_Stat_Writer_Manager.stat_block[2];}
@@ -349,7 +349,7 @@ function Spell_Cast(target_code, selected_spell){
 		var crit_dice = irandom_range(1,20); if crit_dice == 20{critical_success = true;}
 		if critical_success == true{
 			hp_recover *= 1.8;
-			Text_Chat_Manager.printed_string += string("\n{0} Crited when healing!",stat_block[1]);
+			Text_Chat_Manager.printed_string += string("\n{0} Crit when healing!",stat_block[1]);
 		}
 		if targetted_creature[0] == Character_1_Stat_Writer_Manager.stat_block[0]{
 			Character_1_Stat_Writer_Manager.current_hp += hp_recover;
@@ -738,7 +738,23 @@ function Spell_Cast(target_code, selected_spell){
 		var string_splitter = int64(string("{0}{1}",string_char_at(selected_spell[5],2),string_char_at(selected_spell[5],3)));
 		//1 + 200 * (Enemy % - 20) / (300 - 20) + 20 * (Player % / 300)
 		var PLAYER_PERCENT = current_hp/stat_block[2];
-		var ENEMY_PERCENT = Enemy_1_Stat_Writer_Manager.current_hp/Enemy_1_Stat_Writer_Manager.stat_block[2];
+		var ENEMY_PERCENT;
+		if hover == 1 {
+			ENEMY_PERCENT = Character_1_Stat_Writer_Manager.current_hp / Character_1_Stat_Writer_Manager.stat_block[2];
+		} else if hover == 2 {
+			ENEMY_PERCENT = Character_2_Stat_Writer_Manager.current_hp / Character_2_Stat_Writer_Manager.stat_block[2];
+		} else if hover == 3 {
+			ENEMY_PERCENT = Character_3_Stat_Writer_Manager.current_hp / Character_3_Stat_Writer_Manager.stat_block[2];
+		} else if hover == 4 {
+				ENEMY_PERCENT = Enemy_1_Stat_Writer_Manager.current_hp / Enemy_1_Stat_Writer_Manager.stat_block[2];
+		} else if hover == 5 {
+			ENEMY_PERCENT = Enemy_2_Stat_Writer_Manager.current_hp / Enemy_2_Stat_Writer_Manager.stat_block[2];
+		} else if hover == 6 {
+			ENEMY_PERCENT = Enemy_3_Stat_Writer_Manager.current_hp / Enemy_3_Stat_Writer_Manager.stat_block[2];
+		} else if hover == 7 {
+			ENEMY_PERCENT = Enemy_4_Stat_Writer_Manager.current_hp / Enemy_4_Stat_Writer_Manager.stat_block[2];
+		} else { ENEMY_PERCENT = 100; }
+		
 		var RANDINT = irandom(100);
 		var DEATH_PERCENT = ((PLAYER_PERCENT * 0.4 - 1) * (ENEMY_PERCENT * 0.6 - 1) / 2) * 100 - 11;
 		DEATH_PERCENT += string_splitter;
@@ -750,8 +766,8 @@ function Spell_Cast(target_code, selected_spell){
 		else if hover == 2{ 
 			TARGET_NAME = Character_2_Stat_Writer_Manager.stat_block[1];
 		}
-		else if hover == 3{ try{
-			TARGET_NAME = Character_3_Stat_Writer_Manager.stat_block[1];} catch (_exception){}
+		else if hover == 3{
+			TARGET_NAME = Character_3_Stat_Writer_Manager.stat_block[1];
 		}
 		else if hover == 4{ 
 			TARGET_NAME = Enemy_1_Stat_Writer_Manager.stat_block[1];
@@ -777,7 +793,8 @@ function Spell_Cast(target_code, selected_spell){
 			else if hover == 7{Enemy_4_Stat_Writer_Manager.current_hp -= 999999;}
 		}
 		else{
-				Text_Chat_Manager.printed_string += string("\nThe Instant Kill Failed, {0} {1}",DEATH_PERCENT, RANDINT);
+				Text_Chat_Manager.printed_string += string("\nThe Instant Kill Failed}");
+				show_debug_message("% TO BEAT: {0}  % ROLLED: {1}", DEATH_PERCENT, RANDINT)
 		}
 	}
 	else if array_last(selected_spell) == "RECOIL"{
@@ -795,7 +812,7 @@ function Spell_Cast(target_code, selected_spell){
 		}
 	}
 	else if array_last(selected_spell) == "CHP"{
-		dmg = current_hp;	
+		dmg = current_hp;
 	}
 	//execute required part
 	current_def = stat_block[8] * def_modifiers;
