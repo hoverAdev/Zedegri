@@ -3,15 +3,14 @@
 //var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
 
 
-var file = file_text_open_read(working_directory + "config.json");
-var temporary = file_text_read_string(file);
-file_text_close(file);
-var Configuration = json_parse(temporary);
+var file = file_text_open_read( get_open_filename("Zedegri Save (*.txt)|*.txt|All Files (*.*)|*.*", ""));
+if file != "" {
+var Configuration = json_parse(file_text_readln(file));
 global.speed_cap = Configuration.speed_cap;
 global.level = Configuration.level;
 
 global.ENVDMG = Configuration.environmental_damage; //environmental damage
-global.PLSG = Configuration.player_speed/10;  //Player Speed variable
+global.PLSG = Configuration.player_speed;  //Player Speed variable
 global.MAX_AP = Configuration.max_ap;
 
 global.Mass_Deactivate = false;
@@ -20,7 +19,6 @@ global.Mass_Deactivate = false;
 show_debug_message(floor(global.level / 10));
 
 
-var file = file_text_open_read(working_directory + "Save_Data.txt");
 
 var Human_Unlock = file_text_readln(file);
 var Zedegri_Unlock = file_text_readln(file);
@@ -121,4 +119,5 @@ AF_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
 AM_WPN=Assign_Item(All_Saved_Items, Amaterasu_Weapons     );
 AM_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
+};
 i = 0;

@@ -23,7 +23,7 @@ scene = [
 ["LM3", "LSW","LDL", 1.3],
 ["LM4", "LSW","LSW", 1.3],
 // JIZO INTRO BATTLE
-["B0", "LZZ","LZZ","LZZ","LZZ", 15],
+["B0", "LZZ","LZZ","LZZ","LZZ", 6],
 ["B1", "", 5],
 // DIMWOOD FOREST: FLB FTT FSF
 ["D1", "FLB","FTT", 1.8],
