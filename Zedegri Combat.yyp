@@ -35,6 +35,8 @@
     {"$GMIncludedFile":"","%Name":"config.json","CopyToMask":-1,"filePath":"datafiles","name":"config.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"CONTROL GUIDE.txt","CopyToMask":-1,"filePath":"datafiles","name":"CONTROL GUIDE.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Save_Data.txt","CopyToMask":-1,"filePath":"datafiles","name":"Save_Data.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"Zed_Icon_Windows.ico","CopyToMask":-1,"filePath":"datafiles","name":"Zed_Icon_Windows.ico","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"Zedegri_Linly_Cross.png","CopyToMask":-1,"filePath":"datafiles","name":"Zedegri_Linly_Cross.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],

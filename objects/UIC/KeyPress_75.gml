@@ -1,12 +1,13 @@
 /// @description Save Object Data
 // You can write your code in this editor
 if room = Room_Ini {
-var Save_String = "";
+var Save_String = string("{\"speed_cap\":{0}, \"level\":{1}, \"environmental_damage\":{2}, \"player_speed\":{3}, \"max_ap\":{4} } \n",
+global.speed_cap, global.level, global.ENVDMG, global.PLSG, global.MAX_AP);
 
 //IsAvailable 0 = not available, 1 = is available
 //Jacob, Ella, Doc, Abby, Azin, Fiona, Joanna, Fiora
 
-Save_String = string("{0}{1}{2}{3}{4}{5}{6}{7}\n",Jacob_Available,Ella_Available,Doc_Available,Abby_Available,Azin_Available,Fiona_Available,Joanna_Available,Fiora_Available); //Humans
+Save_String += string("{0}{1}{2}{3}{4}{5}{6}{7}\n",Jacob_Available,Ella_Available,Doc_Available,Abby_Available,Azin_Available,Fiona_Available,Joanna_Available,Fiora_Available); //Humans
 
 
 Save_String += string("{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}\n", JJA,JTA,EKA,EMA,EHA,DTA,ASA,ALA,AHA,FAA,JAA); //Zedegri

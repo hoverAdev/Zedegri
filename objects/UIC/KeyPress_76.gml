@@ -2,24 +2,18 @@
 // You can write your code in this editor
 
 if room == Room_Ini {
-//var file = file_text_open_read(working_directory + "config.json");
-var file = buffer_load("config.json");
-var temporary = buffer_read(file, buffer_text);
-buffer_delete(file);
-var Configuration = json_parse(temporary);
+var file = file_text_open_read("Save_Data.txt");
+var Configuration = json_parse(file_text_readln(file));
 global.speed_cap = Configuration.speed_cap;
 global.level = Configuration.level;
 
 global.ENVDMG = Configuration.environmental_damage; //environmental damage
-global.PLSG = Configuration.player_speed/10;  //Player Speed variable
+global.PLSG = Configuration.player_speed;  //Player Speed variable
 global.MAX_AP = Configuration.max_ap;
 
 global.Mass_Deactivate = false;
 
 show_debug_message("Player level is {0}", global.level);
-
-
-file = file_text_open_read("Save_Data.txt");
 
 var Human_Unlock = file_text_readln(file);
 var Zedegri_Unlock = file_text_readln(file);

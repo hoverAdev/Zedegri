@@ -19,7 +19,7 @@ if room == Room_Ini and Is_Tutorial_Active{
 	}
 	else if Item_Enter_Presses == 1{
 		draw_set_halign(fa_center); draw_set_valign(fa_middle);
-		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"This scene is the Item Selection Scene\nNavigate the characters, catagories, and lists with UP and DOWN arrow\n[Press ENTER to proceed]");
+		draw_text_outlined(room_width/2,room_height/2,c_black,c_white,"This scene is the Item Selection Scene\nNavigate the characters, categories, and lists with UP and DOWN arrow\n[Press ENTER to proceed]");
 		if keyboard_check_pressed(vk_enter){ Item_Enter_Presses += 1; io_clear(); }
 	}
 	else if Item_Enter_Presses == 2{

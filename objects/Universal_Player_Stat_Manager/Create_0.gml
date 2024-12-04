@@ -2,7 +2,7 @@
 // You can write your code in this editor
 persistent = true;
 
-motd = "[FORK] 1.7.Ambience3"
+motd = "[FORK] 1.7.Ambience3";
 
 var LM = 1 + global.level / 15 * 1.6;
 show_debug_message(LM);

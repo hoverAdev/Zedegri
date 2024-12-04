@@ -153,7 +153,10 @@ if global.all_state_pause == 0{
 		else if action_fierce == true{
 			atk_used = atk_3;
 		}
-		if atk_used[2] - assist_mod <= random_range(1,100){
+		
+		var does_hit = atk_used[2] - assist_mod;
+		
+		if does_hit >= random_range(1,100){
 			dmg = atk_used[1] + turn_counter *1.1;
 			dmg = round(dmg * random_range(0.7, 1.2)); 
 			
