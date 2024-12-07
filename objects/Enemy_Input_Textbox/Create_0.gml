@@ -24,7 +24,8 @@ scene = [
 ["LM4", "LSW","LSW", 1.3],
 // JIZO INTRO BATTLE
 ["B0", "LZZ","LZZ","LZZ","LZZ", 6],
-["B1", "", 5],
+["B1", "MZE", "MZE", 5],
+["B2", "MZM", 15],
 // DIMWOOD FOREST: FLB FTT FSF
 ["D1", "FLB","FTT", 1.8],
 ["D2", "FTT","FTT", 1.8],
@@ -32,9 +33,9 @@ scene = [
 ["D4", "FSF","FSF", 2.1], //Zedegri Only
 ["D5", "FTT","FLB","FTT", 2.4],
 // MAINLAND MINA: 
-["M1","DRM","DHE", 2.4],
-["M2",],
-["M3",],
-["M4",],
-["M5", "ETHEL", 999],
+["M1", "DRM", "DHE", 2.4],
+["M2", "DSS", 2.4],
+["M3", "DOW", 2.5], //Zedegri Fight.
+["M4", "DRM","DRM","DRM", 2.5],
+["M5", "ETHEL", "ETHEL", 999],
 ]

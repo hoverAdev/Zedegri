@@ -555,5 +555,12 @@ if global.all_state_pause == 0{
 		action_fierce = false;
 		action_heavy = false;
 		action_light = false;
+		
+		if dmg_mod_05 >= 1{	dmg_mod_05 --;	}
+		if dmg_mod_15 >= 1{	dmg_mod_15 --;	}
+		if dmg_mod_20 >= 1{	dmg_mod_20 --;	}
+		if def_mod_05 >= 1{	def_mod_05 --;	}
+		if def_mod_15 >= 1{	def_mod_15 --;	}
+		if def_mod_20 >= 1{	def_mod_20 --;	}
 	}
 }

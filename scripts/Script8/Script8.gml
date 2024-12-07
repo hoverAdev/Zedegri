@@ -767,6 +767,7 @@ function Spell_Cast(target_code, selected_spell){
 		}
 		
 		var DEATH_PERCENT = ((PLAYER_PERCENT * 0.4 - 1) * (ENEMY_PERCENT * 0.6 - 1) / 2) * 100 - 11;
+		show_debug_message(DEATH_PERCENT);
 		DEATH_PERCENT += string_splitter;
 				
 		var TARGET_NAME = "";
@@ -791,7 +792,9 @@ function Spell_Cast(target_code, selected_spell){
 		else if hover == 7{ 
 			TARGET_NAME = Enemy_4_Stat_Writer_Manager.stat_block[1];
 		}
-				
+		
+		
+		
 		if RANDINT <= DEATH_PERCENT{
 			Text_Chat_Manager.printed_string += string("\n{0} Instantly Killed {1}!",stat_block[1], TARGET_NAME);
 			if hover == 1{Character_1_Stat_Writer_Manager.current_hp -= 999999;}

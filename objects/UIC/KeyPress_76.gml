@@ -2,7 +2,7 @@
 // You can write your code in this editor
 //var file = file_text_open_read("C:/GitHub/Zedegri_Combat_Gamemaker/datafiles/Save_Data.txt");
 
-
+if room != Room_Enemy_Select{
 var file = file_text_open_read( get_open_filename("Zedegri Save (*.txt)|*.txt|All Files (*.*)|*.*", ""));
 if file != "" {
 var Configuration = json_parse(file_text_readln(file));
@@ -119,5 +119,6 @@ AF_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
 AM_WPN=Assign_Item(All_Saved_Items, Amaterasu_Weapons     );
 AM_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
+};
 };
 i = 0;

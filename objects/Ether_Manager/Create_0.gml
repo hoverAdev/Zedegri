@@ -53,7 +53,7 @@ jo_ether = [
     [1, "Blood Enhance", "Enhance ones strength at the cost of damage",2,50*LM, ["A",true,50]],
 	[2, "Shatter Strike", "A strong strike which breaks the enemies defence", 2, (80 + Universal_Player_Stat_Manager.all_character_array[13][7])*LM, "D0,05"],
 //	[3, "Limit Break Slash", "Joanna focuses their ether into one attack, deals self damage", 3, (500 + Universal_Player_Stat_Manager.all_character_array[13][7])*LM, "RECOIL"],
-//	[4, "Vital Point Exploit", "Joanna attacks a vital point, chance to instantly kill", 4, 0, "I20"],
+//	[4, "Vital Point Exploit", "Joanna attacks a vital point, chance to instantly kill", 4, 0, "I3"],
 //	[5, "Enchanted Lineage", "Joanna channels their inner Ether for 2X damage", 4, 0, "E2,06"],
 ];
 fi_ether = [
@@ -73,13 +73,13 @@ jz_ether = [
 ki_ether = [
     [1, "Soul Infusion","Kalaratri leeches the life from the enemy", 1, (80 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM, "L"],
 	[2, "Deathly Glare", "Kalaratri intimidates the enemy, lowering their defence.",2,0, "D0,06"],
-//	[3, "Cursed Word", "An attack with a rare chance to instantly kill the enemy", 1, (100 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM, "I10"],
+//	[3, "Cursed Word", "An attack with a rare chance to instantly kill the enemy", 1, (100 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM, "I1"],
 //	[4, "Inflict Atrophy", "Kalaratri lowers the strength of the enemy", 3, 0, "E0,06"],
-//	[5, "Lethal Inflection", "Kalaratri launches a single attack with a notable chance to INSTAKILL.", 6, (80 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM,"I32"],//32
+//	[5, "Lethal Inflection", "Kalaratri launches a single attack with a notable chance to INSTAKILL.", 6, (80 + Universal_Player_Stat_Manager.all_character_array[7][7])*LM,"I7"],//32
 ];
 tr_ether = [
     [1, "Defensive Field","Creates a light protective field around a target",2, 0, "D1,04"], //DEF 1.5 up
-	[2, "Ether Sphere", "Thurnaer creates an aura of ether which heals all teammates", 2, 0, "F15"],
+	[2, "Ether Sphere", "Thurnaer creates an aura of ether which heals all teammates", 4, 0, "F15"],
 //	[3, "Medic Support","Thurnaer sends a healing bolt towards one teammate",2, 0, "H15"], //Basic Heal
 //	[4, "Defensive Barrier","Creates a strong protective barrier around a target", 4, 0, "D2,04"], //DEF 2 up
 //	[5, "Oath Defy","Going against their doctor code and leeches the life from an enemy",3, (175 + Universal_Player_Stat_Manager.all_character_array[8][7])*LM, "L"], //Leech
@@ -101,9 +101,9 @@ hd_ether = [
 af_ether = [
     [1, "Nature's Love", "Anfang channels their power to heal all their teammates", 4, 0, "F30"],
 	[2, "Nature's Ferocity", "A fierce vine attack which immobalizes the target", 3, (120 + Universal_Player_Stat_Manager.all_character_array[12][7])*LM, 1],
-//	[3, "Nature's Restoration","Anfang steals life from the enemy to heal herself", 2, (180 + Universal_Player_Stat_Manager.all_character_array[12][7])*LM, "L"], //Leech
-//	[4, "Nature's Blessing", "Anfang empowers a teammate with strength for the rest of battle", 2, 0, ["A", false, 20]], //Perm ATK buff
-//	[5, "Nature's Ultimatum", "Anfang attacks the opponent, more damage the higher their Current HP is", 8, 0, "CHP"],
+	[3, "Nature's Restoration","Anfang steals life from the enemy to heal herself", 2, (180 + Universal_Player_Stat_Manager.all_character_array[12][7])*LM, "L"], //Leech
+	[4, "Nature's Blessing", "Anfang empowers a teammate with strength for the rest of battle", 2, 0, ["A", false, 20]], //Perm ATK buff
+	[5, "Nature's Ultimatum", "Anfang attacks the opponent, more damage the higher their Current HP is", 8, 0, "CHP"],
 ];
 mi_ether = [
     [1, "Heaven's Saber", "Mika'el crashes both of their swords into the enemy with ferocity", 1, (60 + Universal_Player_Stat_Manager.all_character_array[15][7])*LM*2, "ATK"], //ATK
@@ -122,21 +122,21 @@ so_ether = [
 ha_ether = [
     [1, "Esperian Flare","Haru calls down magic fire, reducing the enemies defence",3,(280 + Universal_Player_Stat_Manager.all_character_array[17][7])*LM,"D0,06"],
 	[2, "Future Glint","Haru alters time around themselves to let them move faster",4,0,["S",true,3]],
-//	[3, "Rebellious Intention", "Haru attacks a vital point, chance to INSTAKILL", 5, 50*LM, "I15"],
+//	[3, "Rebellious Intention", "Haru attacks a vital point, chance to INSTAKILL", 5, 50*LM, "I4"],
 //	[4, "Chaos Infusion","Haru blesses a teammate with increased base strength",2,0,["A", false, 30]],
 //	[5, "Draining Touch", "Haru absorbs the opponents Ether,healing herself.", 3,(170 + Universal_Player_Stat_Manager.all_character_array[17][7])*LM,"L"],
 ];
 am_ether = [
     [1, "Solar Winds","Amaterasu releases a gale of blazing winds at an enemy, lowering DEF",2,800, "D0,02"],
 	[2, "Celestial Blessing", "Harnessing the power of light, they heal themselves", 1, 0, "H10"],
-//	[3, "Ultraviolet Beam", "Amaterasu summons a pillar of energy to burn the enemies, deals self damage", 5, (1000 + Universal_Player_Stat_Manager.all_character_array[18][7])*LM, "RECOIL"],
-//	[4, "Strengthening Light", "Amaterasu shines a warm light onto a teammate, increasing their MAX ATK.",3,0,["A", false, 30]],
-//	[5, "Enchanted Lineage", "Joanna channels their inner Ether for 2X damage", 4, 0, "E2,06"]
+	[3, "Ultraviolet Beam", "Amaterasu summons a pillar of energy to burn the enemies, deals self damage", 5, (1000 + Universal_Player_Stat_Manager.all_character_array[18][7])*LM, "RECOIL"],
+	[4, "Strengthening Light", "Amaterasu shines a warm light onto a teammate, increasing their MAX ATK.",3,0,["A", false, 30]],
+	[5, "Enchanted Lineage", "Joanna channels their inner Ether for 2X damage", 4, 0, "E2,06"]
 ];
 ts_ether = [
     [1, "Child of Fear","Tsukuyomi creates an illusion, and lands a strong attack.", 1, Universal_Player_Stat_Manager.all_character_array[19][7]*LM*1.5, "ATK"], //ATK
 	[2, "Empiric Legacy", "Tsukuyomi increases a teammates speed", 2, 0, ["S", false, 2]],
-//	[3, "Lunar Eclipse","As the moon turns to blood, decrease an enemies DEF", 3, global.level*LM, "D0,10"], //DEF DOWN
-//	[4, "Celestrial Force", "A Powerful strike which topples larger enemies", 2, (80 + Universal_Player_Stat_Manager.all_character_array[19][7])*LM, 8], //TOPPLE
-//	[5, "Enchanted Lineage", "Jacob channels their inner Ether for 2X damage", 4, 0, "E2,06"]
+	[3, "Lunar Eclipse","As the moon turns to blood, decrease an enemies DEF", 3, global.level*LM, "D0,10"], //DEF DOWN
+	[4, "Celestrial Force", "A Powerful strike which topples larger enemies", 2, (80 + Universal_Player_Stat_Manager.all_character_array[19][7])*LM, 8], //TOPPLE
+	[5, "Enchanted Lineage", "Jacob channels their inner Ether for 2X damage", 4, 0, "E2,06"]
 ];
