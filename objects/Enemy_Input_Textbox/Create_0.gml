@@ -22,10 +22,11 @@ scene = [
 ["LM2", "LMB","LDL", 1.3], //THE REAL ONE
 ["LM3", "LSW","LDL", 1.3],
 ["LM4", "LSW","LSW", 1.3],
-// JIZO INTRO BATTLE
+// BOSS BATTLES, LAHMUR AND MINA
 ["B0", "LZZ","LZZ","LZZ","LZZ", 6],
 ["B1", "MZE", "MZE", 5],
 ["B2", "MZM", 15],
+["B3", "YMB", "YAB", 7],
 // DIMWOOD FOREST: FLB FTT FSF
 ["D1", "FLB","FTT", 1.8],
 ["D2", "FTT","FTT", 1.8],
@@ -38,4 +39,15 @@ scene = [
 ["M3", "DOW", 2.5], //Zedegri Fight.
 ["M4", "DRM","DRM","DRM", 2.5],
 ["M5", "ETHEL", "ETHEL", 999],
+// YAMEH BATTLES
+["Y1", "YTS", 3],
+["Y2", "YTS", "YWF", 3.2],
+["Y3", "YWF", "YWF", 3.2],
+["Y4", "YGH", "YWF", 6],
+["Y5", "YPG", "YCG", 3.6],
+["Y6", "YPG", "YPG", "YCG", 4],
+// LINSER OUTSIDE
+["LS1", "LOG", 4],
+["LS2", "LOG", "LOG", 3.2],
+["LS3", "LOA", "LOG", "LOG", 6],
 ]

@@ -158,7 +158,7 @@ if global.all_state_pause == 0{
 		show_debug_message(assist_mod);
 		
 		var does_hit = atk_used[2] - assist_mod;
-		
+		show_debug_message("does hit: ", does_hit);
 		if does_hit >= random_range(1,100){
 			show_debug_message("entered damage process");
 			dmg = atk_used[1] + turn_counter *1.1;

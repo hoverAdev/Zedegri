@@ -261,21 +261,7 @@ all_enemy_array = [//                        |2 = doen't happen
 							0, 120, 1],
 ]
 var _file = file_text_open_read(working_directory + "Enemies.json");
-file_text_readln(_file);
-while file_text_eof(_file) == false{
-	try{
-		array_push(all_enemy_array, Enemy_Arraify(json_parse(file_text_readln(_file))));
-		show_debug_message(array_last(all_enemy_array));
-	}
-	catch(_exception){
-		break;
-	}
+var filed_enemies = json_parse(file_text_readln(_file));
+for ( var i = 0 ; i < array_length( filed_enemies ); i++ ) {
+	array_insert(all_enemy_array, array_length(all_enemy_array), Enemy_Arraify(filed_enemies[i]));
 }
-/*
-while file_text_eoln(_file){
-		
-}
-
-for (i = 0; i 
-array_push(all_enemy_array, file_text_read_string()
-*/

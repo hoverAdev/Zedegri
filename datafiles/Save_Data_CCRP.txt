@@ -1,4 +1,0 @@
-{"speed_cap":6, "level":6, "environmental_damage":0, "player_speed":0.50, "max_ap":4 } 
-22110000
-10100000000
-Desert Gauntlets,Desert Face Wrap,No Charm,Stone Staff,Desert Face Wrap,No Charm,Polished Sword,Desert Face Wrap,No Charm,Model EK15,Desert Face Wrap,No Charm,Reliable Whips,Unarmed,No Charm,Unarmed,Unarmed,No Charm,Sempiternal Rapier,Unarmed,No Charm,Ether Dagger,Unarmed,No Charm,Unarmed,No Sequencer,Unarmed,No Sequencer,Unarmed,No Sequencer,Unarmed,No Sequencer,Unarmed,No Sequencer,Unarmed,No Sequencer,Mk. XXIV Screamer Edge,No Sequencer,Unarmed,No Sequencer,Galvanised Spirit,No Sequencer,Unarmed,No Sequencer,Ark Rapier,No Sequencer
