@@ -36,10 +36,12 @@ if disabled_selection == false{
 			}
 		}
 		//show_debug_message(enemy_array);
-		global.enemy_members[j] = enemy_array;
-	}
-	*/
-	
+		array_insert(global.enemy_members, j, enemy_array);
+	}/*
+	}catch(_exception){
+	global.enemy_members = [array_last(Universal_Player_Stat_Manager.all_enemy_array),array_last(Universal_Player_Stat_Manager.all_enemy_array)];
+	global.reward = 9999;
+	}*/
 	global.enemy_members = Validate_Enemy_Array(global.enemy_members);
 	room_goto(Room_Combat);
 	

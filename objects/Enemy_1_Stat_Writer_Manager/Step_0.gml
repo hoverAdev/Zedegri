@@ -146,17 +146,21 @@ if global.all_state_pause == 0{
 		var atk_used = [];
 		if action_light == true{
 			atk_used = atk_1;
+			show_debug_message("light attack");
 		}
 		else if action_heavy == true{
+			show_debug_message("med attack");
 			atk_used = atk_2;
 		}
 		else if action_fierce == true{
 			atk_used = atk_3;
 		}
+		show_debug_message(assist_mod);
 		
 		var does_hit = atk_used[2] - assist_mod;
-		
+		show_debug_message("does hit: ", does_hit);
 		if does_hit >= random_range(1,100){
+			show_debug_message("entered damage process");
 			dmg = atk_used[1] + turn_counter *1.1;
 			dmg = round(dmg * random_range(0.7, 1.2)); 
 			
@@ -551,5 +555,12 @@ if global.all_state_pause == 0{
 		action_fierce = false;
 		action_heavy = false;
 		action_light = false;
+		
+		if dmg_mod_05 >= 1{	dmg_mod_05 --;	}
+		if dmg_mod_15 >= 1{	dmg_mod_15 --;	}
+		if dmg_mod_20 >= 1{	dmg_mod_20 --;	}
+		if def_mod_05 >= 1{	def_mod_05 --;	}
+		if def_mod_15 >= 1{	def_mod_15 --;	}
+		if def_mod_20 >= 1{	def_mod_20 --;	}
 	}
 }

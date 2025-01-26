@@ -1,8 +1,9 @@
 /// @description Load Object Data
 // You can write your code in this editor
 
-if room == Room_Ini {
-var file = file_text_open_read("Save_Data.txt");
+if room != Room_Enemy_Select{
+var file = file_text_open_read( get_open_filename("Zedegri Save (*.txt)|*.txt|All Files (*.*)|*.*", ""));
+if file != "" {
 var Configuration = json_parse(file_text_readln(file));
 global.speed_cap = Configuration.speed_cap;
 global.level = Configuration.level;
@@ -13,7 +14,10 @@ global.MAX_AP = Configuration.max_ap;
 
 global.Mass_Deactivate = false;
 
-show_debug_message("Player level is {0}", global.level);
+//show_debug_message("The Player Level is: {0}", global.level);
+show_debug_message(floor(global.level / 10));
+
+
 
 var Human_Unlock = file_text_readln(file);
 var Zedegri_Unlock = file_text_readln(file);
@@ -114,6 +118,6 @@ AF_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
 
 AM_WPN=Assign_Item(All_Saved_Items, Amaterasu_Weapons     );
 AM_CRM=Assign_Item(All_Saved_Items, Charms_And_Sequencers );
-
+};
+};
 i = 0;
-}

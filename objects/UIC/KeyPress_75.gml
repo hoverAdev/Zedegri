@@ -4,6 +4,10 @@ if room = Room_Ini {
 var Save_String = string("{\"speed_cap\":{0}, \"level\":{1}, \"environmental_damage\":{2}, \"player_speed\":{3}, \"max_ap\":{4} } \n",
 global.speed_cap, global.level, global.ENVDMG, global.PLSG, global.MAX_AP);
 
+global.ENVDMG = Configuration.environmental_damage; //environmental damage
+global.PLSG = Configuration.player_speed/10;  //Player Speed variable
+global.MAX_AP = Configuration.max_ap;
+*/
 //IsAvailable 0 = not available, 1 = is available
 //Jacob, Ella, Doc, Abby, Azin, Fiona, Joanna, Fiora
 
