@@ -17,12 +17,6 @@ if disabled_selection == false{
 	
 	global.reward = array_pop(scene_array);
 	
-	for (var j = 0; j < enemy_count; j++) {
-		var enemy_array = scene_array[j + 1];
-		global.enemy_members[j] = enemy_array;
-	}
-	
-	/*
 	for (var j = 0; j < enemy_count; j++){ //It leaves the last array blank.
 		var enemy_array = [];
 		var enemy_search_code = scene_array[j + 1];	

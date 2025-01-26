@@ -37,7 +37,6 @@
     {"$GMIncludedFile":"","%Name":"Enemies.json","CopyToMask":-1,"filePath":"datafiles","name":"Enemies.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Save_Data_2.txt","CopyToMask":-1,"filePath":"datafiles","name":"Save_Data_2.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Save_Data_4.txt","CopyToMask":-1,"filePath":"datafiles","name":"Save_Data_4.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"Save_Data_Ambi.txt","CopyToMask":-1,"filePath":"datafiles","name":"Save_Data_Ambi.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Save_Data_LEAVE_EMPTY.txt","CopyToMask":-1,"filePath":"datafiles","name":"Save_Data_LEAVE_EMPTY.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Save_Data.txt","CopyToMask":-1,"filePath":"datafiles","name":"Save_Data.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Zed_Icon_Windows.ico","CopyToMask":-1,"filePath":"datafiles","name":"Zed_Icon_Windows.ico","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -46,7 +45,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"Zedegri Combat",
   "resources":[

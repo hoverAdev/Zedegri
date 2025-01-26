@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if room != Room_Enemy_Select{
-var file = file_text_open_read( get_open_filename("Zedegri Save (*.txt)|*.txt|All Files (*.*)|*.*", ""));
+var file = file_text_open_read("Save_Data.txt");
 if file != "" {
 var Configuration = json_parse(file_text_readln(file));
 global.speed_cap = Configuration.speed_cap;
